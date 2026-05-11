@@ -1,0 +1,41 @@
+.promobar {
+  padding-block: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("@/assets/images/Abstract-Lines.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mobile {
+    justify-content: flex-start;
+    padding-inline: var(--container-padding-x);
+  }
+
+  &__text {
+    display: flex;
+    column-gap: 10px;
+    font-size: 12px;
+  }
+
+  &__close {
+    position: absolute;
+    right: fluid(32, 16);
+    @include square(26px);
+    border-radius: var(--border-radius-circle);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: unset;
+    color: inherit;
+
+    svg {
+      vector-effect: non-scaling-stroke;
+    }
+
+    &:hover {
+      background-color: var(--color-purple-60);
+    }
+  }
+}
