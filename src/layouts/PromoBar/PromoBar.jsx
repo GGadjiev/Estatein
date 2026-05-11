@@ -1,0 +1,2 @@
+import './PromoBar.scss'
+

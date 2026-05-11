@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.3em;
+  padding: 16px 24px;
+  color: var(--color-white);
+  background-color: var(--color-gray-08);
+  border: var(--border-gray);
+  border-radius: var(--border-radius-base-2);
+
+  @include hover {
+    background-color: var(--color-purple-60);
+  }
+}

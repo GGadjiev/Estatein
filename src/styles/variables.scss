@@ -1,0 +1,66 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-purple-60: #703BF7;
+  --color-purple-65: #703BF7;
+  --color-purple-70: #946CF9;
+  --color-purple-75: #946CF9;
+  --color-purple-90: #DBCEFD;
+  --color-purple-95: #EDE7FE;
+  --color-purple-97: #F4F0FE;
+  --color-purple-99: #FBFAFF;
+
+  --color-white-90: #E4E4E7;
+  --color-white-95: #F1F1F3;
+  --color-white-97: #F7F7F8;
+  --color-white-99: #FCFCFD;
+
+  --color-gray-08: #141414;
+  --color-gray-10: #1A1A1A;
+  --color-gray-15: #262626;
+  --color-gray-20: #333333;
+  --color-gray-30: #4D4D4D;
+  --color-gray-40: #666666;
+  --color-gray-50: #808080;
+  --color-gray-60: #999999;
+
+  --border-gray: var(--border-width) solid var(--color-gray-15);
+  --border-purple: var(--border-width) solid var(--color-purple-60) ;
+
+  --border-width: 1px;
+
+  --border-radius-base: 12px;
+  --border-radius-base-2: 10px;
+  --border-radius-base-3: 8px;
+  --border-radius-circle: 50%;
+  --border-radius-twitter: 43px;
+  --border-radius-say-hello: 100px;
+  --border-radius-steps: 0 12px 12px 12px;
+  --border-radius-search: 12px 12px 0 0;
+  --border-radius-checkbox: 4px;
+  --border-radius-pagination: 60px;
+  --border-radius-x: 28px;
+
+  @include laptop {
+    --border-radius-base: 10px;
+    --border-radius-base-2: 8px;
+    --border-radius-base-3: 6px;
+    --border-radius-steps: 0 10px 10px 10px;
+  }
+
+  @include mobile {
+    --border-radius-search: 12px;
+  }
+
+  --font-family-base: 'Urbanist';
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+
+  --container-padding-x: 16px;
+
+  --transition-duration: 0.2s;
+}
