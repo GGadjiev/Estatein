@@ -1,13 +1,13 @@
 .section {
   display: grid;
   row-gap: fluid(80, 40);
-  padding-block: 50px;
+  padding-block: 75px;
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 16px;
+//    column-gap: 16px;
 
     @include mobile {
       flex-direction: column;

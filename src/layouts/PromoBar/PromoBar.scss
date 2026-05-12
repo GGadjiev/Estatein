@@ -54,7 +54,7 @@
 
 .promobar.is-active {
   max-height: 100px;
-  padding-block: 18px;
+  padding-block: fluid(18, 14);
   opacity: 1;
 }
 

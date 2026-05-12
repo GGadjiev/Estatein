@@ -8,7 +8,13 @@
   border: var(--border-gray);
   border-radius: var(--border-radius-base-2);
 
-  @include hover {
+  &_purple-hover {
+    @include hover {
+      background-color: var(--color-purple-60);
+    }
+  }
+
+  &_purple {
     background-color: var(--color-purple-60);
   }
 }

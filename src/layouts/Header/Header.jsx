@@ -52,7 +52,7 @@ export default (props) => {
             </ul>
           </nav>
         </dialog>
-        <Button className="header__button hidden-mobile">Contact Us</Button>
+        <Button className="header__button hidden-mobile button_purple-hover">Contact Us</Button>
         <BurgerButton
           className="header__burger-button visible-mobile"
           extraAttrs={{
