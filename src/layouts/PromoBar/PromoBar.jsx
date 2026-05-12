@@ -1,11 +1,12 @@
 import './PromoBar.scss'
+import clsx from "clsx";
 
 export default () => {
   return (
-    <div className="promobar">
+    <div className={clsx("promobar", 'is-active')}>
       <p className='promobar__text'>
         ✨Discover Your Dream Property with Estatein
-        <a href="" className='promobar__link'>Learn More</a>
+        <a href="/" className='promobar__link'>Learn More</a>
       </p>
       <button className='promobar__close'>
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">

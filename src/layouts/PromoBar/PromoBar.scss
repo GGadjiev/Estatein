@@ -1,14 +1,16 @@
 .promobar {
-  padding-block: 18px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  max-height: 0;
+  padding-block: 0;
   background-image: url("@/assets/images/Abstract-Lines.svg");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition-duration: var(--transition-duration);
 
   @include mobile {
     justify-content: flex-start;
@@ -19,16 +21,18 @@
     display: flex;
     column-gap: 10px;
     font-size: 12px;
+    font-weight: 500;
   }
 
   &__close {
     position: absolute;
     right: fluid(32, 16);
-    @include square(26px);
-    border-radius: var(--border-radius-circle);
+    color: inherit;
     background-color: rgba(255, 255, 255, 0.1);
     border: unset;
-    color: inherit;
+    border-radius: var(--border-radius-circle);
+
+    @include square(26px);
 
     svg {
       vector-effect: non-scaling-stroke;
@@ -38,4 +42,19 @@
       background-color: var(--color-purple-60);
     }
   }
+
+  &:not(.is-active) &__text {
+    transform: translateY(-20px); // Уводим текст чуть вверх внутри исчезающего блока
+  }
+
+  &:not(.is-active) &__close {
+    transform: translateY(-20px); // Уводим текст чуть вверх внутри исчезающего блока
+  }
 }
+
+.promobar.is-active {
+  max-height: 100px;
+  padding-block: 18px;
+  opacity: 1;
+}
+
