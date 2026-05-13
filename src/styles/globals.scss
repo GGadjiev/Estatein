@@ -5,32 +5,38 @@ html {
 }
 
 body {
-  @include fluid-text(18, 14);
+  font-size: fluid(18, 14);
 
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base), sans-serif;
+  line-height: var(--line-height-base);
+  font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-gray-08);
 }
 
-h1,
-.h1 {
-  @include fluid-text(60, 28);
-}
+//h1,
+//.h1 {
+//  font-size: fluid(60, 46, 1920, 1440);
+//
+//  @include laptop {
+//    font-size: fluid(46, 28, 1440);
+//  }
+//}
 
 h2,
 .h2 {
-  @include fluid-text(48, 28);
+  font-size: fluid(48, 28);
 }
 
 h3,
 .h3 {
-  @include fluid-text(24, 18);
+  font-size: fluid(24, 18);
 }
 
 .h3-big {
-  @include fluid-text(30, 20);
+  font-size: fluid(30, 20);
 }
 
 h1, .h1,

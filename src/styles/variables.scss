@@ -54,6 +54,7 @@
   }
 
   --font-family-base: 'Urbanist';
+  --line-height-base: 1.5;
 
   --container-width: #{fluid-to-laptop(
       $container-desktop-width,

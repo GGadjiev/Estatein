@@ -1,3 +1,65 @@
 .hero {
-  padding-block: 50px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(80, 60);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(60, 40);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(24, 16);
+  }
+
+  &__title {
+    line-height: 1.2;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: fluid(20, 16);
+  }
+
+  &__about-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: fluid(20, 12);
+  }
+
+  &__about-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 12);
+    padding: fluid(16, 15) fluid(24, 16);
+    border: var(--border-gray);
+    border-radius: var(--border-radius-base);
+  }
+
+  &__about-item-label {
+    font-size: fluid(18, 14);
+    color: var(--color-gray-60);
+  }
+
+  &__about-item-value {
+    font-size: fluid(40, 24);
+    font-weight: 700;
+  }
+
+  &__visual {
+    width: 73vw;
+    // Считаем расстояние от края контейнера до края экрана:
+    // 50vw (пол-экрана) минус 50% от ширины контейнера
+    margin-right: calc(-50vw + 50%);
+  }
+
+  &__circle {
+    position: absolute;
+  }
 }
