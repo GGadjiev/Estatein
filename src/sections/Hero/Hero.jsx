@@ -20,8 +20,8 @@ export default () => {
           </div>
 
           <div className="hero__buttons">
-            <Button className='hero__button-about' href='/'>Learn More</Button>
-            <Button className='hero__button-properties button_purple' href='/'>Browse Properties</Button>
+            <Button className='hero__button' href='/'>Learn More</Button>
+            <Button className='hero__button button_purple' href='/'>Browse Properties</Button>
           </div>
 
           <div className="hero__about">
@@ -38,9 +38,15 @@ export default () => {
 
         <div className="hero__visual">
           <div className="hero__circle">
-            <span className="hero__circle-text">✨Discover Your Dream Property with Estatein</span>
-            <Button className={'hero__circle-link'} href='/'>
-              <Icon className="hero__circle-link-icon" name='arrow'/>
+            <Image src='/src/assets/images/hero-circle.png' className='hero__circle-image' />
+            <Button
+              className='hero__circle-link'
+              href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1'
+            >
+              <Icon
+                className="hero__circle-link-icon"
+                name='arrow'
+              />
             </Button>
           </div>
 

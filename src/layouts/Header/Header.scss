@@ -50,7 +50,7 @@
     &-list {
       display: flex;
       align-items: center;
-      column-gap: 6px;
+      column-gap: fluid(6, 0, 1440, 768);
 
       @include mobile {
         flex-direction: column;
@@ -60,7 +60,8 @@
     }
 
     &-link {
-      padding: 14px 20px;
+//      padding: 14px 20px;
+      padding: fluid(14, 12, 1920, 1440) fluid(24, 20, 1920, 1440);
       color: var(--color-white);
 
       &.is-active {

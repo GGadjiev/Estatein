@@ -1,14 +1,34 @@
 .hero {
+  overflow: hidden;
   &__inner {
+    position: relative;
     display: flex;
     align-items: center;
-    column-gap: fluid(80, 60);
+    column-gap: fluid(80, 30, 1920, 1024);
+
+
+    @include laptop {
+      padding-top: fluid(15, 0, 1024, 1440);
+    }
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 40px;
+      padding-top: 40px;
+    }
+
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     row-gap: fluid(60, 40);
+    width: 50%;
+
+    @include tablet {
+      order: 1;
+      width: unset;
+    }
   }
 
   &__text {
@@ -21,45 +41,172 @@
     line-height: 1.2;
   }
 
+  &__description {
+    color: var(--color-gray-60);
+  }
+
   &__buttons {
     display: flex;
     flex-direction: row;
-    column-gap: fluid(20, 16);
+    column-gap: fluid(20, 16, 1920, 1440);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
   }
 
   &__about-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: fluid(20, 12);
+    gap: fluid(20, 16, 1920, 1440);
+
+    @include laptop {
+      gap: fluid(16, 12, 1440);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__about-item {
     display: flex;
     flex-direction: column;
-    row-gap: fluid(20, 12);
-    padding: fluid(16, 15) fluid(24, 16);
+    padding: fluid(16, 14, 1920, 1440) fluid(24, 20, 1920, 1440);
     border: var(--border-gray);
     border-radius: var(--border-radius-base);
+
+    @include laptop {
+      padding: fluid(16, 16, 1440) fluid(20, 16, 1440);
+    }
+
+    @include mobile {
+      align-items: center;
+
+      &:last-child {
+        grid-column: span 2;
+      }
+    }
   }
 
   &__about-item-label {
-    font-size: fluid(18, 14);
+    font-size: fluid(18, 16, 1920, 1440);
+
+    @include laptop {
+      font-size: fluid(16, 14, 1440);
+    }
+
     color: var(--color-gray-60);
   }
 
   &__about-item-value {
-    font-size: fluid(40, 24);
+    font-size: fluid(40, 30, 1920, 1440);
+
+    @include laptop {
+      font-size: fluid(30, 24, 1440);
+    }
+
     font-weight: 700;
   }
 
   &__visual {
-    width: 73vw;
-    // Считаем расстояние от края контейнера до края экрана:
-    // 50vw (пол-экрана) минус 50% от ширины контейнера
-    margin-right: calc(-50vw + 50%);
+    width: 60%;
+
+    @include tablet {
+      overflow: hidden;
+      position: relative;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -100px;
+      top: -10vh;
+      width: fluid(500, 350, 1920, 1024);
+      height: fluid(600, 450, 1920, 1024);
+      background-color: #2A213F;
+      z-index: 1;
+      border-radius: 50%;
+      filter: blur(500px);
+      opacity: 0.6;
+
+      @include mobile {
+        width: fluid(350, 250, 500);
+        height: fluid(450, 300, 500);
+      }
+    }
+
+    @include tablet {
+      order: 0;
+      border: var(--border-gray);
+      border-radius: var(--border-radius-base);
+      width: unset;
+      max-width: 460px;
+    }
   }
 
   &__circle {
     position: absolute;
+    top: 30%;
+    left: 52.2%;
+    translate: -50% -50%;
+  }
+
+  &__circle-image {
+    width: fluid(175, 129, 1920, 1440);
+    height: fluid(175, 129, 1920, 1440);
+
+    @include laptop {
+      width: fluid(129, 117, 1440);
+      height: fluid(129, 117, 1440);
+    }
+  }
+
+  &__circle-link {
+    @include abs-center;
+
+    overflow: hidden;
+    width: fluid(80, 59, 1920, 1440);
+    height: fluid(80, 59, 1920, 1440);
+    padding: fluid(24, 18, 1920, 1440);
+    border-radius: var(--border-radius-circle);
+
+    @include laptop {
+      width: fluid(59, 54, 1440);
+      height: fluid(59, 54, 1440);
+      padding: fluid(18, 15, 1440);
+    }
+  }
+
+  &__image {
+    position: relative;
+
+  }
+
+  &__image::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("@/assets/images/Abstract-Lines.svg");
+    background-position: center;
+    background-size: 270%;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+
+    @include abs-center;
+
+    @include tablet {
+      mask-image: unset;
+      background-size: 195%;
+    }
   }
 }

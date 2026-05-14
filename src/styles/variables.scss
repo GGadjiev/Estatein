@@ -56,12 +56,19 @@
   --font-family-base: 'Urbanist';
   --line-height-base: 1.5;
 
-  --container-width: #{fluid-to-laptop(
+  --container-width: #{fluid(
       $container-desktop-width,
-      $container-laptop-width
+      $container-laptop-width,
+      1600,
+      1280
     )};
 
-  --container-padding-x: 16px;
+//  --container-padding-x: 80px;
+  --container-padding-x: #{fluid(80, 35, 1440, 1024)};
+
+  @include mobile {
+    --container-padding-x: #{fluid(35, 16, 1024)};
+  }
 
   --transition-duration: 0.2s;
 }
