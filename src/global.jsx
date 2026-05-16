@@ -4,8 +4,7 @@ import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 import manifest from '@/assets/favicons/site.webmanifest'
-import PromoBar from "@/layouts/PromoBar/PromoBar.jsx";
-
+import PromoBar from '@/layouts/PromoBar/PromoBar.jsx'
 
 export default (props) => {
   const { children, title, url } = props

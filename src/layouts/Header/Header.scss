@@ -60,14 +60,14 @@
     }
 
     &-link {
-//      padding: 14px 20px;
+      //      padding: 14px 20px;
       padding: fluid(14, 12, 1920, 1440) fluid(24, 20, 1920, 1440);
       color: var(--color-white);
 
       &.is-active {
         background-color: var(--color-gray-08);
 
-//        text-decoration: underline;
+        //        text-decoration: underline;
         border: var(--border-gray);
         border-radius: var(--border-radius-base-2);
       }

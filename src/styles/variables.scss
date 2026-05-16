@@ -2,31 +2,32 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-purple-60: #703BF7;
-  --color-purple-65: #703BF7;
-  --color-purple-70: #946CF9;
-  --color-purple-75: #946CF9;
-  --color-purple-90: #DBCEFD;
-  --color-purple-95: #EDE7FE;
-  --color-purple-97: #F4F0FE;
-  --color-purple-99: #FBFAFF;
+  --color-purple-60: #703bf7;
+  --color-purple-65: #703bf7;
+  --color-purple-70: #946cf9;
+  --color-purple-75: #946cf9;
+  --color-purple-90: #dbcefd;
+  --color-purple-95: #ede7fe;
+  --color-purple-97: #f4f0fe;
+  --color-purple-99: #fbfaff;
 
-  --color-white-90: #E4E4E7;
-  --color-white-95: #F1F1F3;
-  --color-white-97: #F7F7F8;
-  --color-white-99: #FCFCFD;
+  --color-white-90: #e4e4e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
 
   --color-gray-08: #141414;
-  --color-gray-10: #1A1A1A;
+  --color-gray-10: #1a1a1a;
   --color-gray-15: #262626;
   --color-gray-20: #333333;
-  --color-gray-30: #4D4D4D;
+  --color-gray-30: #4d4d4d;
   --color-gray-40: #666666;
   --color-gray-50: #808080;
   --color-gray-60: #999999;
 
   --border-gray: var(--border-width) solid var(--color-gray-15);
-  --border-purple: var(--border-width) solid var(--color-purple-60) ;
+  --border-purple: var(--border-width) solid var(--color-purple-60);
+  --border-icon-circle: var(--border-width) solid var(--color-purple-75);
 
   --border-width: 1px;
 
@@ -63,7 +64,7 @@
       1280
     )};
 
-//  --container-padding-x: 80px;
+  //  --container-padding-x: 80px;
   --container-padding-x: #{fluid(80, 35, 1440, 1024)};
 
   @include mobile {

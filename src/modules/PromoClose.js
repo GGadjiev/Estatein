@@ -1,4 +1,4 @@
-export default function() {
+export default function () {
   const closeButton = document.querySelector('.promobar__close')
   const promobar = document.querySelector('.promobar')
 
@@ -6,4 +6,3 @@ export default function() {
     promobar.classList.remove('is-active')
   })
 }
-

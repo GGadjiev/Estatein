@@ -1,0 +1,54 @@
+.grid-cards {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: fluid(20, 10, 1920, 1440);
+    border: var(--border-gray);
+    box-shadow: 0 0 0 10px #191919;
+    padding: fluid(23.4, 10, 1920, 1440) fluid(20, 10, 1920, 1440);
+    text-align: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
+  &__item {
+    border: var(--border-gray);
+    border-radius: var(--border-radius-base);
+    background-color: var(--color-gray-10);
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: fluid(40, 32, 1920, 1440);
+    padding-block: fluid(60, 45, 1920, 1440) fluid(40, 30, 1920, 1440);
+
+    @include tablet {
+      gap: fluid(32, 28, 1440);
+    }
+  }
+
+  &__arrow {
+    background-color: unset;
+    border: unset;
+    position: absolute;
+    right: -4px;
+    top: 7px;
+
+    &-icon {
+      @include square(fluid(25, 19, 1920, 1440));
+      color: var(--color-gray-30);
+
+      &:hover {
+        color: var(--color-white);
+        transition-duration: var(--transition-duration);
+      }
+    }
+  }
+}
