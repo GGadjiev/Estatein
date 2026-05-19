@@ -1,15 +1,31 @@
 .grid-cards {
+  max-width: unset;
+  margin-bottom: fluid-to-laptop(75, 60);
+
+  @include laptop {
+    margin-bottom: fluid-laptop-to-mobile(60, 40);
+  }
+
+  @include tablet-above {
+    padding-inline: unset;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: fluid(20, 10, 1920, 1440);
+    gap: fluid-to-laptop(20, 10);
     border: var(--border-gray);
-    box-shadow: 0 0 0 10px #191919;
-    padding: fluid(23.4, 10, 1920, 1440) fluid(20, 10, 1920, 1440);
+    box-shadow: 0 0 0 fluid-to-laptop(10, 6) var(--color-gray-10);
+    padding: fluid-to-laptop(23.4, 10) fluid-to-laptop(20, 10);
     text-align: center;
+
+    @include laptop {
+      box-shadow: 0 0 0 fluid-laptop-to-mobile(6, 4) var(--color-gray-10);
+    }
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
+      border-radius: var(--border-radius-base);
     }
 
   }
@@ -26,11 +42,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: fluid(40, 32, 1920, 1440);
-    padding-block: fluid(60, 45, 1920, 1440) fluid(40, 30, 1920, 1440);
+    gap: fluid-to-laptop(40, 32);
+    padding-block: fluid-to-laptop(60, 45) fluid-to-laptop(40, 30);
 
-    @include tablet {
-      gap: fluid(32, 28, 1440);
+    @include laptop {
+      gap: fluid-laptop-to-mobile(32, 28);
     }
   }
 
@@ -42,7 +58,7 @@
     top: 7px;
 
     &-icon {
-      @include square(fluid(25, 19, 1920, 1440));
+      @include square(fluid-to-laptop(25, 19));
       color: var(--color-gray-30);
 
       &:hover {

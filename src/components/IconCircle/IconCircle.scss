@@ -10,10 +10,10 @@
     content: '';
     display: block;
     @include abs-center;
-    @include square(fluid(62, 44, 1920, 1440));
+    @include square(fluid-to-laptop(62, 44));
 
-    @include mobile {
-      @include square(fluid(44, 36, 1440));
+    @include laptop {
+      @include square(fluid-laptop-to-mobile(44, 36));
     }
 
     border-radius: var(--border-radius-circle);
@@ -37,10 +37,10 @@
     content: '';
     display: block;
     @include abs-center;
-    @include square(fluid(82, 60, 1920, 1440));
+    @include square(fluid-to-laptop(82, 60));
 
-    @include mobile {
-      @include square(fluid(60, 48, 1440));
+    @include laptop {
+      @include square(fluid-laptop-to-mobile(60, 48));
     }
 
     border-radius: var(--border-radius-circle);
@@ -61,10 +61,10 @@
   }
 
   &__icon {
-    @include square(fluid(30, 20, 1920, 1440));
+    @include square(fluid-to-laptop(30, 20));
 
-    @include mobile {
-      @include square(fluid(20, 15, 1440));
+    @include laptop {
+      @include square(fluid-laptop-to-mobile(20, 15));
     }
   }
 }

@@ -61,7 +61,7 @@
 
     &-link {
       //      padding: 14px 20px;
-      padding: fluid(14, 12, 1920, 1440) fluid(24, 20, 1920, 1440);
+      padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
       color: var(--color-white);
 
       &.is-active {

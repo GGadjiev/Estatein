@@ -1,8 +1,7 @@
 import Hero from '@/sections/Hero'
-import Button from '@/components/Button'
-import Field from '@/components/Field'
 import GridCards from '@/sections/GridCards/index.js'
 import { services } from '@/constants/homeData.js'
+import Properties from "@/sections/Properties/index.js";
 
 export const metadata = {
   title: 'Home',
@@ -19,6 +18,7 @@ export default () => {
       {/*</div>*/}
       <Hero />
       <GridCards items={services} />
+      <Properties />
     </>
   )
 }

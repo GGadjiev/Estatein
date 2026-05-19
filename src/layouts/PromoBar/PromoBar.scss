@@ -26,13 +26,17 @@
 
   &__close {
     position: absolute;
-    right: fluid(32, 16);
+    right: fluid-to-laptop(32, 24);
     color: inherit;
     background-color: rgba(255, 255, 255, 0.1);
     border: unset;
     border-radius: var(--border-radius-circle);
 
     @include square(26px);
+
+    @include laptop {
+      right: fluid-laptop-to-mobile(24, 16);
+    }
 
     svg {
       vector-effect: non-scaling-stroke;
@@ -58,6 +62,6 @@
 
 .promobar.is-active {
   max-height: 100px;
-  padding-block: fluid(18, 14);
+  padding-block: fluid-to-laptop(18, 14);
   opacity: 1;
 }

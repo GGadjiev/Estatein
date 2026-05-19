@@ -21,8 +21,12 @@
   &__content {
     display: flex;
     flex-direction: column;
-    row-gap: fluid(60, 40);
+    row-gap: fluid-to-laptop(60, 50);
     width: 50%;
+
+    @include laptop {
+      row-gap: fluid-laptop-to-mobile(50, 40);
+    }
 
     @include tablet {
       order: 1;
@@ -33,7 +37,11 @@
   &__text {
     display: flex;
     flex-direction: column;
-    row-gap: fluid(24, 16);
+    row-gap: fluid-to-laptop(24, 20);
+
+    @include laptop {
+      row-gap: fluid-laptop-to-mobile(20, 16);
+    }
   }
 
   &__title {
@@ -47,7 +55,7 @@
   &__buttons {
     display: flex;
     flex-direction: row;
-    column-gap: fluid(20, 16, 1920, 1440);
+    column-gap: fluid-to-laptop(20, 16);
 
     @include mobile {
       flex-direction: column;
@@ -63,10 +71,10 @@
   &__about-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: fluid(20, 16, 1920, 1440);
+    gap: fluid-to-laptop(20, 16);
 
     @include laptop {
-      gap: fluid(16, 12, 1440);
+      gap: fluid-laptop-to-mobile(16, 12);
     }
 
     @include mobile {
@@ -77,12 +85,12 @@
   &__about-item {
     display: flex;
     flex-direction: column;
-    padding: fluid(16, 14, 1920, 1440) fluid(24, 20, 1920, 1440);
+    padding: fluid-to-laptop(16, 14) fluid-to-laptop(24, 20);
     border: var(--border-gray);
     border-radius: var(--border-radius-base);
 
     @include laptop {
-      padding: fluid(16, 16, 1440) fluid(20, 16, 1440);
+      padding: fluid-laptop-to-mobile(16, 16) fluid-laptop-to-mobile(20, 16);
     }
 
     @include mobile {
@@ -95,20 +103,20 @@
   }
 
   &__about-item-label {
-    font-size: fluid(18, 16, 1920, 1440);
+    font-size: fluid-to-laptop(18, 16);
 
     @include laptop {
-      font-size: fluid(16, 14, 1440);
+      font-size: fluid-laptop-to-mobile(16, 14);
     }
 
     color: var(--color-gray-60);
   }
 
   &__about-item-value {
-    font-size: fluid(40, 30, 1920, 1440);
+    font-size: fluid-to-laptop(40, 30);
 
     @include laptop {
-      font-size: fluid(30, 24, 1440);
+      font-size: fluid-laptop-to-mobile(30, 24);
     }
 
     font-weight: 700;
@@ -136,10 +144,6 @@
       filter: blur(500px);
       opacity: 0.6;
 
-//      @include mobile {
-//        width: fluid(350, 250, 500);
-//        height: fluid(450, 300, 500);
-//      }
       @include tablet {
         display: none;
       }
@@ -169,12 +173,12 @@
   }
 
   &__circle-image {
-    width: fluid(175, 129, 1920, 1440);
-    height: fluid(175, 129, 1920, 1440);
+    width: fluid-to-laptop(175, 129);
+    height: fluid-to-laptop(175, 129);
 
     @include laptop {
-      width: fluid(129, 117, 1440);
-      height: fluid(129, 117, 1440);
+      width: fluid-laptop-to-mobile(129, 117);
+      height: fluid-laptop-to-mobile(129, 117);
     }
   }
 
@@ -182,15 +186,15 @@
     @include abs-center;
 
     overflow: hidden;
-    width: fluid(80, 59, 1920, 1440);
-    height: fluid(80, 59, 1920, 1440);
-    padding: fluid(24, 18, 1920, 1440);
+    width: fluid-to-laptop(80, 59);
+    height: fluid-to-laptop(80, 59);
+    padding: fluid-to-laptop(24, 18);
     border-radius: var(--border-radius-circle);
 
     @include laptop {
-      width: fluid(59, 54, 1440);
-      height: fluid(59, 54, 1440);
-      padding: fluid(18, 15, 1440);
+      width: fluid-laptop-to-mobile(59, 54);
+      height: fluid-laptop-to-mobile(59, 54);
+      padding: fluid-laptop-to-mobile(18, 15);
     }
   }
 

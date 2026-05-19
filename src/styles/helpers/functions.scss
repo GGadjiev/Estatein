@@ -28,7 +28,24 @@
 //  @return fluid($max, $min, true);
 // }
 
-@function fluid($max: 100, $min: 10, $startViewport: 1920, $endViewport: 390) {
+// рабочая
+//@function fluid($max: 100, $min: 10, $startViewport: 1920, $endViewport: 390) {
+//  $maxSize: math.div($max, 16);
+//  $minSize: math.div($min, 16);
+//  $maxWidth: math.div($startViewport, 16);
+//  $minWidth: math.div($endViewport, 16);
+//
+//  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+//  $yAxisIntersections: -$minWidth * $slope + $minSize;
+//
+//  @return clamp(
+//    #{$minSize * 1rem},
+//    #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
+//    #{$maxSize * 1rem}
+//  );
+//}
+
+@function fluid($max, $min, $startViewport: 1920, $endViewport: 390) {
   $maxSize: math.div($max, 16);
   $minSize: math.div($min, 16);
   $maxWidth: math.div($startViewport, 16);
@@ -42,4 +59,14 @@
     #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
     #{$maxSize * 1rem}
   );
+}
+
+// 2. Функция для диапазона от 1920px до 1440px
+@function fluid-to-laptop($max, $min) {
+  @return fluid($max, $min, 1920, 1440);
+}
+
+// 3. Функция для диапазона от 1440px до 390px
+@function fluid-laptop-to-mobile($max, $min) {
+  @return fluid($max, $min, 1440, 390);
 }

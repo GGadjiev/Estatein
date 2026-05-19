@@ -1,4 +1,4 @@
-import './IconCircle.scss'
+import '@/components/IconCircle/IconCircle.scss'
 import clsx from 'clsx'
 import Icon from '@/components/Icon/index.js'
 

@@ -68,7 +68,7 @@
   --container-padding-x: #{fluid(80, 35, 1440, 1024)};
 
   @include mobile {
-    --container-padding-x: #{fluid(35, 16, 1024)};
+    --container-padding-x: #{fluid(35, 16, 1024, 390)};
   }
 
   --transition-duration: 0.2s;

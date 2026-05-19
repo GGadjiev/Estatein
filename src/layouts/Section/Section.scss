@@ -1,19 +1,72 @@
 .section {
   display: grid;
-  row-gap: fluid(80, 40);
-  padding-block: 75px;
+  row-gap: fluid-to-laptop(80, 60);
+  padding-block: fluid-to-laptop(75, 60);
+
+  @include laptop {
+    row-gap: fluid-laptop-to-mobile(60, 40);
+    padding-block: fluid-laptop-to-mobile(60, 40);
+  }
 
   &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-between;
+//    align-items: flex-start;
+//
+//    //    column-gap: 16px;
+//
+//    @include mobile {
+//      flex-direction: column;
+//      align-items: start;
+//      row-gap: 20px;
+//    }
 
-    //    column-gap: 16px;
+    display: grid;
+    grid-template-areas:
+      "title header-actions"
+      "description header-actions";
+    gap: fluid-to-laptop(14, 10) fluid-to-laptop(200, 150);
+    align-items: flex-start;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: start;
-      row-gap: 20px;
+    @include laptop {
+      gap: fluid-laptop-to-mobile(10, 6);
     }
+  }
+
+  &__title {
+    grid-area: title;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: fluid-to-laptop(68.5, 55);
+      height: fluid-to-laptop(30, 24);
+      position: absolute;
+      top: fluid(-24, -40, 1440, 1920);
+      left: fluid(-12, -22, 1440, 1920);
+
+      background-image: url("/src/assets/icons/stars.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include laptop {
+        width: fluid-to-laptop(55, 45.6);
+        height: fluid-to-laptop(24, 20);
+        top: fluid(-24, -18, 390, 1440);
+        left: fluid(-12, -8, 390, 1440);
+      }
+    }
+  }
+
+  &__description {
+    grid-area: description;
+    color: var(--color-gray-60);
+  }
+
+  &__header-actions {
+    grid-area: header-actions;
+    align-self: flex-end;
   }
 }

@@ -1,3 +1,7 @@
 .logo {
-  width: fluid(160, 93);
+  width: fluid-to-laptop(160, 113);
+
+  @include laptop {
+    width: fluid-laptop-to-mobile(113, 93);
+  }
 }

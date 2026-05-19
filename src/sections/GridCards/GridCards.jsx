@@ -1,5 +1,4 @@
 import './GridCards.scss'
-import { services } from '@/constants/homeData.js'
 import Icon from '@/components/Icon/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
 import Button from "@/components/Button/index.js";
@@ -8,7 +7,7 @@ export default (props) => {
   const { items = [] } = props
 
   return (
-    <section className="grid-cards" aria-labelledby="grid-cards-title">
+    <section className="grid-cards container" aria-labelledby="grid-cards-title">
       <h2 className="grid-cards-title visually-hidden">
         Плитки с информацией о компании
       </h2>
