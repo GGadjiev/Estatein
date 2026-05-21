@@ -17,10 +17,25 @@ export default () => {
         </Button>
       }
     >
-      <div className="properties__inner">
-        {properties.map((item) => (
-          <Property {...item} className='properties__item'/>
-        ))}
+      {/*разметка до добавления свайпера*/}
+      {/*<div className="properties__inner">*/}
+      {/*  {properties.map((item) => (*/}
+      {/*    <Property {...item} className='properties__item'/>*/}
+      {/*  ))}*/}
+      {/*</div>*/}
+
+      <div className="properties__slider-wrapper">
+        <swiper-container
+          class="properties__inner"
+          init="false"
+          navigation="true"
+        >
+          {properties.map((item) => (
+            <swiper-slide class="properties__slide">
+              <Property {...item} className='properties__item'/>
+            </swiper-slide>
+          ))}
+        </swiper-container>
       </div>
     </Section>
   )

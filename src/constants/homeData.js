@@ -48,4 +48,40 @@ export const properties = [
     price: 750000,
     currency: '$',
   },
+  {
+    title: 'Metropolitan Horizon Penthouse',
+    description: 'An exquisite 3-bedroom, 2-bathroom penthouse located in the heart of the downtown area, boasting floor-to-ceiling windows, a panoramic rooftop deck, and premium smart-home integration. This residence offers unmatched skyline views and high-end finishes for sophisticated urban living.',
+    image: 'property-2',
+    details: {
+      'bedrooms': 3,
+      'bathrooms': 2,
+      'type': 'Penthouse',
+    },
+    price: 890000,
+    currency: '$',
+  },
+  {
+    title: 'Whispering Pines Chalet',
+    description: 'A charming 5-bedroom, 4-bathroom mountain lodge nestled among mature pine forests, featuring an open-concept timber frame design, a massive stone fireplace, and an outdoor hot tub. Perfect as a cozy winter sanctuary or a serene year-round nature escape.',
+    image: 'property-3',
+    details: {
+      'bedrooms': 5,
+      'bathrooms': 4,
+      'type': 'Chalet',
+    },
+    price: 725000,
+    currency: '$',
+  },
+  {
+    title: 'Azure Waters Beachfront Studio',
+    description: 'A compact yet luxuriously appointed 1-bedroom, 1-bathroom coastal apartment with direct access to sandy shores. Features include private balcony seating, brilliant natural lighting, and space-saving modern furniture tailored for maximum comfort and an effortless seaside lifestyle.',
+    image: 'property-4',
+    details: {
+      'bedrooms': 1,
+      'bathrooms': 1,
+      'type': 'Studio',
+    },
+    price: 310000,
+    currency: '$',
+  },
 ]

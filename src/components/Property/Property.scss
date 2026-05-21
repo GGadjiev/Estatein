@@ -5,7 +5,10 @@
   padding: fluid-to-laptop(40, 30);
   border: var(--border-gray);
   border-radius: var(--border-radius-base);
-  flex: 1 1 512px; //----------------------------------------
+//  flex: 1 1 512px;
+//  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
 
   @include laptop {
     padding: fluid-laptop-to-mobile(30, 24);
