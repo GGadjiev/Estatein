@@ -69,7 +69,8 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
-a {
+a,
+button {
   color: inherit;
 
   @include hover {

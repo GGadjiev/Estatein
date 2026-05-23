@@ -1,28 +1,28 @@
-import { register } from 'swiper/element/bundle';
+import { register } from 'swiper/element/bundle'
 
 export default function () {
-  register();
+  register()
 
-  const swiperEl = document.querySelector('.properties__inner');
+  const swiperEl = document.querySelector('.properties__inner')
 
-  if (!swiperEl) return;
+  if (!swiperEl) return
 
   const swiperParams = {
     slidesPerView: 1,
     spaceBetween: 20,
     navigation: true,
     breakpoints: {
-      640: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1024: {
+      1440: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
     },
-  };
+  }
 
-  Object.assign(swiperEl, swiperParams);
-  swiperEl.initialize();
+  Object.assign(swiperEl, swiperParams)
+  swiperEl.initialize()
 }

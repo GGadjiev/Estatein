@@ -5,8 +5,8 @@
   padding: fluid-to-laptop(40, 30);
   border: var(--border-gray);
   border-radius: var(--border-radius-base);
-//  flex: 1 1 512px;
-//  flex: 0 0 100%;
+  //  flex: 1 1 512px;
+  //  flex: 0 0 100%;
   width: 100%;
   box-sizing: border-box;
 
@@ -49,8 +49,13 @@
     padding: fluid-to-laptop(8, 6) 14px;
 
     &-icon {
-      @include square(fluid-to-laptop(20, 16.6))
+      @include square(fluid-to-laptop(20, 16.6));
     }
+  }
+
+  &__image {
+    //    margin: 0 auto;
+    width: 100%;
   }
 
   &__footer {
@@ -71,18 +76,18 @@
   }
 
   &__price {
-    font-size: fluid-to-laptop(24, 20);
+    font-size: fluid-to-laptop(24, 18);
 
-    @include laptop {
-      font-size: fluid-to-laptop(20, 18);
-    }
+    //    @include laptop {
+    //      font-size: fluid-laptop-to-mobile(20, 18);
+    //    }
   }
 
   &__button {
     padding-inline: fluid-to-laptop(54.5, 47.7);
 
     @include laptop {
-      padding-inline: fluid-to-laptop(47.7, 35);
+      padding-inline: fluid-laptop-to-mobile(47.7, 25);
     }
   }
 }

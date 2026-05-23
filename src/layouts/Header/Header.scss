@@ -87,4 +87,10 @@
   &__burger-button {
     position: relative;
   }
+
+  &__button {
+    &:hover {
+      color: unset;
+    }
+  }
 }
