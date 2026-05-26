@@ -1,0 +1,26 @@
+import './Reviews.scss'
+import { reviews } from '@/constants/homeData.js'
+import ReviewCard from "@/components/Review/index.js";
+import SliderSection from "@/layouts/SliderSection/index.js";
+
+export default () => {
+  return (
+    <SliderSection
+      className="reviews"
+      title="What Our Clients Say"
+      titleId="reviews-title"
+      description='Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.'
+      sliderId='reviews'
+      actionConfig={{ href: '/', label: "View All Testimonials" }}
+      sliderProps={{
+        slidesPerViewMobile: 1,
+        slidesPerViewTablet: 2,
+        slidesPerViewDesktop: 3
+      }}
+    >
+      {reviews.map((item) => (
+        <ReviewCard {...item} className="reviews__item" />
+      ))}
+    </SliderSection>
+  )
+}

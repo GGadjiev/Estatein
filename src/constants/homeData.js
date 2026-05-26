@@ -91,3 +91,139 @@ export const properties = [
     currency: '$',
   },
 ]
+
+export const reviews = [
+  {
+    rating: 5,
+    title: 'Exceptional Service!',
+    text: 'Our experience with Estatein was outstanding. Their team\'s dedication and professionalism made finding our dream home a breeze. Highly recommended!',
+    author: {
+      name: 'Wade Warren',
+      location: 'USA, California',
+      avatar: 'Wade-Warren-avatar',
+    }
+  },
+  {
+    rating: 4,
+    title: 'Efficient and Reliable',
+    text: 'Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn\'t be happier with the results. ',
+    author: {
+      name: 'Emelie Thomson',
+      location: 'USA, Florida',
+      avatar: 'Emelie-Thomson-avatar',
+    }
+  },
+  {
+    rating: 2,
+    title: 'Trusted Advisors',
+    text: 'The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!',
+    author: {
+      name: 'John Mans',
+      location: 'USA, Nevada',
+      avatar: 'John-Mans-avatar',
+    }
+  },
+  {
+    rating: 5,
+    title: "Smooth and Seamless!",
+    text: "Selling our apartment through Estatein was completely stress-free. They handled every detail with expert care and kept us updated constantly. Fantastic experience!",
+    author: {
+      name: "Kristin Watson",
+      location: "USA, New York",
+      avatar: "Wade-Warren-avatar"
+    }
+  },
+  {
+    rating: 4,
+    title: "Beyond My Expectations",
+    text: "As a first-time homebuyer, I was very nervous. The team went above and beyond to explain everything clearly and found a property that fits my budget perfectly.",
+    author: {
+      name: "Robert Fox",
+      location: "USA, Texas",
+      avatar: "Emelie-Thomson-avatar"
+    }
+  },
+  {
+    rating: 3,
+    title: "Professional and Honest",
+    text: "It is hard to find real estate agents you can fully trust. Estatein proved to be honest, professional, and genuinely interested in our long-term satisfaction.",
+    author: {
+      name: "Esther Howard",
+      location: "USA, Arizona",
+      avatar: "John-Mans-avatar"
+    }
+  },
+  {
+    rating: 2,
+    title: "Outstanding Market Knowledge",
+    text: "Their deep understanding of the local market helped us secure a great investment property. Their insights were invaluable during the negotiation phase.",
+    author: {
+      name: "Albert Flores",
+      location: "USA, Illinois",
+      avatar: "Wade-Warren-avatar"
+    }
+  },
+  {
+    rating: 4,
+    title: "Highly Dedicated Team",
+    text: "The dedication of this team is unmatched. They were available to answer our questions even late in the evening and made sure we got the best deal possible.",
+    author: {
+      name: "Eleanor Pena",
+      location: "USA, Washington",
+      avatar: "Emelie-Thomson-avatar"
+    }
+  },
+  {
+    rating: 3,
+    title: "Perfect Commercial Deal",
+    text: "We used Estatein to find a new office space for our growing business. They listened carefully to our specific technical requirements and delivered a perfect option.",
+    author: {
+      name: "Marvin McKinney",
+      location: "USA, Ohio",
+      avatar: "John-Mans-avatar"
+    }
+  }
+]
+
+export const faq = [
+  {
+    question: "How do I search for properties on Estatein?",
+    answer: "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+  },
+  {
+    question: "What documents do I need to sell my property through Estatein?",
+    answer: "Find out about the necessary documentation for listing your property with us.",
+  },
+  {
+    question: "How can I contact an Estatein agent?",
+    answer: "Discover the different ways you can get in touch with our experienced agents.",
+  },
+  {
+    question: "Are there any hidden fees when closing a property deal?",
+    answer: "We believe in full transparency. Read a complete breakdown of all closing and processing costs.",
+  },
+  {
+    question: "Can I schedule a virtual property viewing remotely?",
+    answer: "Yes, we offer high-quality interactive video tours and live remote viewings for global clients.",
+  },
+  {
+    question: "How long does the average home buying process take?",
+    answer: "Understand the typical timeline from your very first property viewing to final key handover.",
+  },
+  {
+    question: "Do you offer property management services for landlords?",
+    answer: "Explore how our team handles tenant screening, daily maintenance, and rent collection for you.",
+  },
+  {
+    question: "How is the market value of my property determined?",
+    answer: "Learn about our data-driven valuation process based on current market trends and location history.",
+  },
+  {
+    question: "Can Estatein help me secure a home loan or mortgage?",
+    answer: "We partner with trusted financial institutions to guide you through competitive mortgage options.",
+  },
+  {
+    question: "What is your policy on property legal verifications?",
+    answer: "Every listing undergoes strict legal vetting to ensure complete safety and peace of mind.",
+  }
+]

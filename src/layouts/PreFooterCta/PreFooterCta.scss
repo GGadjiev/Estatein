@@ -1,0 +1,95 @@
+.pre-footer-cta {
+  padding-block: fluid-to-laptop(100, 60);
+  border: var(--border-gray);
+  position: relative;
+  overflow: hidden;
+
+  @include laptop {
+    padding-block: fluid-laptop-to-mobile(60, 50);
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 566px;
+    height: 308px;
+    left: fluid(0, -20, 1440, 1920);
+    bottom: 0;
+    background-image: url("/src/assets/images/Abstract-Cubes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include tablet {
+      top: 50px;
+      left: -165px;
+      rotate: 90deg;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 566px;
+    height: 308px;
+    right: fluid(-14, -92, 1440, 1920);
+    bottom: fluid(-20, -50, 1440, 1920);
+    background-image: url("/src/assets/images/Abstract-Cubes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: scaleX(-1);
+
+    @include tablet {
+      right: fluid(-92, -180, 1024, 390);
+      bottom: -75px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px fluid-to-laptop(250, 150);
+    z-index: 10;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      display: inline-flex;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(14, 10);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(10, 6);
+    }
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+  }
+
+  &__button {
+    text-wrap: nowrap;
+
+    @include tablet {
+      align-self: flex-start;
+    }
+
+    @include mobile {
+      align-self: stretch;
+      justify-content: center;
+    }
+  }
+}

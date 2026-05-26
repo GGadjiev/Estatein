@@ -5,6 +5,7 @@ import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 import manifest from '@/assets/favicons/site.webmanifest'
 import PromoBar from '@/layouts/PromoBar/PromoBar.jsx'
+import PreFooterCta from "@/layouts/PreFooterCta/index.js";
 
 export default (props) => {
   const { children, title, url } = props
@@ -19,6 +20,7 @@ export default (props) => {
       <PromoBar />
       <Header url={url} />
       <Content>{children}</Content>
+      <PreFooterCta />
       <Footer />
     </>
   )

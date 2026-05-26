@@ -1,3 +1,3 @@
-import Property from './Property'
+import PropertyCard from './PropertyCard.jsx'
 
-export default Property
+export default PropertyCard

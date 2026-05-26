@@ -72,7 +72,13 @@
   }
 
   &__header-actions {
+    display: flex;
     grid-area: header-actions;
     align-self: flex-end;
+    justify-content: flex-end;
+
+    .button {
+      background-color: var(--color-gray-10);
+    }
   }
 }

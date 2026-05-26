@@ -4,7 +4,6 @@
   column-gap: 0.3em;
   text-align: center;
 
-  //  padding: 16px 24px;
   padding: fluid-to-laptop(16, 14) fluid-to-laptop(24, 20);
   color: var(--color-white);
   background-color: var(--color-gray-08);
@@ -19,5 +18,9 @@
 
   &_purple {
     background-color: var(--color-purple-60);
+  }
+
+  &_gray {
+    background-color: var(--color-gray-10);
   }
 }
