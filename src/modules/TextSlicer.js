@@ -1,6 +1,10 @@
 export default function (str, length) {
-  if (!str) return ''
-  if (str.length <= length) return str
+  if (!str) {
+    return ''
+  }
+  if (str.length <= length) {
+    return str
+  }
 
   const spaceIndex = str.indexOf(' ', length)
 

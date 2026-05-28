@@ -47,10 +47,6 @@
     border: var(--border-gray);
     border-radius: var(--border-radius-property-detail);
     padding: fluid-to-laptop(8, 6) 14px;
-
-    &-icon {
-      @include square(fluid-to-laptop(20, 16.6));
-    }
   }
 
   &__image {

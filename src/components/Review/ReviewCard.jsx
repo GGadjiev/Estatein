@@ -10,7 +10,7 @@ export default (props) => {
     <div className={clsx('review-card', className)}>
       <div className="review-card__rating">
         {[...Array(rating)].map((_) => (
-          <Icon className='review-card__rating-star' name="star" hasFill />
+          <Icon className="review-card__rating-star" name="star" hasFill />
         ))}
       </div>
       <div className="review-card__text-container">
@@ -23,8 +23,10 @@ export default (props) => {
           src={'/src/assets/images/' + author.avatar + '.png'}
         />
         <div className="review-card__author-info">
-          <span className='review-card__author-name'>{author.name}</span>
-          <span className='review-card__author-location'>{author.location}</span>
+          <span className="review-card__author-name">{author.name}</span>
+          <span className="review-card__author-location">
+            {author.location}
+          </span>
         </div>
       </div>
     </div>

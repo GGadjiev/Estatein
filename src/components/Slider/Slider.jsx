@@ -11,11 +11,15 @@ export default (props) => {
     id,
     slidesPerViewMobile = 1,
     slidesPerViewTablet = 2,
-    slidesPerViewDesktop = 3
+    slidesPerViewDesktop = 3,
   } = props
 
-  const nextButtonClass = id ? `slider__button_next_${id}` : 'slider__button_next'
-  const prevButtonClass = id ? `slider__button_prev_${id}` : 'slider__button_prev'
+  const nextButtonClass = id
+    ? `slider__button_next_${id}`
+    : 'slider__button_next'
+  const prevButtonClass = id
+    ? `slider__button_prev_${id}`
+    : 'slider__button_prev'
   const paginationClass = id ? `slider__pagination_${id}` : 'slider__pagination'
 
   return (
@@ -59,7 +63,11 @@ export default (props) => {
 
           <div className="slider__control-buttons">
             <Button
-              className={clsx('slider__button', 'slider__button_prev', prevButtonClass)}
+              className={clsx(
+                'slider__button',
+                'slider__button_prev',
+                prevButtonClass
+              )}
               aria-label="Previous slide"
             >
               <Icon
@@ -70,7 +78,11 @@ export default (props) => {
             </Button>
 
             <Button
-              className={clsx('slider__button', 'slider__button_next', nextButtonClass)}
+              className={clsx(
+                'slider__button',
+                'slider__button_next',
+                nextButtonClass
+              )}
               aria-label="Next slide"
             >
               <Icon

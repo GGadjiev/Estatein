@@ -6,7 +6,8 @@ import Button from '@/components/Button/index.js'
 import TextSlicer from '@/modules/TextSlicer.js'
 
 export default (props) => {
-  const { className, title, description, image, details, price, currency } = props
+  const { className, title, description, image, details, price, currency } =
+    props
   const slisedDesc = TextSlicer(description, 70)
   const isSlised = description && description.length > slisedDesc.length
 
@@ -32,8 +33,12 @@ export default (props) => {
           <Icon className="property-card__detail-icon" name="bedroom" hasFill />
           {details.bedrooms + '-Bedroom'}
         </span>
-        <span className="propert-cardy__detail">
-          <Icon className="property-card__detail-icon" name="bathroom" hasFill />
+        <span className="property-card__detail">
+          <Icon
+            className="property-card__detail-icon"
+            name="bathroom"
+            hasFill
+          />
           {details.bathrooms + '-Bathroom'}
         </span>
         <span className="property-card__detail">

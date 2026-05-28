@@ -127,9 +127,5 @@
     border-radius: var(--border-radius-circle);
     padding: fluid-to-laptop(17, 12);
     background-color: var(--color-gray-10);
-
-    &-icon {
-      @include square(fluid-to-laptop(21, 17));
-    }
   }
 }

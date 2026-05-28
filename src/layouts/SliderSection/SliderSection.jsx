@@ -13,7 +13,7 @@ export default (props) => {
     actionConfig,
     sliderId,
     children,
-    sliderProps = {}
+    sliderProps = {},
   } = props
 
   const ActionElement = actionConfig ? (
