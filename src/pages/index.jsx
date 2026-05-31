@@ -1,6 +1,6 @@
 import Hero from '@/sections/Hero'
 import GridCards from '@/sections/GridCards/index.js'
-import { services } from '@/constants/homeData.js'
+import { services } from '@/constants/data.js'
 import Properties from '@/sections/Properties/index.js'
 import Reviews from '@/sections/Reviews/index.js'
 import Faq from '@/sections/Faq/index.js'

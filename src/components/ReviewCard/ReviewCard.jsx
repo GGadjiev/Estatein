@@ -10,7 +10,11 @@ export default (props) => {
     <div className={clsx('review-card', className)}>
       <div className="review-card__rating">
         {[...Array(rating)].map((_) => (
-          <Icon className="review-card__rating-star" name="star" hasFill />
+          <Icon
+            className="review-card__rating-star"
+            name="review-star"
+            hasFill
+          />
         ))}
       </div>
       <div className="review-card__text-container">

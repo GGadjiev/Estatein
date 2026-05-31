@@ -2,13 +2,26 @@ import './Section.scss'
 import clsx from 'clsx'
 
 export default (props) => {
-  const { className, title, titleId, description, headerActions, children } =
-    props
+  const {
+    className,
+    title,
+    titleId,
+    description,
+    headerActions,
+    headerMedia,
+    children,
+  } = props
   return (
     <section
       className={clsx('section', 'container', className)}
       aria-labelledby={titleId}
     >
+      {headerMedia && (
+        <div className="section__header-media visible-tablet">
+          {headerMedia}
+        </div>
+      )}
+
       <header className="section__header">
         <h2 className="section__title h2" id={titleId}>
           {title}

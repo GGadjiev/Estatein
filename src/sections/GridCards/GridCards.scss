@@ -15,12 +15,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: fluid-to-laptop(20, 10);
     border: var(--border-gray);
-    box-shadow: 0 0 0 fluid-to-laptop(10, 6) var(--color-gray-10);
+    box-shadow: var(--box-shadow-desktop);
     padding: fluid-to-laptop(23.4, 10) fluid-to-laptop(20, 10);
     text-align: center;
 
     @include laptop {
-      box-shadow: 0 0 0 fluid-laptop-to-mobile(6, 4) var(--color-gray-10);
+      box-shadow: var(--box-shadow-tablet);
     }
 
     @include tablet {

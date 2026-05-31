@@ -1,0 +1,53 @@
+.section.section_side-by-side.about-journey {
+  row-gap: 0;
+
+  @include tablet {
+    row-gap: fluid-laptop-to-mobile(60, 40);
+  }
+}
+
+.about-journey {
+  &__about {
+    @include tablet-above {
+      grid-column: 1;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      order: 0;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: var(--border-gray);
+    border-radius: var(--border-radius-base);
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('/src/assets/images/Abstract-Lines.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 250%;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    @include tablet-above {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    @include tablet {
+      order: -1;
+      width: fit-content;
+    }
+  }
+}

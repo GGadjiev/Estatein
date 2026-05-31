@@ -1,5 +1,5 @@
 import './Faq.scss'
-import { faq } from '@/constants/homeData.js'
+import { faq } from '@/constants/data.js'
 import FaqCard from '@/components/FaqCard/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 

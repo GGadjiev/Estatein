@@ -1,5 +1,5 @@
 import './Properties.scss'
-import { properties } from '@/constants/homeData.js'
+import { properties } from '@/constants/data.js'
 import PropertyCard from '@/components/Property/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 

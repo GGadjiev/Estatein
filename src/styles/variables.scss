@@ -6,6 +6,7 @@
   --color-purple-65: #703bf7;
   --color-purple-70: #946cf9;
   --color-purple-75: #946cf9;
+  --color-purple-80: #A685FA;
   --color-purple-90: #dbcefd;
   --color-purple-95: #ede7fe;
   --color-purple-97: #f4f0fe;
@@ -29,7 +30,7 @@
 
   --border-gray: var(--border-width) solid var(--color-gray-15);
   --border-purple: var(--border-width) solid var(--color-purple-60);
-  --border-icon-circle: var(--border-width) solid var(--color-purple-75);
+  --border-icon-circle: var(--border-width) solid var(--color-purple-80);
 
   --border-width: 1px;
 
@@ -44,6 +45,9 @@
   --border-radius-checkbox: 4px;
   --border-radius-pagination: 60px;
   --border-radius-property-detail: 28px;
+
+  --box-shadow-desktop: 0px 0px 0px #{fluid-to-laptop(10, 6)} var(--color-gray-10);
+  --box-shadow-tablet: 0px 0px 0px #{fluid-laptop-to-mobile(6, 4)} var(--color-gray-10);
 
   @include laptop {
     --border-radius-base: 10px;

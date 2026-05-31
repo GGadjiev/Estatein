@@ -31,6 +31,7 @@
     @include tablet {
       order: 1;
       width: unset;
+      margin-bottom: fluid(46, 40, 1024, 390);
     }
   }
 
@@ -66,60 +67,6 @@
   &__button {
     display: flex;
     justify-content: center;
-  }
-
-  &__about-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: fluid-to-laptop(20, 16);
-
-    @include laptop {
-      gap: fluid-laptop-to-mobile(16, 12);
-    }
-
-    @include mobile {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  &__about-item {
-    display: flex;
-    flex-direction: column;
-    padding: fluid-to-laptop(16, 14) fluid-to-laptop(24, 20);
-    border: var(--border-gray);
-    border-radius: var(--border-radius-base);
-
-    @include laptop {
-      padding: fluid-laptop-to-mobile(16, 16) fluid-laptop-to-mobile(20, 16);
-    }
-
-    @include mobile {
-      align-items: center;
-
-      &:last-child {
-        grid-column: span 2;
-      }
-    }
-  }
-
-  &__about-item-label {
-    font-size: fluid-to-laptop(18, 16);
-
-    @include laptop {
-      font-size: fluid-laptop-to-mobile(16, 14);
-    }
-
-    color: var(--color-gray-60);
-  }
-
-  &__about-item-value {
-    font-size: fluid-to-laptop(40, 30);
-
-    @include laptop {
-      font-size: fluid-laptop-to-mobile(30, 24);
-    }
-
-    font-weight: 700;
   }
 
   &__visual {

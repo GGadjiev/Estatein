@@ -1,6 +1,6 @@
 import './Reviews.scss'
-import { reviews } from '@/constants/homeData.js'
-import ReviewCard from '@/components/Review/index.js'
+import { reviews } from '@/constants/data.js'
+import ReviewCard from '@/components/ReviewCard/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 
 export default () => {

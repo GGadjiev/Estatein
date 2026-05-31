@@ -1,0 +1,122 @@
+.section.section_side-by-side.about-values {
+  grid-template-columns: 0.7fr 1.3fr;
+
+  @include laptop {
+    grid-template-columns: 1fr;
+  }
+
+  .section__body {
+    overflow: visible;
+  }
+}
+
+.about-values {
+  @include tablet {
+
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: var(--border-gray);
+    border-radius: var(--border-radius-base);
+    padding: fluid-to-laptop(58, 48);
+    row-gap: fluid-to-laptop(60, 48);
+    position: relative;
+    box-shadow: var(--box-shadow-desktop);
+
+    @include laptop {
+      box-shadow: var(--box-shadow-tablet);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      padding: fluid(48, 24, 768, 390);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 87%;
+      background-color: var(--color-gray-15);
+      position: absolute;
+      top: fluid-to-laptop(235, 189);
+      right: 7%;
+
+      @include mobile {
+        @include visually-hidden
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(20, 16);
+    position: relative;
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(16, 14);
+    }
+
+    &:nth-child(odd) {
+      border-right: var(--border-gray);
+      padding-right: fluid-to-laptop(30, 24);
+
+      @include mobile {
+        border: none;
+        padding-right: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      padding-left: fluid-to-laptop(30, 24);
+      padding-right: fluid(30, 0, 1440, 768);
+
+      @include mobile {
+        padding-left: 0;
+      }
+    }
+
+    @include mobile {
+      &:not(:last-child):before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: var(--color-gray-15);
+        position: absolute;
+        top: calc(100% + 20px);
+      }
+    }
+  }
+
+  &__item-description {
+    color: var(--color-gray-60);
+  }
+
+  &__item-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: fluid-to-laptop(14, 10);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(10, 8);
+    }
+  }
+
+  &__item-icon {
+    color: var(--color-purple-80);
+    border: var(--border-purple);
+    border-radius: var(--border-radius-circle);
+    @include square(fluid-to-laptop(30, 24.7));
+    padding: fluid-to-laptop(20, 16);
+    box-sizing: content-box;
+
+    @include laptop {
+      padding: fluid-laptop-to-mobile(16, 14);
+      @include square(fluid-laptop-to-mobile(24.7, 21.1));
+    }
+  }
+}

@@ -237,3 +237,84 @@ export const faq = [
       'Every listing undergoes strict legal vetting to ensure complete safety and peace of mind.',
   },
 ]
+
+export const footerNavigation = [
+  {
+    title: 'Home',
+    links: [
+      { text: 'Hero Section', href: '/' },
+      { text: 'Features', href: '/' },
+      { text: 'Properties', href: '/' },
+      { text: 'Testimonials', href: '/' },
+      { text: 'FAQ’s', href: '/' },
+    ],
+  },
+  {
+    title: 'About Us',
+    links: [
+      { text: 'Our Story', href: '/' },
+      { text: 'Our Works', href: '/' },
+      { text: 'How It Works', href: '/' },
+      { text: 'Our Team', href: '/' },
+      { text: 'Our Clients', href: '/' },
+    ],
+  },
+  {
+    title: 'Properties',
+    links: [
+      { text: 'Portfolio', href: '/' },
+      { text: 'Categories', href: '/' },
+    ],
+  },
+  {
+    title: 'Services',
+    links: [
+      { text: 'Valuation Mastery', href: '/' },
+      { text: 'Strategic Marketing', href: '/' },
+      { text: 'Negotiation Wizardry', href: '/' },
+      { text: 'Closing Success', href: '/' },
+      { text: 'Property Management', href: '/' },
+    ],
+  },
+  {
+    title: 'Contact Us',
+    links: [
+      { text: 'Contact Form', href: '/' },
+      { text: 'Our Offices', href: '/' },
+    ],
+  },
+]
+
+export const footerSocials = [
+  { icon: 'facebook', href: 'https://facebook.com' },
+  { icon: 'linkedin', href: 'https://linkedin.com' },
+  { icon: 'twitter', href: 'https://twitter.com' },
+  { icon: 'youtube', href: 'https://youtube.com' },
+]
+
+export const aboutValues = [
+  {
+    logo: 'value-star',
+    title: 'Trust',
+    description:
+      'Trust is the cornerstone of every successful real estate transaction.',
+  },
+  {
+    logo: 'bachelor-hat',
+    title: 'Excellence',
+    description:
+      'We set the bar high for ourselves. From the properties we list to the services we provide.',
+  },
+  {
+    logo: 'people',
+    title: 'Client-Centric',
+    description:
+      'Your dreams and needs are at the center of our universe. We listen, understand.',
+  },
+  {
+    logo: 'value-star',
+    title: 'Our Commitment',
+    description:
+      'We are dedicated to providing you with the highest level of service, professionalism, and support.',
+  },
+]

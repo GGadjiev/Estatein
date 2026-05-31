@@ -2,7 +2,7 @@ import './Hero.scss'
 import Button from '@/components/Button/index.js'
 import Icon from '@/components/Icon/index.js'
 import { Image } from 'minista'
-import { stats } from '@/constants/homeData.js'
+import AboutStats from '@/components/AboutStats/index.js'
 
 export default () => {
   return (
@@ -28,16 +28,7 @@ export default () => {
             </Button>
           </div>
 
-          <div className="hero__about">
-            <ul className="hero__about-list">
-              {stats.map((item) => (
-                <li className="hero__about-item">
-                  <span className="hero__about-item-value">{item.value}</span>
-                  <span className="hero__about-item-label">{item.label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <AboutStats className="hero__about" />
         </div>
 
         <div className="hero__visual">

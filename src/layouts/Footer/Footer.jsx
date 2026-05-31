@@ -3,7 +3,7 @@ import Logo from '@/components/Logo/index.js'
 import Field from '@/components/Field/index.js'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
-import { footerNavigation, footerSocials } from '@/constants/footerData.js'
+import { footerNavigation, footerSocials } from '@/constants/data.js'
 
 export default () => {
   return (

@@ -1,4 +1,5 @@
-import About from '@/sections/About'
+import AboutJourney from '@/sections/AboutJournay/index.js'
+import AboutValues from '@/sections/AboutValues/index.js'
 
 export const metadata = {
   title: 'About',
@@ -7,8 +8,9 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <h1>About page</h1>
-      <About />
+      <h1 className="visually-hidden">About Us page</h1>
+      <AboutJourney />
+      <AboutValues />
     </>
   )
 }
