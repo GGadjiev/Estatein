@@ -366,3 +366,26 @@ export const aboutExperience = [
     description: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
   },
 ]
+
+export const employees = [
+  {
+    name: 'Max Mitchell',
+    position: 'Founder',
+    image: 'MaxMitchell',
+  },
+  {
+    name: 'Sarah Johnson',
+    position: 'Chief Real Estate Officer',
+    image: 'SarahJohnson',
+  },
+  {
+    name: 'David Brown',
+    position: 'Head of Property Management',
+    image: 'DavidBrown',
+  },
+  {
+    name: 'Michael Turner',
+    position: 'Legal Counsel',
+    image: 'MichaelTurner',
+  },
+]
