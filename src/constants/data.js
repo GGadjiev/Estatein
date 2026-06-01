@@ -1,7 +1,7 @@
 export const services = [
   { text: 'Find Your Dream Home', icon: 'house' },
-  { text: 'Unlock Property Value', icon: 'camera' },
-  { text: 'Effortless Property Management', icon: 'skyscraper' },
+  { text: 'Unlock PropertyCard Value', icon: 'camera' },
+  { text: 'Effortless PropertyCard Management', icon: 'skyscraper' },
   { text: 'Smart Investments, Informed Decisions', icon: 'sun' },
 ]
 
@@ -187,53 +187,53 @@ export const reviews = [
 
 export const faq = [
   {
-    question: 'How do I search for properties on Estatein?',
-    answer:
+    title: 'How do I search for properties on Estatein?',
+    description:
       'Learn how to use our user-friendly search tools to find properties that match your criteria.',
   },
   {
-    question: 'What documents do I need to sell my property through Estatein?',
-    answer:
+    title: 'What documents do I need to sell my property through Estatein?',
+    description:
       'Find out about the necessary documentation for listing your property with us.',
   },
   {
-    question: 'How can I contact an Estatein agent?',
-    answer:
+    title: 'How can I contact an Estatein agent?',
+    description:
       'Discover the different ways you can get in touch with our experienced agents.',
   },
   {
-    question: 'Are there any hidden fees when closing a property deal?',
-    answer:
+    title: 'Are there any hidden fees when closing a property deal?',
+    description:
       'We believe in full transparency. Read a complete breakdown of all closing and processing costs.',
   },
   {
-    question: 'Can I schedule a virtual property viewing remotely?',
-    answer:
+    title: 'Can I schedule a virtual property viewing remotely?',
+    description:
       'Yes, we offer high-quality interactive video tours and live remote viewings for global clients.',
   },
   {
-    question: 'How long does the average home buying process take?',
-    answer:
+    title: 'How long does the average home buying process take?',
+    description:
       'Understand the typical timeline from your very first property viewing to final key handover.',
   },
   {
-    question: 'Do you offer property management services for landlords?',
-    answer:
+    title: 'Do you offer property management services for landlords?',
+    description:
       'Explore how our team handles tenant screening, daily maintenance, and rent collection for you.',
   },
   {
-    question: 'How is the market value of my property determined?',
-    answer:
+    title: 'How is the market value of my property determined?',
+    description:
       'Learn about our data-driven valuation process based on current market trends and location history.',
   },
   {
-    question: 'Can Estatein help me secure a home loan or mortgage?',
-    answer:
+    title: 'Can Estatein help me secure a home loan or mortgage?',
+    description:
       'We partner with trusted financial institutions to guide you through competitive mortgage options.',
   },
   {
-    question: 'What is your policy on property legal verifications?',
-    answer:
+    title: 'What is your policy on property legal verifications?',
+    descriptionr:
       'Every listing undergoes strict legal vetting to ensure complete safety and peace of mind.',
   },
 ]
@@ -273,7 +273,7 @@ export const footerNavigation = [
       { text: 'Strategic Marketing', href: '/' },
       { text: 'Negotiation Wizardry', href: '/' },
       { text: 'Closing Success', href: '/' },
-      { text: 'Property Management', href: '/' },
+      { text: 'PropertyCard Management', href: '/' },
     ],
   },
   {
@@ -316,5 +316,53 @@ export const aboutValues = [
     title: 'Our Commitment',
     description:
       'We are dedicated to providing you with the highest level of service, professionalism, and support.',
+  },
+]
+
+export const aboutAchievements = [
+  {
+    title: '3+ Years of Excellence',
+    description: "With over 3 years in the industry, we've amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.",
+  },
+  {
+    title: 'Happy Clients',
+    description: "Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.",
+  },
+  {
+    title: 'Industry Recognition',
+    description: "We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.",
+  },
+]
+
+export const aboutExperience = [
+  {
+    step: '1',
+    title: 'Discover a World of Possibilities',
+    description: "Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location.",
+  },
+  {
+    step: '2',
+    title: 'Narrowing Down Your Choices',
+    description: "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
+  },
+  {
+    step: '3',
+    title: 'Personalized Guidance',
+    description: "Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away. ",
+  },
+  {
+    step: '4',
+    title: 'See It for Yourself',
+    description: "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
+  },
+  {
+    step: '5',
+    title: 'Making Informed Decisions',
+    description: "Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed.",
+  },
+  {
+    step: '6',
+    title: 'Getting the Best Deal',
+    description: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
   },
 ]

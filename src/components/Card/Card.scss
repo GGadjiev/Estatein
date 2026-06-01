@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: fluid-to-laptop(30, 24);
+  border: var(--border-gray);
+  border-radius: var(--border-radius-base);
+  padding: fluid-to-laptop(50, 40);
+
+  @include laptop {
+    gap: fluid-laptop-to-mobile(24, 20);
+    padding: fluid-laptop-to-mobile(40, 30);
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+    margin-top: auto;
+  }
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__step {
+    position: relative;
+    padding: fluid-to-laptop(16, 14) fluid-to-laptop(20, 16);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background: rgba(115, 70, 255) 60%;
+      z-index: 2;
+    }
+  }
+
+  &__text {
+    flex-grow: 1;
+    border-radius: var(--border-radius-steps);
+    position: relative;
+    z-index: 10;
+    border: var(--border-gray);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: fluid-to-laptop(100, 80);
+      height: fluid-to-laptop(100, 80);
+      background: radial-gradient(circle at 0 0, rgba(115, 70, 255, 0.25) 0%, transparent 70%);
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border: 1px solid #7346FF;
+      pointer-events: none;
+      z-index: 30;
+      mask-image: radial-gradient(circle at 0 0, black 5%, transparent 35%);
+    }
+  }
+
+  &__description {
+    margin-top: unset;
+  }
+}

@@ -1,0 +1,29 @@
+.section.about-achievements {
+  .section__body {
+    overflow: visible;
+  }
+}
+
+.about-achievements {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: fluid-to-laptop(40, 30);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(30, 20);
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    box-shadow: var(--box-shadow-desktop);
+
+    @include laptop {
+      box-shadow: var(--box-shadow-tablet);
+    }
+  }
+}

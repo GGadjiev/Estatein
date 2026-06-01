@@ -1,6 +1,6 @@
 import './Faq.scss'
 import { faq } from '@/constants/data.js'
-import FaqCard from '@/components/FaqCard/index.js'
+import Card from '@/components/Card/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 
 export default () => {
@@ -19,7 +19,7 @@ export default () => {
       }}
     >
       {faq.map((item) => (
-        <FaqCard {...item} className="faq__item" />
+        <Card {...item} actions className="faq__item" />
       ))}
     </SliderSection>
   )

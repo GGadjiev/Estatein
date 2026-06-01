@@ -1,6 +1,6 @@
 import './Properties.scss'
 import { properties } from '@/constants/data.js'
-import PropertyCard from '@/components/Property/index.js'
+import PropertyCard from '@/components/PropertyCard/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 
 export default () => {
