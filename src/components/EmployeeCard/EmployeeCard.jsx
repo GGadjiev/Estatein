@@ -1,6 +1,7 @@
 import './EmployeeCard.scss'
 import clsx from 'clsx'
 import Icon from '@/components/Icon/index.js'
+import {Image} from "minista";
 
 export default (props) => {
   const { className, name, position, image } = props
