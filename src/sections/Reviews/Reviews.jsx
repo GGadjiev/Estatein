@@ -12,11 +12,6 @@ export default () => {
       description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       sliderId="reviews"
       actionConfig={{ href: '/', label: 'View All Testimonials' }}
-      sliderProps={{
-        slidesPerViewMobile: 1,
-        slidesPerViewTablet: 2,
-        slidesPerViewDesktop: 3,
-      }}
     >
       {reviews.map((item) => (
         <ReviewCard {...item} className="reviews__item" />

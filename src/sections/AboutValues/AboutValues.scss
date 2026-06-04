@@ -12,7 +12,6 @@
 
 .about-values {
   @include tablet {
-
   }
   &__container {
     display: grid;
@@ -34,7 +33,7 @@
     }
 
     &:after {
-      content: "";
+      content: '';
       display: block;
       height: 1px;
       width: 87%;
@@ -44,7 +43,7 @@
       right: 7%;
 
       @include mobile {
-        @include visually-hidden
+        @include visually-hidden;
       }
     }
   }
@@ -80,7 +79,7 @@
 
     @include mobile {
       &:not(:last-child):before {
-        content: "";
+        content: '';
         display: block;
         height: 1px;
         width: 100%;

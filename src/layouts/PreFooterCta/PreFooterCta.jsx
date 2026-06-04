@@ -3,7 +3,7 @@ import Button from '@/components/Button/index.js'
 
 export default () => {
   return (
-    <section className="pre-footer-cta">
+    <section className="pre-footer-cta" aria-labelledby="pre-footer-cta-title">
       <div className="pre-footer-cta__inner container">
         <div className="pre-footer-cta__text-container">
           <h2 className="pre-footer-cta__title">

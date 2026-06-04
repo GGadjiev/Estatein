@@ -73,14 +73,19 @@
 
   &__price {
     font-size: fluid-to-laptop(24, 18);
-
-    //    @include laptop {
-    //      font-size: fluid-laptop-to-mobile(20, 18);
-    //    }
   }
 
   &__button {
     padding-inline: fluid-to-laptop(54.5, 47.7);
+    //    text-wrap: nowrap;
+
+    //    @include laptop {
+    //      padding-inline: fluid(47.7, 25, 1440, 1024);
+    //    }
+    //
+    //    @include tablet {
+    //      padding-inline: fluid-laptop-to-mobile(47.7, 25);
+    //    }
 
     @include laptop {
       padding-inline: fluid-laptop-to-mobile(47.7, 25);

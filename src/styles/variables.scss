@@ -6,7 +6,7 @@
   --color-purple-65: #703bf7;
   --color-purple-70: #946cf9;
   --color-purple-75: #946cf9;
-  --color-purple-80: #A685FA;
+  --color-purple-80: #a685fa;
   --color-purple-90: #dbcefd;
   --color-purple-95: #ede7fe;
   --color-purple-97: #f4f0fe;
@@ -46,8 +46,10 @@
   --border-radius-pagination: 60px;
   --border-radius-property-detail: 28px;
 
-  --box-shadow-desktop: 0px 0px 0px #{fluid-to-laptop(10, 6)} var(--color-gray-10);
-  --box-shadow-tablet: 0px 0px 0px #{fluid-laptop-to-mobile(6, 4)} var(--color-gray-10);
+  --box-shadow-desktop: 0px 0px 0px #{fluid-to-laptop(10, 6)}
+    var(--color-gray-10);
+  --box-shadow-tablet: 0px 0px 0px #{fluid-laptop-to-mobile(6, 4)}
+    var(--color-gray-10);
 
   @include laptop {
     --border-radius-base: 10px;

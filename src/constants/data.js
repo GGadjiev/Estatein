@@ -322,15 +322,18 @@ export const aboutValues = [
 export const aboutAchievements = [
   {
     title: '3+ Years of Excellence',
-    description: "With over 3 years in the industry, we've amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.",
+    description:
+      "With over 3 years in the industry, we've amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.",
   },
   {
     title: 'Happy Clients',
-    description: "Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.",
+    description:
+      'Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.',
   },
   {
     title: 'Industry Recognition',
-    description: "We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.",
+    description:
+      "We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.",
   },
 ]
 
@@ -338,32 +341,38 @@ export const aboutExperience = [
   {
     step: '1',
     title: 'Discover a World of Possibilities',
-    description: "Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location.",
+    description:
+      'Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location.',
   },
   {
     step: '2',
     title: 'Narrowing Down Your Choices',
-    description: "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
+    description:
+      "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
   },
   {
     step: '3',
     title: 'Personalized Guidance',
-    description: "Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away. ",
+    description:
+      'Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away. ',
   },
   {
     step: '4',
     title: 'See It for Yourself',
-    description: "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
+    description:
+      "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
   },
   {
     step: '5',
     title: 'Making Informed Decisions',
-    description: "Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed.",
+    description:
+      'Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed.',
   },
   {
     step: '6',
     title: 'Getting the Best Deal',
-    description: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
+    description:
+      "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
   },
 ]
 
@@ -387,5 +396,53 @@ export const employees = [
     name: 'Michael Turner',
     position: 'Legal Counsel',
     image: 'MichaelTurner',
+  },
+]
+
+export const clients = [
+  {
+    name: 'ABC Corporation',
+    founderYear: '2019',
+    domain: 'Commercial Real Estate',
+    category: 'Luxury Home Development',
+    url: '/',
+    review:
+      "Estatein\'s expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
+  },
+  {
+    name: 'GreenTech Enterprises',
+    founderYear: '2018',
+    domain: 'Commercial Real Estate',
+    category: 'Retail Space',
+    url: '/',
+    review:
+      "Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.",
+  },
+  {
+    name: 'Apex Tech Solutions',
+    founderYear: '2021',
+    domain: 'Information Technology',
+    category: 'Software Engineering',
+    url: '/',
+    review:
+      'Estatein helped us secure a modern tech hub that perfectly fits our agile teams. Their smooth onboarding and tech-ready spaces exceeded our expectations.',
+  },
+  {
+    name: 'GreenLife Organics',
+    founderYear: '2017',
+    domain: 'Retail & E-commerce',
+    category: 'Eco-Friendly Products',
+    url: '/',
+    review:
+      'Finding a sustainable warehouse with solar infrastructure was a massive challenge. Estatein delivered exactly what we needed within our tight timeline.',
+  },
+  {
+    name: 'Quantum Capital',
+    founderYear: '2015',
+    domain: 'Finance & Banking',
+    category: 'Investment Management',
+    url: '/',
+    review:
+      'The premium location and top-tier security systems of our new headquarters have significantly elevated our brand image and client trust.',
   },
 ]

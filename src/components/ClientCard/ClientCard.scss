@@ -1,0 +1,101 @@
+.client-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: var(--border-gray);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-desktop);
+  padding: fluid-to-laptop(50, 40);
+  gap: fluid-to-laptop(40, 30);
+
+  @include laptop {
+    box-shadow: var(--box-shadow-tablet);
+    padding: fluid-laptop-to-mobile(40, 24);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-to-laptop(6, 4);
+
+      @include laptop {
+        gap: fluid-laptop-to-mobile(4, 2);
+      }
+    }
+  }
+
+  &__founder-year {
+    color: var(--color-gray-60);
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__tag-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: fluid-to-laptop(8, 6);
+    font-size: fluid-to-laptop(20, 16);
+    padding-right: fluid-to-laptop(30, 20);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(6, 4);
+      font-size: fluid-laptop-to-mobile(16, 14);
+      padding-right: fluid-laptop-to-mobile(20, 16);
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: fluid-to-laptop(18, 14);
+      color: var(--color-gray-60);
+      gap: fluid-to-laptop(6, 4);
+
+      @include laptop {
+        gap: fluid-laptop-to-mobile(4, 2);
+      }
+    }
+
+    &:nth-child(2) {
+      padding-left: fluid-to-laptop(30, 20);
+      border-left: var(--border-gray);
+
+      @include laptop {
+        padding-left: fluid-laptop-to-mobile(20, 16);
+      }
+    }
+  }
+
+  &__review {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(14, 10);
+    padding: fluid-to-laptop(30, 24);
+    border: var(--border-gray);
+    border-radius: var(--border-radius-base);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(10, 8);
+      padding: fluid-laptop-to-mobile(24, 20);
+    }
+
+    &-subtitle {
+      color: var(--color-gray-60);
+    }
+  }
+}

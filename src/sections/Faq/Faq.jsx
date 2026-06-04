@@ -12,11 +12,6 @@ export default () => {
       description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
       sliderId="faq"
       actionConfig={{ href: '/', label: 'View All FAQ’s' }}
-      sliderProps={{
-        slidesPerViewMobile: 1,
-        slidesPerViewTablet: 2,
-        slidesPerViewDesktop: 3,
-      }}
     >
       {faq.map((item) => (
         <Card {...item} actions className="faq__item" />

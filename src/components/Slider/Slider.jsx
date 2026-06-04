@@ -11,8 +11,14 @@ export default (props) => {
     id,
     slidesPerViewMobile = 1,
     slidesPerViewTablet = 2,
+    slidesPerViewLaptop = 2,
     slidesPerViewDesktop = 3,
+    padding,
   } = props
+
+  const desktopSpaceBetween = Number(slidesPerViewDesktop) === 2 ? 50 : 30
+  const laptopSpaceBetween = Number(slidesPerViewLaptop) === 2 ? 40 : 30
+  const tabletSpaceBetween = 20
 
   const nextButtonClass = id
     ? `slider__button_next_${id}`
@@ -36,15 +42,21 @@ export default (props) => {
         loop="true"
         slides-per-view={slidesPerViewMobile}
         slides-per-group="1"
+        slides-offset-before={padding ? padding : undefined}
+        slides-offset-after={padding ? padding : undefined}
         space-between="20"
         breakpoints={JSON.stringify({
           768: {
             slidesPerView: Number(slidesPerViewTablet),
-            spaceBetween: 20,
+            spaceBetween: tabletSpaceBetween,
+          },
+          1024: {
+            slidesPerView: Number(slidesPerViewLaptop),
+            spaceBetween: laptopSpaceBetween,
           },
           1440: {
             slidesPerView: Number(slidesPerViewDesktop),
-            spaceBetween: 30,
+            spaceBetween: desktopSpaceBetween,
           },
         })}
       >

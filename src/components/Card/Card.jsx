@@ -7,12 +7,14 @@ export default (props) => {
 
   return stepCard ? (
     <div className={clsx('step-card', className)}>
-      <div className='step-card__step'>
-        <span className='step-card__step-number'>Step {step}</span>
+      <div className="step-card__step">
+        <span className="step-card__step-number">Step {step}</span>
       </div>
-      <div className='step-card__text card'>
+      <div className="step-card__text card">
         <h3 className="step-card__title card__title">{title}</h3>
-        <p className="step-card__description card__description">{description}</p>
+        <p className="step-card__description card__description">
+          {description}
+        </p>
       </div>
     </div>
   ) : (

@@ -53,7 +53,11 @@
       left: 0;
       width: fluid-to-laptop(100, 80);
       height: fluid-to-laptop(100, 80);
-      background: radial-gradient(circle at 0 0, rgba(115, 70, 255, 0.25) 0%, transparent 70%);
+      background: radial-gradient(
+        circle at 0 0,
+        rgba(115, 70, 255, 0.25) 0%,
+        transparent 70%
+      );
       overflow: hidden;
       pointer-events: none;
       z-index: 20;
@@ -63,7 +67,7 @@
       content: '';
       position: absolute;
       inset: -1px;
-      border: 1px solid #7346FF;
+      border: 1px solid #7346ff;
       pointer-events: none;
       z-index: 30;
       mask-image: radial-gradient(circle at 0 0, black 5%, transparent 35%);
