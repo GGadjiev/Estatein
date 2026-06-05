@@ -1,11 +1,10 @@
 import './GridCards.scss'
+import { services } from "@/constants/data.js";
 import Icon from '@/components/Icon/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
 import Button from '@/components/Button/index.js'
 
-export default (props) => {
-  const { items = [] } = props
-
+export default () => {
   return (
     <section
       className="grid-cards container"
@@ -15,7 +14,7 @@ export default (props) => {
         Плитки с информацией о компании
       </h2>
       <div className="grid-cards__inner">
-        {items.map((item) => (
+        {services.map((item) => (
           <div className="grid-cards__item">
             <Button className="grid-cards__arrow" href="/">
               <Icon className="grid-cards__arrow-icon" name="arrow" />
