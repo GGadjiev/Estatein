@@ -1,0 +1,31 @@
+.page-intro {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(90deg,rgba(153, 153, 153, 0.08) 10%, rgba(0, 0, 0, 0) 30%);
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(14, 10);
+    padding-block: fluid-to-laptop(150, 100);
+
+    @include laptop {
+      padding-block: fluid-laptop-to-mobile(100, 50);
+    }
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+    max-width: fluid-to-laptop(1350, 1160);
+  }
+}
