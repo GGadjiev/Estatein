@@ -21,6 +21,7 @@ export default () => {
               isLabelHidden
               iconName="email"
               buttonIconName="field-submit"
+              buttonIconHasFill={true}
             />
           </div>
 

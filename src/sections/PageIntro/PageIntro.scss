@@ -1,6 +1,7 @@
 .page-intro {
   position: relative;
   overflow: hidden;
+  border: var(--border-gray);
 
   &:before {
     content: "";

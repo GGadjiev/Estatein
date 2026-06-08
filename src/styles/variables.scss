@@ -58,7 +58,7 @@
     --border-radius-steps: 0 10px 10px 10px;
   }
 
-  @include mobile {
+  @include tablet {
     --border-radius-search: 12px;
   }
 

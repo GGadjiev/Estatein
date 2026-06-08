@@ -20,6 +20,9 @@ export default (props) => {
     isLabelHidden,
     iconName,
     buttonIconName,
+    buttonIconHasFill,
+    buttonText,
+    buttonClassName,
   } = props
 
   const Component = type === 'textarea' ? 'textarea' : 'input'
@@ -61,12 +64,13 @@ export default (props) => {
         />
 
         {buttonIconName && (
-          <Button className="field__button" type="submit">
+          <Button className={clsx("field__button", buttonClassName)} type="submit">
             <Icon
-              hasFill
+              hasFill={buttonIconHasFill ? true : false}
               className="field__button-icon"
               name={buttonIconName}
             />
+            <span className='field__button-text hidden-tablet'>{buttonText}</span>
           </Button>
         )}
       </div>
