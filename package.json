@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@a1rth/css-normalize": "1.2.1",
+    "choices.js": "^11.2.3",
     "clsx": "2.1.1",
     "imask": "7.6.1",
     "swiper": "^12.1.4"

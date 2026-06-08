@@ -1,0 +1,108 @@
+.search-filter-bar {
+  margin-top: fluid(-30, -45, 1440, 1920);
+
+  @include tablet {
+    margin-top: 57px;
+  }
+
+  &__container {
+    form {
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__search-input {
+    .field__body {
+      max-width: unset;
+      height: 100%;
+
+      .field__control {
+        height: 100%;
+        border-radius: var(--border-radius-search);
+        font-size: fluid-to-laptop(24, 20);
+
+        @include laptop {
+          font-size: fluid-laptop-to-mobile(20, 16);
+        }
+
+        &::placeholder {
+          font-size: fluid-to-laptop(24, 20);
+
+          @include laptop {
+            font-size: fluid-laptop-to-mobile(20, 16);
+          }
+        }
+      }
+    }
+
+    width: 82%;
+    box-shadow: var(--box-shadow-desktop);
+    border-radius: var(--border-radius-search);
+    height: fluid-to-laptop(103, 81);
+    position: relative;
+    bottom: 10px;
+
+    @include laptop {
+      height: fluid-laptop-to-mobile(81, 68);
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fluid-to-laptop(185, 148);
+      height: fluid-to-laptop(63, 49);
+      background-color: var(--color-purple-60);
+
+      @include tablet {
+        width: 60px;
+        height: 48px;
+      }
+    }
+  }
+
+  &__filters {
+    display: flex;
+    flex-direction: row;
+    gap: fluid-to-laptop(14, 6);
+    box-shadow: var(--box-shadow-desktop);
+    border-radius: var(--border-radius-base);
+
+    @include laptop {
+      box-shadow: var(--box-shadow-tablet);
+    }
+
+    @include tablet {
+      flex-direction: column;
+      box-shadow: none;
+      border: 20px solid var(--color-gray-10);
+      gap: 20px;
+    }
+
+    &-item {
+      box-shadow: var(--box-shadow-desktop);
+
+      @include laptop {
+        box-shadow: var(--box-shadow-tablet);
+      }
+
+      @include tablet {
+        box-shadow: 0 0 0 20px var(--color-gray-10);
+      }
+    }
+  }
+}

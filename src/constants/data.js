@@ -446,3 +446,61 @@ export const clients = [
       'The premium location and top-tier security systems of our new headquarters have significantly elevated our brand image and client trust.',
   },
 ]
+
+export const filters = {
+  location: {
+    icon: 'mappoint',
+    placeholder: 'Location',
+    options: [
+      { value: 'usa-ny', label: 'New York, USA' },
+      { value: 'usa-ca', label: 'Los Angeles, USA' },
+      { value: 'uk-lon', label: 'London, UK' },
+      { value: 'ae-dxb', label: 'Dubai, UAE' },
+      { value: 'de-ber', label: 'Berlin, Germany' },
+    ]
+  },
+  propertyType: {
+    icon: 'house-2',
+    placeholder: 'Property Type',
+    options: [
+      { value: 'house', label: 'House' },
+      { value: 'apartment', label: 'Apartment' },
+      { value: 'villa', label: 'Villa' },
+      { value: 'townhouse', label: 'Townhouse' },
+      { value: 'penthouse', label: 'Penthouse' },
+    ]
+  },
+  pricingRange: {
+    icon: 'camera',
+    placeholder: 'Pricing Range',
+    options: [
+      { value: '0-100k', label: '$0 - $100,000',  },
+      { value: '100k-300k', label: '$100,000 - $300,000' },
+      { value: '300k-500k', label: '$300,000 - $500,000' },
+      { value: '500k-1m', label: '$500,000 - $1,000,000' },
+      { value: '1m-plus', label: '$1,000,000+' },
+    ]
+  },
+  propertySize: {
+    icon: 'cube',
+    placeholder: 'Property Size',
+    options: [
+      { value: 'under-50', label: 'Under 50 sq m' },
+      { value: '50-100', label: '50 - 100 sq m' },
+      { value: '100-150', label: '100 - 150 sq m' },
+      { value: '150-200', label: '150 - 200 sq m' },
+      { value: '200-plus', label: '200+ sq m' },
+    ]
+  },
+  buildYear: {
+    icon: 'calendar',
+    placeholder: 'Build Year',
+    options: [
+      { value: 'under-construction', label: 'Under Construction' },
+      { value: '2025-2026', label: '2025 - 2026' },
+      { value: '2020-2024', label: '2020 - 2024' },
+      { value: '2015-2019', label: '2015 - 2019' },
+      { value: 'before-2015', label: 'Before 2015' },
+    ]
+  },
+};
