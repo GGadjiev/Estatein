@@ -1,4 +1,4 @@
-export const services = [
+export const homeGridCards = [
   { text: 'Find Your Dream Home', icon: 'house' },
   { text: 'Unlock PropertyCard Value', icon: 'camera' },
   { text: 'Effortless PropertyCard Management', icon: 'skyscraper' },
@@ -605,4 +605,44 @@ export const contact = {
     type: 'textarea',
     placeholder: 'Enter your Message here.',
   },
+}
+
+export const servicesGridCards = [
+  { text: 'info@estatein.com', icon: 'writing' },
+  { text: '+1 (123) 456-7890', icon: 'phone' },
+  { text: 'Main Headquarters', icon: 'mappoint' },
+  { text: 'Instagram LinkedIn Facebook', icon: 'estatein' },
+]
+
+export const servicesValue = [
+  {
+    icon: 'histogram',
+    title: 'Valuation Mastery',
+    description:
+      'Discover the true worth of your property with our expert valuation services.',
+  },
+  {
+    icon: 'piece',
+    title: 'Strategic Marketing',
+    description:
+      'Selling a property requires more than just a listing; it demands a strategic marketing approach.',
+  },
+  {
+    icon: 'database',
+    title: 'Negotiation Wizardry',
+    description:
+      'Negotiating the best deal is an art, and our negotiation experts are masters of it.',
+  },
+  {
+    icon: 'speaker',
+    title: 'Closing Success',
+    description:
+      'A successful sale is not complete until the closing. We guide you through the intricate closing process.',
+  },
+]
+
+export const servicesWideCard = {
+  title: 'Unlock the Value of Your Property Today',
+  description:
+    'Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.',
 }
