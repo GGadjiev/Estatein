@@ -1,10 +1,10 @@
 import './Contact.scss'
 import Section from '@/layouts/Section/index.js'
-import Field from "@/components/Field/index.js";
-import Select from "@/components/Select/index.js";
-import Icon from "@/components/Icon/index.js";
-import { contact } from "@/constants/data.js";
-import Button from "@/components/Button/index.js";
+import Field from '@/components/Field/index.js'
+import Select from '@/components/Select/index.js'
+import Icon from '@/components/Icon/index.js'
+import { contact } from '@/constants/data.js'
+import Button from '@/components/Button/index.js'
 
 export default () => {
   return (
@@ -14,13 +14,8 @@ export default () => {
       titleId="contact-title"
       description="Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together."
     >
-      <form
-        action="/"
-        className="contact__form"
-        method="POST"
-      >
+      <form action="/" className="contact__form" method="POST">
         <div className="contact__grid">
-
           {/* 1. Рендеринг текстовых полей */}
           {contact.textFields.map((field) => (
             <Field
@@ -51,7 +46,9 @@ export default () => {
 
           {/* 4. Выбор метода связи (2 колонки) */}
           <div className="contact__field contact__field_double contact-method">
-            <span className="contact-method__label">{contact.contactMethod.label}</span>
+            <span className="contact-method__label">
+              {contact.contactMethod.label}
+            </span>
             <div className="contact-method__options">
               {contact.contactMethod.options.map((option) => (
                 <label className="contact-radio" key={option.value}>
@@ -63,10 +60,14 @@ export default () => {
                     defaultChecked={option.defaultChecked}
                   />
                   <span className="contact-radio__box">
-                <Icon className="contact-radio__icon" name={option.icon} hasFill />
-                <span className="contact-radio__text">{option.text}</span>
-                <span className="contact-radio__dot"></span>
-              </span>
+                    <Icon
+                      className="contact-radio__icon"
+                      name={option.icon}
+                      hasFill
+                    />
+                    <span className="contact-radio__text">{option.text}</span>
+                    <span className="contact-radio__dot"></span>
+                  </span>
                 </label>
               ))}
             </div>
@@ -85,10 +86,15 @@ export default () => {
         {/* Подвал формы */}
         <div className="contact__footer">
           <label className="contact-checkbox">
-            <input className="contact-checkbox__input visually-hidden" type="checkbox" required />
+            <input
+              className="contact-checkbox__input visually-hidden"
+              type="checkbox"
+              required
+            />
             <span className="contact-checkbox__box"></span>
             <span className="contact-checkbox__text">
-              I agree with <a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>
+              I agree with <a href="/">Terms of Use</a> and{' '}
+              <a href="/">Privacy Policy</a>
             </span>
           </label>
 
@@ -97,7 +103,6 @@ export default () => {
           </Button>
         </div>
       </form>
-
     </Section>
   )
 }

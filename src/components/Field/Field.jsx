@@ -64,13 +64,18 @@ export default (props) => {
         />
 
         {buttonIconName && (
-          <Button className={clsx("field__button", buttonClassName)} type="submit">
+          <Button
+            className={clsx('field__button', buttonClassName)}
+            type="submit"
+          >
             <Icon
               hasFill={buttonIconHasFill ? true : false}
               className="field__button-icon"
               name={buttonIconName}
             />
-            <span className='field__button-text hidden-tablet'>{buttonText}</span>
+            <span className="field__button-text hidden-tablet">
+              {buttonText}
+            </span>
           </Button>
         )}
       </div>

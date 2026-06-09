@@ -1,11 +1,11 @@
-import Choices from 'choices.js';
+import Choices from 'choices.js'
 
-export default function (){
+export default function () {
   const runInit = () => {
-    const elements = document.querySelectorAll('.js-choices-select');
+    const elements = document.querySelectorAll('.js-choices-select')
 
     elements.forEach((el) => {
-      if (el.classList.contains('choices__input')) return;
+      if (el.classList.contains('choices__input')) return
 
       new Choices(el, {
         searchEnabled: false,
@@ -15,13 +15,13 @@ export default function (){
         placeholder: true,
         placeholderValue: el.dataset.placeholder,
         silent: true,
-      });
-    });
-  };
+      })
+    })
+  }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', runInit);
+    document.addEventListener('DOMContentLoaded', runInit)
   } else {
-    runInit();
+    runInit()
   }
 }

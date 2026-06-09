@@ -1,5 +1,5 @@
 import './GridCards.scss'
-import { services } from "@/constants/data.js";
+import { services } from '@/constants/data.js'
 import Icon from '@/components/Icon/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
 import Button from '@/components/Button/index.js'

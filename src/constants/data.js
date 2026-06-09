@@ -457,7 +457,7 @@ export const filters = {
       { value: 'uk-lon', label: 'London, UK' },
       { value: 'ae-dxb', label: 'Dubai, UAE' },
       { value: 'de-ber', label: 'Berlin, Germany' },
-    ]
+    ],
   },
   propertyType: {
     icon: 'house-2',
@@ -468,18 +468,18 @@ export const filters = {
       { value: 'villa', label: 'Villa' },
       { value: 'townhouse', label: 'Townhouse' },
       { value: 'penthouse', label: 'Penthouse' },
-    ]
+    ],
   },
   pricingRange: {
     icon: 'camera',
     placeholder: 'Pricing Range',
     options: [
-      { value: '0-100k', label: '$0 - $100,000',  },
+      { value: '0-100k', label: '$0 - $100,000' },
       { value: '100k-300k', label: '$100,000 - $300,000' },
       { value: '300k-500k', label: '$300,000 - $500,000' },
       { value: '500k-1m', label: '$500,000 - $1,000,000' },
       { value: '1m-plus', label: '$1,000,000+' },
-    ]
+    ],
   },
   propertySize: {
     icon: 'cube',
@@ -490,7 +490,7 @@ export const filters = {
       { value: '100-150', label: '100 - 150 sq m' },
       { value: '150-200', label: '150 - 200 sq m' },
       { value: '200-plus', label: '200+ sq m' },
-    ]
+    ],
   },
   buildYear: {
     icon: 'calendar',
@@ -501,108 +501,108 @@ export const filters = {
       { value: '2020-2024', label: '2020 - 2024' },
       { value: '2015-2019', label: '2015 - 2019' },
       { value: 'before-2015', label: 'Before 2015' },
-    ]
+    ],
   },
-};
+}
 
 export const contact = {
   textFields: [
     {
-      id: "first-name",
-      label: "First Name",
-      placeholder: "Enter First Name",
+      id: 'first-name',
+      label: 'First Name',
+      placeholder: 'Enter First Name',
       isRequired: true,
     },
     {
-      id: "last-name",
-      label: "Last Name",
-      placeholder: "Enter Last Name",
+      id: 'last-name',
+      label: 'Last Name',
+      placeholder: 'Enter Last Name',
       isRequired: true,
     },
     {
-      id: "email",
-      label: "Email",
-      type: "email",
-      placeholder: "Enter your Email",
+      id: 'email',
+      label: 'Email',
+      type: 'email',
+      placeholder: 'Enter your Email',
       isRequired: true,
     },
     {
-      id: "phone",
-      label: "Phone",
-      placeholder: "Enter Phone Number",
-      inputMode: "tel",
+      id: 'phone',
+      label: 'Phone',
+      placeholder: 'Enter Phone Number',
+      inputMode: 'tel',
     },
   ],
 
   selectFields: {
     location: {
-      label: "Preferred Location",
-      placeholder: "Select Location",
+      label: 'Preferred Location',
+      placeholder: 'Select Location',
       options: [
-        { value: "ny", label: "New York" },
-        { value: "la", label: "Los Angeles" },
+        { value: 'ny', label: 'New York' },
+        { value: 'la', label: 'Los Angeles' },
       ],
     },
     propertyType: {
-      label: "Property Type",
-      placeholder: "Select Property Type",
+      label: 'Property Type',
+      placeholder: 'Select Property Type',
       options: [
-        { value: "house", label: "House" },
-        { value: "apartment", label: "Apartment" },
+        { value: 'house', label: 'House' },
+        { value: 'apartment', label: 'Apartment' },
       ],
     },
     bathrooms: {
-      label: "No. of Bathrooms",
-      placeholder: "Select no. of Bathrooms",
+      label: 'No. of Bathrooms',
+      placeholder: 'Select no. of Bathrooms',
       options: [
-        { value: "1", label: "1" },
-        { value: "2", label: "2" },
-        { value: "3+", label: "3+" },
+        { value: '1', label: '1' },
+        { value: '2', label: '2' },
+        { value: '3+', label: '3+' },
       ],
     },
     bedrooms: {
-      label: "No. of Bedrooms",
-      placeholder: "Select no. of Bedrooms",
+      label: 'No. of Bedrooms',
+      placeholder: 'Select no. of Bedrooms',
       options: [
-        { value: "1", label: "1" },
-        { value: "2", label: "2" },
-        { value: "3+", label: "3+" },
+        { value: '1', label: '1' },
+        { value: '2', label: '2' },
+        { value: '3+', label: '3+' },
       ],
     },
   },
 
   budget: {
-    label: "Budget",
-    placeholder: "Select Budget",
+    label: 'Budget',
+    placeholder: 'Select Budget',
     options: [
-      { value: "100k", label: "$100,000 - $200,000" },
-      { value: "200k", label: "$200,000 - $500,000" },
+      { value: '100k', label: '$100,000 - $200,000' },
+      { value: '200k', label: '$200,000 - $500,000' },
     ],
   },
 
   contactMethod: {
-    label: "Preferred Contact Method",
-    name: "contact_method",
+    label: 'Preferred Contact Method',
+    name: 'contact_method',
     options: [
       {
-        value: "phone",
-        text: "Enter Your Number",
-        icon: "phone",
+        value: 'phone',
+        text: 'Enter Your Number',
+        icon: 'phone',
         defaultChecked: true,
       },
       {
-        value: "email",
-        text: "Enter Your Email",
-        icon: "writing",
+        value: 'email',
+        text: 'Enter Your Email',
+        icon: 'writing',
         defaultChecked: false,
       },
     ],
   },
 
   message: {
-    id: "message",
-    label: "Message",
-    type: "textarea",
-    placeholder: "Enter your Message here.",
+    id: 'message',
+    label: 'Message',
+    type: 'textarea',
+    placeholder: 'Enter your Message here.',
   },
-};
+}

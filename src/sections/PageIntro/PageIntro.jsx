@@ -1,10 +1,7 @@
 import './PageIntro.scss'
 
 export default (props) => {
-  const {
-    title,
-    description,
-  } = props;
+  const { title, description } = props
 
   return (
     <section className="page-intro" aria-labelledby="page-intro-title">

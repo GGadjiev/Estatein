@@ -1,4 +1,4 @@
-@import "choices.js/public/assets/styles/choices.min.css";
+@import 'choices.js/public/assets/styles/choices.min.css';
 
 .custom-select-wrapper {
   display: flex;
@@ -33,7 +33,7 @@
   font-weight: 500;
 }
 
-.choices[data-type*="select-one"] .choices__list--dropdown {
+.choices[data-type*='select-one'] .choices__list--dropdown {
   border: none !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   background-color: var(--color-gray-08) !important;
@@ -49,7 +49,7 @@
   position: relative;
 
   &:before {
-    content: "";
+    content: '';
     background-color: var(--color-gray-20);
     display: block;
     position: absolute;
@@ -65,16 +65,14 @@
   border-radius: inherit !important;
   margin-bottom: 0;
 
-
-
   &::after {
     border: none !important;
-    content: "" !important;
+    content: '' !important;
     width: fluid-to-laptop(32, 24) !important;
     height: fluid-to-laptop(32, 24) !important;
     background-color: var(--color-gray-10) !important;
     border-radius: var(--border-radius-circle) !important;
-    background-image: url("src/assets/icons/select-arrow.svg") !important;
+    background-image: url('src/assets/icons/select-arrow.svg') !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: fluid-to-laptop(18.2, 14.5) fluid-to-laptop(9.1, 7.6) !important;
@@ -82,7 +80,9 @@
     right: fluid-to-laptop(20, 12) !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    transition: transform var(--transition-duration) ease-in-out, background-color var(--transition-duration) ease !important;
+    transition:
+      transform var(--transition-duration) ease-in-out,
+      background-color var(--transition-duration) ease !important;
     margin-top: 0 !important;
   }
 
@@ -126,7 +126,7 @@
   }
 
   &.is-disabled,
-  &[data-value=""],
+  &[data-value=''],
   &.choices__item--placeholder {
     display: none !important;
   }
@@ -146,13 +146,16 @@
   z-index: 100 !important;
   position: relative;
   display: block !important;
-//  padding-left: 20px !important;
+  //  padding-left: 20px !important;
 
   opacity: 0 !important;
   visibility: hidden !important;
   transform: translateY(-10px) !important;
   pointer-events: none;
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s !important;
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out,
+    visibility 0.2s !important;
 }
 
 .choices.is-open .choices__list--dropdown {
@@ -162,10 +165,6 @@
   pointer-events: auto;
 }
 
-
 .choices__list--single {
   padding: 4px fluid-to-laptop(16, 0) 4px 4px !important;
 }
-
-
-

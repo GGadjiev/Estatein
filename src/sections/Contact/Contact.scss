@@ -6,7 +6,7 @@
     border: var(--border-gray);
 
     @include laptop {
-      padding: fluid-laptop-to-mobile(50, 20)
+      padding: fluid-laptop-to-mobile(50, 20);
     }
   }
 
@@ -91,7 +91,9 @@
       border-radius: var(--border-radius-base-3);
       height: 100%;
       gap: fluid-to-laptop(12, 6);
-      transition: border-color 0.2s, background-color 0.2s;
+      transition:
+        border-color 0.2s,
+        background-color 0.2s;
 
       @include hover {
         border-color: var(--color-gray-30);

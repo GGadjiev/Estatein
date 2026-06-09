@@ -1,23 +1,13 @@
 import './Select.scss'
-import clsx from "clsx";
-import Icon from "@/components/Icon/index.js";
+import clsx from 'clsx'
+import Icon from '@/components/Icon/index.js'
 
 export default ({ filterKey, filterData, className }) => {
-  const {
-    icon,
-    placeholder,
-    options = [],
-  } = filterData;
+  const { icon, placeholder, options = [] } = filterData
 
   return (
     <div className={clsx('custom-select-wrapper', className)}>
-      {icon && (
-        <Icon
-          name={icon}
-          className='custom-select-icon'
-          hasFill
-        />
-      )}
+      {icon && <Icon name={icon} className="custom-select-icon" hasFill />}
 
       <select
         className="js-choices-select"
@@ -32,5 +22,5 @@ export default ({ filterKey, filterData, className }) => {
         ))}
       </select>
     </div>
-  );
+  )
 }

@@ -4,13 +4,17 @@
   border: var(--border-gray);
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
-    background: linear-gradient(90deg,rgba(153, 153, 153, 0.08) 10%, rgba(0, 0, 0, 0) 30%);
+    background: linear-gradient(
+      90deg,
+      rgba(153, 153, 153, 0.08) 10%,
+      rgba(0, 0, 0, 0) 30%
+    );
     z-index: -1;
   }
 
