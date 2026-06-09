@@ -1,0 +1,274 @@
+.contact {
+  &__form {
+    background-color: var(--color-gray-08);
+    padding: fluid-to-laptop(100, 50);
+    border-radius: var(--border-radius-base);
+    border: var(--border-gray);
+
+    @include laptop {
+      padding: fluid-laptop-to-mobile(50, 20)
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: fluid-to-laptop(50, 30);
+    margin-bottom: fluid-to-laptop(50, 30);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(30, 20);
+    }
+  }
+
+  &__field {
+    .field__control,
+    .choices__inner {
+      background-color: var(--color-gray-10);
+      border: var(--border-gray);
+      padding-left: fluid-to-laptop(20, 10) !important;
+    }
+
+    .choices__item--choice {
+      padding-left: fluid-to-laptop(24, 14) !important;
+    }
+
+    .choices__list {
+      padding: 0 !important;
+    }
+
+    .field__body {
+      max-width: unset;
+    }
+
+    &_double {
+      grid-column: span 2;
+    }
+
+    &_full {
+      grid-column: span 4;
+    }
+  }
+
+  .custom-select-wrapper {
+    padding-left: 0;
+  }
+
+  .contact-method {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(16, 14);
+
+    @include laptop {
+      gap: fluid-to-laptop(14, 10);
+    }
+
+    &__label {
+      color: var(--color-white);
+      font-size: fluid-to-laptop(20, 16);
+      font-weight: 600;
+    }
+
+    &__options {
+      display: flex;
+      gap: 16px;
+      height: 100%;
+    }
+  }
+
+  // Кастомные радио-кнопки
+  .contact-radio {
+    flex: 1;
+    cursor: pointer;
+    display: block;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      background: var(--color-gray-10);
+      border: var(--border-gray);
+      padding: fluid-to-laptop(22, 16) fluid-to-laptop(24, 10);
+      border-radius: var(--border-radius-base-3);
+      height: 100%;
+      gap: fluid-to-laptop(12, 6);
+      transition: border-color 0.2s, background-color 0.2s;
+
+      @include hover {
+        border-color: var(--color-gray-30);
+      }
+    }
+
+    &__text {
+      color: var(--color-gray-60);
+      font-size: fluid-to-laptop(18, 12);
+      font-weight: 500;
+      flex-grow: 1;
+      user-select: none;
+      transition-duration: var(--transition-duration);
+    }
+
+    &__dot {
+      width: fluid-to-laptop(16, 10);
+      height: fluid-to-laptop(16, 10);
+      border: var(--border-purple);
+      border-radius: var(--border-radius-circle);
+      position: relative;
+      flex-shrink: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: var(--color-purple-60);
+        border-radius: var(--border-radius-circle);
+        transform: scale(0);
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &__input:checked + .contact-radio__box {
+      .contact-radio__dot {
+        border-color: var(--color-purple-60);
+
+        &::after {
+          transform: scale(1);
+        }
+      }
+
+      .contact-radio__text {
+        color: var(--color-white);
+      }
+
+      .contact-radio__icon {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    //    padding-top: 10px;
+  }
+
+  .contact-checkbox {
+    display: flex;
+    align-items: center;
+    gap: fluid-to-laptop(10, 6);
+    cursor: pointer;
+
+    &__input:checked + .contact-checkbox__box {
+      border-color: var(--color-gray-30) !important;
+    }
+
+    &__box {
+      width: fluid-to-laptop(28, 24);
+      height: fluid-to-laptop(28, 24);
+      border: var(--border-gray);
+      background: var(--color-gray-10);
+      border-radius: var(--border-radius-checkbox);
+      position: relative;
+      flex-shrink: 0;
+      transition: border-color 0.2s;
+
+      @include hover {
+        border-color: var(--color-gray-30);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 4px;
+        width: fluid-to-laptop(10, 7);
+        height: fluid-to-laptop(15, 12);
+        border: solid var(--color-purple-75);
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg) scale(0);
+        transition: transform 0.15s ease;
+      }
+    }
+
+    &__text {
+      color: var(--color-gray-60);
+      font-size: fluid-to-laptop(18, 16);
+      user-select: none;
+
+      @include laptop {
+        font-size: fluid-laptop-to-mobile(16, 14);
+      }
+
+      a {
+        color: var(--color-gray-60);
+        text-decoration: underline;
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+          color: var(--color-purple-60);
+        }
+      }
+    }
+
+    &__input:checked + .contact-checkbox__box {
+      border-color: var(--border-purple);
+
+      &::after {
+        transform: rotate(45deg) scale(1);
+      }
+    }
+  }
+}
+
+@include tablet {
+  .contact {
+    padding: 30px;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__field {
+      &_full {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .contact {
+    padding: 20px;
+    --grid-gap: 16px;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__field {
+      &_double,
+      &_full {
+        grid-column: span 1;
+      }
+    }
+
+    .contact-method {
+      &__options {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 24px;
+    }
+
+    &__submit {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

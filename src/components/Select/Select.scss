@@ -17,6 +17,22 @@
   flex-shrink: 0;
 }
 
+.custom-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: fluid-to-laptop(16, 14);
+
+  @include laptop {
+    gap: fluid-laptop-to-mobile(14, 10);
+  }
+}
+
+.custom-select-label {
+  color: var(--color-white);
+  font-size: fluid-to-laptop(20, 16);
+  font-weight: 500;
+}
+
 .choices[data-type*="select-one"] .choices__list--dropdown {
   border: none !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -29,22 +45,27 @@
   margin-top: 4px !important;
 }
 
-.choices {
-  flex-grow: 1;
-  width: 100%;
-  border-radius: inherit !important;
-  margin-bottom: 0;
+.custom-select-icon {
+  position: relative;
 
   &:before {
     content: "";
     background-color: var(--color-gray-20);
     display: block;
     position: absolute;
-    top: fluid-to-laptop(22.5, 16.5);
-    left: 0;
+    right: -11px;
     width: 1px;
-    height: 35%;
+    height: 100%;
   }
+}
+
+.choices {
+  flex-grow: 1;
+  width: 100%;
+  border-radius: inherit !important;
+  margin-bottom: 0;
+
+
 
   &::after {
     border: none !important;
@@ -58,7 +79,7 @@
     background-position: center !important;
     background-size: fluid-to-laptop(18.2, 14.5) fluid-to-laptop(9.1, 7.6) !important;
     position: absolute !important;
-    right: fluid-to-laptop(20, 14) !important;
+    right: fluid-to-laptop(20, 12) !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     transition: transform var(--transition-duration) ease-in-out, background-color var(--transition-duration) ease !important;
@@ -73,15 +94,15 @@
 .choices__inner {
   display: flex;
   align-items: center;
-  background-color: transparent !important;
-  border: none !important;
+  background-color: transparent;
+  border: none;
   padding: 0 !important;
   padding-left: 7.5px !important;
   padding-right: 45px !important;
   min-height: auto !important;
   transition-duration: var(--transition-duration);
   height: fluid-to-laptop(70, 50);
-  font-size: fluid-to-laptop(18, 14);
+  font-size: fluid-to-laptop(18, 12);
   color: var(--color-white) !important;
   border-radius: inherit !important;
 
@@ -94,7 +115,7 @@
 }
 
 .choices__item--choice {
-  font-size: fluid-to-laptop(18, 14) !important;
+  font-size: fluid-to-laptop(18, 12) !important;
   color: var(--color-gray-60);
   background-color: transparent !important;
 
@@ -125,6 +146,7 @@
   z-index: 100 !important;
   position: relative;
   display: block !important;
+//  padding-left: 20px !important;
 
   opacity: 0 !important;
   visibility: hidden !important;
@@ -139,6 +161,7 @@
   transform: translateY(0) !important;
   pointer-events: auto;
 }
+
 
 .choices__list--single {
   padding: 4px fluid-to-laptop(16, 0) 4px 4px !important;

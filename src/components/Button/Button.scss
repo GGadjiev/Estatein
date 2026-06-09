@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 0.3em;
-  text-align: center;
+  justify-content: center;
 
   padding: fluid-to-laptop(16, 14) fluid-to-laptop(24, 20);
   color: var(--color-white);

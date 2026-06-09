@@ -11,11 +11,13 @@ export default ({ filterKey, filterData, className }) => {
 
   return (
     <div className={clsx('custom-select-wrapper', className)}>
-      <Icon
-        name={icon}
-        className='custom-select-icon'
-        hasFill
-      />
+      {icon && (
+        <Icon
+          name={icon}
+          className='custom-select-icon'
+          hasFill
+        />
+      )}
 
       <select
         className="js-choices-select"

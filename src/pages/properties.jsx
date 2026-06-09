@@ -1,6 +1,7 @@
 import PageIntro from "@/sections/PageIntro/index.js";
 import SearchFilterBar from "@/sections/SearchFilterBar/index.js";
 import Properties from "@/sections/Properties/index.js";
+import Contact from "@/sections/Contact/index.js";
 
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default () => {
       />
       <SearchFilterBar />
       <Properties />
+      <Contact />
     </>
   )
 }

@@ -21,7 +21,12 @@ export default () => {
 
           <div className="search-filter-bar__filters">
             {Object.entries(filters).map(([key, data]) => (
-              <Select className='search-filter-bar__filters-item' key={key} filterKey={key} filterData={data} />
+              <Select
+                className='search-filter-bar__filters-item'
+                key={key}
+                filterKey={key}
+                filterData={data}
+              />
             ))}
           </div>
         </form>
