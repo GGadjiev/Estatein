@@ -22,9 +22,31 @@
   }
 
   &__search-input {
+//    width: 82%;
+    width: 100%;
+
+
+    height: fluid-to-laptop(103, 81);
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop {
+      height: fluid-laptop-to-mobile(81, 68);
+    }
+
     .field__body {
       max-width: unset;
       height: 100%;
+      width: 82%;
+      box-shadow: var(--box-shadow-desktop);
+      border-radius: var(--border-radius-search);
+
+      @include tablet {
+        width: 100%;
+      }
 
       .field__control {
         height: 100%;
@@ -43,21 +65,6 @@
           }
         }
       }
-    }
-
-    width: 82%;
-    box-shadow: var(--box-shadow-desktop);
-    border-radius: var(--border-radius-search);
-    height: fluid-to-laptop(103, 81);
-    position: relative;
-    bottom: 10px;
-
-    @include laptop {
-      height: fluid-laptop-to-mobile(81, 68);
-    }
-
-    @include tablet {
-      width: 100%;
     }
 
     &-button {
