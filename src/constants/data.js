@@ -7,7 +7,7 @@ export const services = [
 
 export const stats = [
   { value: '200+', label: 'Happy Customers' },
-  { value: '10k+', label: 'Properties For Clients' },
+  { value: '10k+', label: 'HomeProperties For Clients' },
   { value: '16+', label: 'Years of Experience' },
 ]
 

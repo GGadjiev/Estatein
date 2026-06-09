@@ -1,3 +1,3 @@
-import Properties from './Properties'
+import Properties from './Properties.jsx'
 
 export default Properties

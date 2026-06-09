@@ -1,5 +1,10 @@
 .search-filter-bar {
   margin-top: fluid(-30, -45, 1440, 1920);
+  margin-bottom: fluid-to-laptop(75, 60);
+
+  @include laptop {
+    margin-bottom: fluid-laptop-to-mobile(60, 40);
+  }
 
   @include tablet {
     margin-top: 57px;
