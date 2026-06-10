@@ -13,6 +13,7 @@ export default (props) => {
     stepCard,
     wideCard,
     icon,
+    titleBig,
   } = props
 
   if (stepCard) {
@@ -34,7 +35,9 @@ export default (props) => {
   if (wideCard) {
     return (
       <div className={clsx('wide-card', className)}>
-        <h3 className="wide-card__title h3-big">{title}</h3>
+        <h3 className={clsx('wide-card__title', titleBig && 'h3-big')}>
+          {title}
+        </h3>
 
         {actions && (
           <Button className="wide-card__button" href="/">

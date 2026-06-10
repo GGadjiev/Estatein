@@ -614,35 +614,101 @@ export const servicesGridCards = [
   { text: 'Instagram LinkedIn Facebook', icon: 'estatein' },
 ]
 
-export const servicesValue = [
+export const servicesGridValue = [
   {
-    icon: 'histogram',
+    icon: 'cubes-plus',
     title: 'Valuation Mastery',
     description:
       'Discover the true worth of your property with our expert valuation services.',
   },
   {
-    icon: 'piece',
+    icon: 'tickets',
     title: 'Strategic Marketing',
     description:
       'Selling a property requires more than just a listing; it demands a strategic marketing approach.',
   },
   {
-    icon: 'database',
+    icon: 'stars-2',
     title: 'Negotiation Wizardry',
     description:
       'Negotiating the best deal is an art, and our negotiation experts are masters of it.',
   },
   {
-    icon: 'speaker',
+    icon: 'sun',
     title: 'Closing Success',
     description:
       'A successful sale is not complete until the closing. We guide you through the intricate closing process.',
   },
 ]
 
-export const servicesWideCard = {
-  title: 'Unlock the Value of Your Property Today',
-  description:
-    'Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.',
+export const servicesWideCards = {
+  value: {
+    title: 'Unlock the Value of Your Property Today',
+    description:
+      'Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.',
+  },
+  management: {
+    title: 'Experience Effortless Property Management',
+    description:
+      'Ready to experience hassle-free property management? Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.',
+  },
+  investment: {
+    title: 'Unlock Your Investment Potential',
+    description:
+      'Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.',
+  },
 }
+
+export const servicesGridManagement = [
+  {
+    icon: 'histogram',
+    title: 'Tenant Harmony',
+    description:
+      'Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.',
+  },
+  {
+    icon: 'piece',
+    title: 'Maintenance Ease',
+    description:
+      'Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.',
+  },
+  {
+    icon: 'database',
+    title: 'Financial Peace of Mind',
+    description:
+      'Managing property finances can be complex. Our financial experts take care of rent collection',
+  },
+  {
+    icon: 'speaker',
+    title: 'Legal Guardian',
+    description:
+      'Stay compliant with property laws and regulations effortlessly.',
+  },
+]
+
+export const servicesInvestment = [
+  {
+    icon: 'histogram',
+    title: 'Market Insight',
+    description:
+      'Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions',
+  },
+  {
+    icon: 'fire',
+    title: 'ROI Assessment',
+    description:
+      'Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments',
+  },
+  {
+    icon: 'lamp',
+    title: 'Customized Strategies',
+    description:
+      'Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs',
+  },
+  {
+    icon: 'sun',
+    title: 'Diversification Mastery',
+    description:
+      'Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations',
+  },
+]
