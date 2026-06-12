@@ -1,0 +1,46 @@
+.location-card {
+  display: flex;
+  flex-direction: column;
+  gap: fluid-to-laptop(40, 30);
+  padding: fluid-to-laptop(50, 40);
+  border: var(--border-gray);
+  border-radius: var(--border-radius-base);
+
+  @include laptop {
+    gap: fluid-laptop-to-mobile(30, 24);
+    padding: fluid-laptop-to-mobile(40, 24);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(12, 8);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(8, 6)
+    }
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: fluid-to-laptop(10, 8);
+    margin-top: auto;
+    
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: fluid-to-laptop(6, 4);
+      padding: fluid-to-laptop(14, 10) fluid-to-laptop(20, 16);
+      border: var(--border-gray);
+      border-radius: var(--border-radius-property-detail);
+      background-color: var(--color-gray-10);
+    }
+  }
+}

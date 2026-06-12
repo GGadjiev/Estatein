@@ -1,0 +1,39 @@
+.contact-locations {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(50, 40);
+
+    @include laptop {
+      gap: fluid-laptop-to-mobile(40, 30);
+    }
+  }
+
+  &__tab-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--color-gray-10);
+    border-radius: var(--border-radius-base);
+
+    @include tablet {
+      align-self: center;
+    }
+  }
+
+  &__tab {
+    width: fluid-to-laptop(159, 124);
+    height: fluid-to-laptop(63, 49);
+    background-color: var(--color-gray-10);
+
+    @include laptop {
+      width: fluid-laptop-to-mobile(124, 106);
+    }
+  }
+
+  .is-active {
+    background-color: var(--color-gray-08);
+  }
+}
