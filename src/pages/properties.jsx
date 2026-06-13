@@ -1,7 +1,7 @@
 import PageIntro from '@/sections/PageIntro/index.js'
 import SearchFilterBar from '@/sections/SearchFilterBar/index.js'
 import Properties from '@/sections/Properties/index.js'
-import PropertiesContactForm from "@/sections/PropertiesContactForm/index.js";
+import PropertiesContactForm from '@/sections/PropertiesContactForm/index.js'
 
 export const metadata = {
   title: 'Properties',

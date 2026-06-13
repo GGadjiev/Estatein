@@ -11,7 +11,7 @@ export default (props) => {
     description,
     email,
     phone,
-    locationName
+    locationName,
   } = props
 
   return (
@@ -23,19 +23,21 @@ export default (props) => {
       </div>
       <ui className="location-card__tags">
         <li className="location-card__tags-item">
-          <Icon name='writing' hasFill/>
+          <Icon name="writing" hasFill />
           {email}
         </li>
         <li className="location-card__tags-item">
-          <Icon name='phone' hasFill/>
+          <Icon name="phone" hasFill />
           {phone}
         </li>
         <li className="location-card__tags-item">
-          <Icon name='mappoint' hasFill/>
+          <Icon name="mappoint" hasFill />
           {locationName}
         </li>
       </ui>
-      <Button className='location-card__button button_purple'>Get Direction</Button>
+      <Button className="location-card__button button_purple">
+        Get Direction
+      </Button>
     </article>
   )
 }

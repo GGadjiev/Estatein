@@ -1,8 +1,9 @@
 import PageIntro from '@/sections/PageIntro/index.js'
-import { contactGridCards } from "@/constants/data.js";
-import GridCards from "@/sections/GridCards/index.js";
-import ContactForm from "@/sections/ContactForm/index.js";
-import ContactLocations from "@/sections/ContactLocations/index.js";
+import { contactGridCards } from '@/constants/data.js'
+import GridCards from '@/sections/GridCards/index.js'
+import ContactForm from '@/sections/ContactForm/index.js'
+import ContactLocations from '@/sections/ContactLocations/index.js'
+import ContactGallery from '@/sections/ContactGallery/index.js'
 
 export const metadata = {
   title: 'Contact',
@@ -19,6 +20,7 @@ export default () => {
       <GridCards items={contactGridCards} />
       <ContactForm />
       <ContactLocations />
+      <ContactGallery />
     </>
   )
 }

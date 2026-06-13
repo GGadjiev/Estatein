@@ -1,16 +1,13 @@
 import './Form.scss'
 import clsx from 'clsx'
-import { propertiesContact, contactForm } from "@/constants/data.js";
-import Field from "@/components/Field/index.js";
-import Select from "@/components/Select/index.js";
-import Icon from "@/components/Icon/index.js";
-import Button from "@/components/Button/index.js";
+import { propertiesContact, contactForm } from '@/constants/data.js'
+import Field from '@/components/Field/index.js'
+import Select from '@/components/Select/index.js'
+import Icon from '@/components/Icon/index.js'
+import Button from '@/components/Button/index.js'
 
 export default (props) => {
-  const {
-    className,
-    page,
-  } = props
+  const { className, page } = props
 
   if (page === 'Properties') {
     return (
@@ -37,7 +34,9 @@ export default (props) => {
           ))}
 
           <div className="form__field form__field_double custom-select-group">
-            <span className="custom-select-label">{propertiesContact.budget.label}</span>
+            <span className="custom-select-label">
+              {propertiesContact.budget.label}
+            </span>
             <Select filterKey="budget" filterData={propertiesContact.budget} />
           </div>
 

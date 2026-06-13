@@ -539,34 +539,34 @@ export const propertiesContact = {
       label: 'Preferred Location',
       placeholder: 'Select Location',
       options: [
-        {value: 'ny', label: 'New York'},
-        {value: 'la', label: 'Los Angeles'},
+        { value: 'ny', label: 'New York' },
+        { value: 'la', label: 'Los Angeles' },
       ],
     },
     propertyType: {
       label: 'Property Type',
       placeholder: 'Select Property Type',
       options: [
-        {value: 'house', label: 'House'},
-        {value: 'apartment', label: 'Apartment'},
+        { value: 'house', label: 'House' },
+        { value: 'apartment', label: 'Apartment' },
       ],
     },
     bathrooms: {
       label: 'No. of Bathrooms',
       placeholder: 'Select no. of Bathrooms',
       options: [
-        {value: '1', label: '1'},
-        {value: '2', label: '2'},
-        {value: '3+', label: '3+'},
+        { value: '1', label: '1' },
+        { value: '2', label: '2' },
+        { value: '3+', label: '3+' },
       ],
     },
     bedrooms: {
       label: 'No. of Bedrooms',
       placeholder: 'Select no. of Bedrooms',
       options: [
-        {value: '1', label: '1'},
-        {value: '2', label: '2'},
-        {value: '3+', label: '3+'},
+        { value: '1', label: '1' },
+        { value: '2', label: '2' },
+        { value: '3+', label: '3+' },
       ],
     },
   },
@@ -575,8 +575,8 @@ export const propertiesContact = {
     label: 'Budget',
     placeholder: 'Select Budget',
     options: [
-      {value: '100k', label: '$100,000 - $200,000'},
-      {value: '200k', label: '$200,000 - $500,000'},
+      { value: '100k', label: '$100,000 - $200,000' },
+      { value: '200k', label: '$200,000 - $500,000' },
     ],
   },
 
@@ -765,7 +765,10 @@ export const contactForm = {
       placeholder: 'Select',
       options: [
         { value: 'search_engine', label: 'Google / Search Engine' },
-        { value: 'social_media', label: 'Social Media (Instagram, TikTok, etc.)' },
+        {
+          value: 'social_media',
+          label: 'Social Media (Instagram, TikTok, etc.)',
+        },
         { value: 'friend_family', label: 'Friend or Family' },
         { value: 'advertisement', label: 'Online Advertisement' },
         { value: 'other', label: 'Other' },
@@ -787,7 +790,8 @@ export const contactLocations = [
     type: 'regional', // Внутренний тип для фильтрации
     category: 'Main Headquarters', // Заголовок над адресом
     address: '123 Estatein Plaza, City Center, Metropolis',
-    description: 'Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.',
+    description:
+      'Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.',
     email: 'info@estatein.com',
     phone: '+1 (123) 456-7890',
     locationName: 'Metropolis',
@@ -797,7 +801,8 @@ export const contactLocations = [
     type: 'regional',
     category: 'Regional Offices',
     address: '456 Urban Avenue, Downtown District, Metropolis',
-    description: "Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.",
+    description:
+      "Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.",
     email: 'info@restatein.com',
     phone: '+1 (123) 628-7890',
     locationName: 'Metropolis',
@@ -807,7 +812,8 @@ export const contactLocations = [
     type: 'regional',
     category: 'Regional Offices',
     address: '789 Harbor Drive, Marina Bay, Metropolis',
-    description: 'Our coastal division handles luxury waterfront properties and commercial docking spaces. Visit our Marina Bay team for specialized insights into premium seaside real estate.',
+    description:
+      'Our coastal division handles luxury waterfront properties and commercial docking spaces. Visit our Marina Bay team for specialized insights into premium seaside real estate.',
     email: 'marina@estatein.com',
     phone: '+1 (123) 999-1122',
     locationName: 'Metropolis',
@@ -817,7 +823,8 @@ export const contactLocations = [
     type: 'regional',
     category: 'Regional Offices',
     address: '12 Tech Boulevard, Silicon District, Metropolis',
-    description: 'Focusing exclusively on modern smart homes, eco-friendly buildings, and commercial tech hubs. This office shapes the future of sustainable living in Metropolis.',
+    description:
+      'Focusing exclusively on modern smart homes, eco-friendly buildings, and commercial tech hubs. This office shapes the future of sustainable living in Metropolis.',
     email: 'techfield@estatein.com',
     phone: '+1 (123) 888-3344',
     locationName: 'Metropolis',
@@ -827,7 +834,8 @@ export const contactLocations = [
     type: 'regional',
     category: 'Regional Offices',
     address: '55 Heritage Square, Old Town, Metropolis',
-    description: 'Specializing in historical preservation, classic architecture, and vintage estates. Our Old Town experts help you find properties with timeless charm and historical value.',
+    description:
+      'Specializing in historical preservation, classic architecture, and vintage estates. Our Old Town experts help you find properties with timeless charm and historical value.',
     email: 'heritage@estatein.com',
     phone: '+1 (123) 777-5566',
     locationName: 'Metropolis',
@@ -836,8 +844,9 @@ export const contactLocations = [
     id: 6,
     type: 'international',
     category: 'International Offices',
-    address: '30 Pall Mall, St. James\'s, London',
-    description: 'Our European flagship office connects global investors with premium real estate across the UK and continent. Expert guidance on cross-border property acquisition and luxury listings.',
+    address: "30 Pall Mall, St. James's, London",
+    description:
+      'Our European flagship office connects global investors with premium real estate across the UK and continent. Expert guidance on cross-border property acquisition and luxury listings.',
     email: 'london@estatein.international',
     phone: '+44 20 7946 0192',
     locationName: 'London, UK',
@@ -847,7 +856,8 @@ export const contactLocations = [
     type: 'international',
     category: 'International Offices',
     address: '15 Avenue des Champs-Élysées, Paris',
-    description: 'Specializing in high-end Parisian apartments, historic châteaux, and commercial investments across France. Experience European elegance combined with world-class real estate services.',
+    description:
+      'Specializing in high-end Parisian apartments, historic châteaux, and commercial investments across France. Experience European elegance combined with world-class real estate services.',
     email: 'paris@estatein.international',
     phone: '+33 1 42 27 78 90',
     locationName: 'Paris, France',
@@ -857,7 +867,8 @@ export const contactLocations = [
     type: 'international',
     category: 'International Offices',
     address: '4-10 Roppongi, Minato City, Tokyo',
-    description: 'Navigating the dynamic and fast-paced Asian property market. Our Tokyo branch delivers unparalleled access to luxury high-rises and premier commercial spaces in Japan.',
+    description:
+      'Navigating the dynamic and fast-paced Asian property market. Our Tokyo branch delivers unparalleled access to luxury high-rises and premier commercial spaces in Japan.',
     email: 'tokyo@estatein.international',
     phone: '+81 3 5555 0143',
     locationName: 'Tokyo, Japan',
@@ -867,7 +878,8 @@ export const contactLocations = [
     type: 'international',
     category: 'International Offices',
     address: 'Marina Heights Tower, Dubai Marina, Dubai',
-    description: 'Capitalizing on the world’s most spectacular architectural wonders. Our Middle East division offers luxury penthouses, futuristic villas, and high-yield investment properties.',
+    description:
+      'Capitalizing on the world’s most spectacular architectural wonders. Our Middle East division offers luxury penthouses, futuristic villas, and high-yield investment properties.',
     email: 'dubai@estatein.international',
     phone: '+971 4 368 0000',
     locationName: 'Dubai, UAE',
@@ -877,9 +889,10 @@ export const contactLocations = [
     type: 'regional',
     category: 'Regional Offices',
     address: '888 Suburban Lane, Green Valley, Metropolis',
-    description: 'Dedicated to family-friendly neighborhoods, expansive suburban homes, and local community developments. Find your perfect peaceful retreat just outside the city center.',
+    description:
+      'Dedicated to family-friendly neighborhoods, expansive suburban homes, and local community developments. Find your perfect peaceful retreat just outside the city center.',
     email: 'suburban@estatein.com',
     phone: '+1 (123) 555-4433',
     locationName: 'Metropolis',
   },
-];
+]
