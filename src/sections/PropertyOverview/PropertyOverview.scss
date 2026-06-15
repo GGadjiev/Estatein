@@ -1,0 +1,201 @@
+.property-overview {
+  padding-block: fluid-to-laptop(120, 80) fluid-to-laptop(75, 60);
+
+  @include laptop {
+    padding-block: fluid-laptop-to-mobile(80, 60) fluid-laptop-to-mobile(60, 40);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-to-laptop(30, 20);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+
+  &__location {
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: fluid-to-laptop(6, 4);
+    padding: fluid-to-laptop(10, 8);
+    border-radius: var(--border-radius-base-3);
+    border: var(--border-gray);
+  }
+
+  &__price {
+    font-size: fluid-to-laptop(24, 20);
+
+    @include laptop {
+      font-size: fluid-laptop-to-mobile(20, 18);
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-text {
+      color: var(--color-gray-60);
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: fluid-to-laptop(30, 20);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+
+    &-container {
+      padding: fluid-to-laptop(50, 40);
+      border: var(--border-gray);
+      border-radius: var(--border-radius-base-2);
+      display: flex;
+      flex-direction: column;
+      gap: fluid-to-laptop(50, 40);
+
+      @include laptop {
+        padding: fluid-laptop-to-mobile(40, 20);
+        gap: fluid-laptop-to-mobile(40, 20);
+      }
+    }
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-to-laptop(14, 10);
+
+      @include laptop {
+        gap: fluid-laptop-to-mobile(10, 6);
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: fluid-to-laptop(20, 10);
+      padding-top: fluid-to-laptop(20, 16);
+      border-top: var(--border-gray);
+
+      @include tablet {
+        gap: 20px;
+        padding-top: 20px;
+      }
+
+      @include mobile {
+        //        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-to-laptop(10, 8);
+
+      @include laptop {
+        gap: fluid-laptop-to-mobile(8, 6);
+      }
+
+      @include mobile-above {
+        &:not(:first-child) {
+          border-left: var(--border-gray);
+          padding-left: fluid-to-laptop(20, 10);
+
+          @include tablet {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      @include mobile {
+        &:nth-child(2) {
+          border-left: var(--border-gray);
+          padding-left: 20px;
+        }
+
+        &:last-child {
+          position: relative;
+          padding-top: 20px;
+          &:after {
+            content: '';
+            display: block;
+            width: fluid(656, 315, 768, 390);
+            height: 1px;
+            top: 0;
+            background-color: var(--color-gray-15);
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    &-item-title {
+      display: flex;
+      flex-direction: row;
+      gap: fluid-to-laptop(6, 4);
+      color: var(--color-gray-60);
+    }
+
+    &-item-value {
+      font-size: fluid-to-laptop(24, 20);
+
+      @include laptop {
+        font-size: fluid-laptop-to-mobile(20, 18);
+      }
+    }
+  }
+
+  &__features {
+    &-container {
+      padding: fluid-to-laptop(50, 40);
+      border: var(--border-gray);
+      border-radius: var(--border-radius-base-2);
+      display: flex;
+      flex-direction: column;
+      gap: fluid-to-laptop(50, 40);
+
+      @include laptop {
+        padding: fluid-laptop-to-mobile(40, 20);
+        gap: fluid-laptop-to-mobile(40, 20);
+      }
+    }
+
+    &-item {
+      padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 16);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%);
+      border-left: var(--border-purple);
+
+      @include laptop {
+        padding: fluid-laptop-to-mobile(14, 10) fluid-laptop-to-mobile(16, 12);
+      }
+    }
+
+    &-text {
+      color: var(--color-gray-60);
+    }
+  }
+}

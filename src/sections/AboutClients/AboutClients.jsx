@@ -15,6 +15,8 @@ export default () => {
         slidesPerViewDesktop: 2,
         slidesPerViewTablet: 1,
         padding: 10,
+        desktopSpaceBetween: 50,
+        laptopSpaceBetween: 40,
       }}
     >
       {clients.map((item) => (

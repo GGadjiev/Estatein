@@ -13,12 +13,16 @@ export default (props) => {
     slidesPerViewTablet = 2,
     slidesPerViewLaptop = 2,
     slidesPerViewDesktop = 3,
+    desktopSpaceBetween = 30,
+    laptopSpaceBetween = 30,
+    tabletSpaceBetween = 20,
     padding,
+    paginationType = 'fraction',
   } = props
 
-  const desktopSpaceBetween = Number(slidesPerViewDesktop) === 2 ? 50 : 30
-  const laptopSpaceBetween = Number(slidesPerViewLaptop) === 2 ? 40 : 30
-  const tabletSpaceBetween = 20
+  // const desktopSpaceBetween = Number(slidesPerViewDesktop) === 2 ? 50 : 30
+  // const laptopSpaceBetween = Number(slidesPerViewLaptop) === 2 ? 40 : 30
+  // const tabletSpaceBetween = 20
 
   const nextButtonClass = id
     ? `slider__button_next_${id}`
@@ -37,7 +41,7 @@ export default (props) => {
           prevEl: `.${prevButtonClass}`,
         })}
         pagination="true"
-        pagination-type="fraction"
+        pagination-type={paginationType}
         pagination-el={`.${paginationClass}`}
         loop="true"
         slides-per-view={slidesPerViewMobile}

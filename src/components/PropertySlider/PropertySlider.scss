@@ -1,0 +1,130 @@
+.property-slider {
+  background: var(--color-gray-10);
+  border-radius: var(--border-radius-base);
+  border: var(--border-gray);
+  padding: fluid-to-laptop(50, 40);
+
+  @include laptop {
+    padding: fluid-to-laptop(40, 20);
+  }
+
+  &__thumbs {
+    margin-bottom: fluid-to-laptop(30, 20);
+
+    .slider__footer {
+      display: none !important;
+    }
+
+    .slider__container {
+      padding: fluid-to-laptop(20, 10);
+      background-color: var(--color-gray-08);
+      border-radius: var(--border-radius-base);
+      border: var(--border-gray);
+
+      swiper-slide {
+        cursor: pointer;
+        border-radius: var(--border-radius-base-2);
+        overflow: hidden;
+        opacity: 0.4;
+        transition:
+          opacity 0.25s ease,
+          outline 0.25s ease;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        padding: 0;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.swiper-slide-thumb-active {
+          opacity: 1;
+        }
+
+        img {
+          width: 100%;
+          height: fluid-to-laptop(94, 74);
+          object-fit: cover;
+          display: block;
+          border-radius: var(--border-radius-base-2);
+
+          @include laptop {
+            height: fluid-laptop-to-mobile(74, 41);
+          }
+        }
+      }
+    }
+  }
+
+  &__slide {
+    border-radius: var(--border-radius-base-2);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    gap: fluid-to-laptop(30, 20);
+
+    &__footer {
+      background-color: var(--color-gray-08);
+      border-radius: var(--border-radius-say-hello);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: fluid-to-laptop(10, 8);
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__controls {
+      display: contents;
+    }
+
+    &__control-buttons {
+      display: contents;
+    }
+
+    &__button_prev {
+      order: 1;
+    }
+
+    &__button_next {
+      order: 3;
+    }
+
+    &__pagination {
+      order: 2;
+      display: flex;
+      align-items: center;
+      gap: fluid-to-laptop(4, 3);
+
+      .swiper-pagination-bullet {
+        width: fluid-to-laptop(20, 12);
+        height: fluid-to-laptop(5, 3);
+        background: var(--color-gray-30);
+        border-radius: 60px;
+        transition: all 0.3s ease;
+
+        &-active {
+          background: var(--color-purple-60);
+        }
+      }
+    }
+
+    &__button {
+      padding: fluid-to-laptop(14, 10);
+    }
+  }
+}

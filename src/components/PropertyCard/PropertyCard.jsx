@@ -54,7 +54,10 @@ export default (props) => {
             {price.toLocaleString()}
           </span>
         </span>
-        <Button className="property-card__button button_purple" href="/">
+        <Button
+          className="property-card__button button_purple"
+          href="/property"
+        >
           View Property Details
         </Button>
       </div>

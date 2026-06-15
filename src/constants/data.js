@@ -896,3 +896,34 @@ export const contactLocations = [
     locationName: 'Metropolis',
   },
 ]
+
+export const propertyOverview = [
+  {
+    title: 'Seaside Serenity Villa',
+    location: 'Malibu, California',
+    price: '$1,250,000',
+    sliderImages: [
+      '/src/assets/images/property-slider-1.png',
+      '/src/assets/images/property-slider-2.png',
+      '/src/assets/images/property-slider-3.png',
+      '/src/assets/images/property-slider-4.png',
+      '/src/assets/images/property-slider-5.png',
+      '/src/assets/images/property-slider-6.png',
+      '/src/assets/images/property-slider-7.png',
+      '/src/assets/images/property-slider-8.png',
+      '/src/assets/images/property-slider-9.png',
+    ],
+    description:
+      'Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.',
+    bedroomsCount: '4',
+    bathroomsCount: '3',
+    area: '2,500 Square Feet',
+    features: [
+      'Expansive oceanfront terrace for outdoor entertaining',
+      'Gourmet kitchen with top-of-the-line appliances',
+      'Private beach access for morning strolls and sunset views',
+      'Master suite with a spa-inspired bathroom and ocean-facing balcony',
+      'Private garage and ample storage space',
+    ],
+  },
+]
