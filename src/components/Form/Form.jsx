@@ -1,6 +1,10 @@
 import './Form.scss'
 import clsx from 'clsx'
-import { propertiesContact, contactForm } from '@/constants/data.js'
+import {
+  propertiesContact,
+  contactForm,
+  propertyForm,
+} from '@/constants/data.js'
 import Field from '@/components/Field/index.js'
 import Select from '@/components/Select/index.js'
 import Icon from '@/components/Icon/index.js'
@@ -129,6 +133,64 @@ export default (props) => {
             label={contactForm.message.label}
             type={contactForm.message.type}
             placeholder={contactForm.message.placeholder}
+          />
+        </div>
+
+        <div className="form__footer">
+          <label className="form-checkbox">
+            <input
+              className="form-checkbox__input visually-hidden"
+              type="checkbox"
+              required
+            />
+            <span className="form-checkbox__box"></span>
+            <span className="form-checkbox__text">
+              I agree with <a href="/">Terms of Use</a> and{' '}
+              <a href="/">Privacy Policy</a>
+            </span>
+          </label>
+
+          <Button className="form__submit button_purple" type="submit">
+            Send Your Message
+          </Button>
+        </div>
+      </form>
+    )
+  }
+
+  if (page === 'Property') {
+    return (
+      <form action="/" className={clsx('form', className)} method="POST">
+        <div className="form__grid form__grid_two-column">
+          {propertyForm.textFields.map((field) => (
+            <Field
+              key={field.id}
+              className="form__field"
+              id={field.id}
+              label={field.label}
+              type={field.type}
+              placeholder={field.placeholder}
+              isRequired={field.isRequired}
+              inputMode={field.inputMode}
+            />
+          ))}
+
+          <Field
+            key={propertyForm.readOnlyField.id}
+            className="form__field form__field_full"
+            id={propertyForm.readOnlyField.id}
+            label={propertyForm.readOnlyField.label}
+            readOnly={propertyForm.readOnlyField.readOnly}
+            defaultValue={propertyForm.readOnlyField.defaultValue}
+            iconName="mappoint"
+          />
+
+          <Field
+            className="form__field form__field_full"
+            id={propertyForm.message.id}
+            label={propertyForm.message.label}
+            type={propertyForm.message.type}
+            placeholder={propertyForm.message.placeholder}
           />
         </div>
 

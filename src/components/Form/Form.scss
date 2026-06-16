@@ -33,6 +33,22 @@
         }
       }
     }
+
+    &_two-column {
+      grid-template-columns: repeat(2, 1fr);
+
+      .form__field_full {
+        grid-column: span 2;
+
+        @include tablet {
+          grid-column: span 2;
+        }
+
+        @include mobile {
+          grid-column: span 1;
+        }
+      }
+    }
   }
 
   &__field {

@@ -1,0 +1,33 @@
+.property-form {
+  grid-template-columns: 0.36fr 0.64fr;
+  gap: fluid-to-laptop(100, 80);
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include laptop {
+    gap: fluid-laptop-to-mobile(80, 40);
+  }
+
+  .section__header {
+    align-self: flex-start;
+  }
+
+  &__form {
+    padding: fluid-to-laptop(50, 40);
+
+    @include laptop {
+      padding: fluid-laptop-to-mobile(40, 20);
+    }
+  }
+
+  .field__icon {
+    right: 20px;
+    left: unset;
+  }
+
+  .form__submit {
+    text-wrap: nowrap;
+  }
+}

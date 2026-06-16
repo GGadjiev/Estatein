@@ -15,6 +15,8 @@ export default (props) => {
     type,
     placeholder,
     isRequired,
+    readOnly,
+    defaultValue,
     inputMode,
     mask,
     isLabelHidden,
@@ -61,6 +63,8 @@ export default (props) => {
           required={isRequired}
           inputMode={inputMode}
           {...extraAttrs}
+          readOnly={readOnly}
+          defaultValue={defaultValue}
         />
 
         {buttonIconName && (

@@ -927,3 +927,47 @@ export const propertyOverview = [
     ],
   },
 ]
+
+export const propertyForm = {
+  textFields: [
+    {
+      id: 'first-name',
+      label: 'First Name',
+      placeholder: 'Enter First Name',
+      isRequired: true,
+    },
+    {
+      id: 'last-name',
+      label: 'Last Name',
+      placeholder: 'Enter Last Name',
+      isRequired: true,
+    },
+    {
+      id: 'email',
+      label: 'Email',
+      type: 'email',
+      placeholder: 'Enter your Email',
+      isRequired: true,
+    },
+    {
+      id: 'phone',
+      label: 'Phone',
+      placeholder: 'Enter Phone Number',
+      inputMode: 'tel',
+    },
+  ],
+
+  readOnlyField: {
+    id: 'location',
+    label: 'Selected Property',
+    readOnly: 'readonly',
+    defaultValue: 'Seaside Serenity Villa, Malibu, California',
+  },
+
+  message: {
+    id: 'message',
+    label: 'Message',
+    type: 'textarea',
+    placeholder: 'Enter your Message here.',
+  },
+}

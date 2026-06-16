@@ -96,27 +96,6 @@
     justify-content: center;
   }
 
-  //  &_side-by-side-bottom {
-  //    @include tablet-above {
-  //      display: grid;
-  //      grid-template-columns: 1fr 1fr;
-  //      grid-template-rows: 1fr;
-  //
-  //      .section__header {
-  //        grid-column: 1;
-  //        grid-row: 1;
-  //        align-self: end;
-  //        padding-bottom: 50px;
-  //        gap: fluid-to-laptop(14, 10) 30px;
-  //      }
-  //
-  //      .section__body {
-  //        grid-column: 1 / -1;
-  //        grid-row: 1;
-  //      }
-  //    }
-  //  }
-
   &_side-by-side-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
