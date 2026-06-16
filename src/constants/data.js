@@ -971,3 +971,107 @@ export const propertyForm = {
     placeholder: 'Enter your Message here.',
   },
 }
+
+export const propertyDetails = {
+  listingPrice: {
+    label: 'Listing Price',
+    value: '$1,250,000',
+  },
+
+  additionalFees: {
+    title: 'Additional Fees',
+    fields: [
+      {
+        label: 'Property Transfer Tax',
+        value: '$25,000',
+        note: 'Based on the sale price and local regulations',
+      },
+      {
+        label: 'Legal Fees',
+        value: '$3,000',
+        note: 'Approximate cost for legal services, including title transfer',
+      },
+      {
+        label: 'Home Inspection',
+        value: '$500',
+        note: 'Recommended for due diligence',
+      },
+      {
+        label: 'Property Insurance',
+        value: '$1,200',
+        note: 'Annual cost for comprehensive property insurance',
+      },
+      {
+        label: 'Mortgage Fees',
+        value: 'Varies',
+        note: 'If applicable, consult with your lender for specific details',
+      },
+    ],
+  },
+
+  monthlyCosts: {
+    title: 'Monthly Costs',
+    fields: [
+      {
+        label: 'Property Taxes',
+        value: '$1,250',
+        note: 'Approximate monthly property tax based on the sale price and local rates',
+        fullWidth: true,
+      },
+      {
+        label: "Homeowners' Association Fee",
+        value: '$300',
+        note: 'Monthly fee for common area maintenance and security',
+        fullWidth: true,
+      },
+    ],
+  },
+
+  totalInitialCosts: {
+    title: 'Total Initial Costs',
+    fields: [
+      {
+        label: 'Listing Price',
+        value: '$1,250,000',
+      },
+      {
+        label: 'Additional Fees',
+        value: '$29,700',
+        note: 'Property transfer tax, legal fees, inspection, insurance',
+      },
+      {
+        label: 'Down Payment',
+        value: '$250,000',
+        badge: '20%',
+      },
+      {
+        label: 'Mortgage Amount',
+        value: '$1,000,000',
+        note: 'If applicable',
+      },
+    ],
+  },
+
+  monthlyExpenses: {
+    title: 'Monthly Expenses',
+    fields: [
+      {
+        label: 'Property Taxes',
+        value: '$1,250',
+      },
+      {
+        label: "Homeowners' Association Fee",
+        value: '$300',
+      },
+      {
+        label: 'Mortgage Payment',
+        value: 'Varies based on terms and interest rate',
+      },
+      {
+        label: 'Property Insurance',
+        value: '$100',
+        note: 'Approximate monthly cost',
+      },
+    ],
+  },
+}
