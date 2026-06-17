@@ -3,12 +3,14 @@ import { clients } from '@/constants/data.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 import ClientCard from '@/components/ClientCard/index.js'
 
-export default () => {
+export default (props) => {
+  const { id } = props
   return (
     <SliderSection
       className="about-clients"
       title="Our Valued Clients"
       titleId="about-clients-title"
+      id={id}
       description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
       sliderId="about-clients"
       sliderProps={{

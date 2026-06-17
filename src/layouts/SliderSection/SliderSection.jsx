@@ -14,6 +14,7 @@ export default (props) => {
     sliderId,
     children,
     sliderProps = {},
+    id,
   } = props
 
   const ActionElement = actionConfig ? (
@@ -32,6 +33,7 @@ export default (props) => {
       titleId={titleId}
       description={description}
       headerActions={ActionElement}
+      id={id}
     >
       <Slider actions={ActionElement} id={sliderId} {...sliderProps}>
         {children}

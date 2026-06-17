@@ -46,7 +46,7 @@ export default () => {
                   <h3 className="property-details__features-title">{title}</h3>
                   <Button
                     className="property-details__features-button button_gray"
-                    href="/"
+                    href="property"
                   >
                     Learn More
                   </Button>

@@ -40,7 +40,7 @@ export default (props) => {
         </h3>
 
         {actions && (
-          <Button className="wide-card__button" href="/">
+          <Button className="wide-card__button" href="properties">
             Learn More
           </Button>
         )}
@@ -61,7 +61,7 @@ export default (props) => {
       <p className="card__description">{description}</p>
 
       {actions && (
-        <Button className="card__button" href="/">
+        <Button className="card__button" href="about">
           Read More
         </Button>
       )}

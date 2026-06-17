@@ -4,12 +4,13 @@ import IconCircle from '@/components/IconCircle/index.js'
 import Button from '@/components/Button/index.js'
 
 export default (props) => {
-  const { items = [] } = props
+  const { items = [], id } = props
 
   return (
     <section
       className="grid-cards container"
       aria-labelledby="grid-cards-title"
+      id={id}
     >
       <h2 className="grid-cards-title visually-hidden">
         Плитки с информацией о компании
@@ -17,7 +18,7 @@ export default (props) => {
       <div className="grid-cards__inner">
         {items.map((item) => (
           <div className="grid-cards__item">
-            <Button className="grid-cards__arrow" href="/">
+            <Button className="grid-cards__arrow" href="properties">
               <Icon className="grid-cards__arrow-icon" name="arrow" />
             </Button>
             <div className="grid-cards__content">

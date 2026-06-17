@@ -18,7 +18,10 @@ export default () => {
             assistance.
           </p>
         </div>
-        <Button className="pre-footer-cta__button button_purple" href="/">
+        <Button
+          className="pre-footer-cta__button button_purple"
+          href="properties"
+        >
           Explore Properties
         </Button>
       </div>

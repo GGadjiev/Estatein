@@ -13,12 +13,12 @@ export default () => {
   return (
     <>
       <h1 className="visually-hidden">About Us page</h1>
-      <AboutJourney />
-      <AboutValues />
+      <AboutJourney id="about-journey" />
+      <AboutValues id="about-values" />
       <AboutAchievements />
-      <AboutExperience />
-      <AboutTeam />
-      <AboutClients />
+      <AboutExperience id="about-experience" />
+      <AboutTeam id="about-team" />
+      <AboutClients id="about-clients" />
     </>
   )
 }

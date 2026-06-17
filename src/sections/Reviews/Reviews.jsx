@@ -3,7 +3,8 @@ import { reviews } from '@/constants/data.js'
 import ReviewCard from '@/components/ReviewCard/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 
-export default () => {
+export default (props) => {
+  const { id } = props
   return (
     <SliderSection
       className="reviews"
@@ -11,7 +12,8 @@ export default () => {
       titleId="reviews-title"
       description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       sliderId="reviews"
-      actionConfig={{ href: '/', label: 'View All Testimonials' }}
+      actionConfig={{ href: 'about', label: 'View All Testimonials' }}
+      id={id}
     >
       {reviews.map((item) => (
         <ReviewCard {...item} className="reviews__item" />

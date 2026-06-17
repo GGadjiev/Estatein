@@ -22,7 +22,7 @@ export default (props) => {
         <p className="property-card__description">
           {slisedDesc}{' '}
           {isSlised && (
-            <a className="property-card__description-link" href="/">
+            <a className="property-card__description-link" href="/property">
               Read More
             </a>
           )}

@@ -249,6 +249,11 @@
       }
     }
   }
+
+  &_disabled {
+    caret-color: transparent;
+    cursor: text;
+  }
 }
 
 @include tablet {

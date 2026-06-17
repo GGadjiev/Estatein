@@ -3,7 +3,7 @@ import Section from '@/layouts/Section/index.js'
 import Card from '@/components/Card/index.js'
 
 export default (props) => {
-  const { title, description, cards, wideCard } = props
+  const { title, description, cards, wideCard, id } = props
 
   return (
     <Section
@@ -11,6 +11,7 @@ export default (props) => {
       title={title}
       titleId="services-grid-title"
       description={description}
+      id={id}
     >
       <div className="services-grid__grid">
         {cards.map((item) => (

@@ -90,8 +90,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="/">Terms of Use</a> and{' '}
-              <a href="/">Privacy Policy</a>
+              I agree with <a href="properties">Terms of Use</a> and{' '}
+              <a href="properties">Privacy Policy</a>
             </span>
           </label>
 
@@ -145,8 +145,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="/">Terms of Use</a> and{' '}
-              <a href="/">Privacy Policy</a>
+              I agree with <a href="contact">Terms of Use</a> and{' '}
+              <a href="contact">Privacy Policy</a>
             </span>
           </label>
 
@@ -177,7 +177,7 @@ export default (props) => {
 
           <Field
             key={propertyForm.readOnlyField.id}
-            className="form__field form__field_full"
+            className="form__field form__field_full form_disabled"
             id={propertyForm.readOnlyField.id}
             label={propertyForm.readOnlyField.label}
             readOnly={propertyForm.readOnlyField.readOnly}
@@ -203,8 +203,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="/">Terms of Use</a> and{' '}
-              <a href="/">Privacy Policy</a>
+              I agree with <a href="property">Terms of Use</a> and{' '}
+              <a href="property">Privacy Policy</a>
             </span>
           </label>
 

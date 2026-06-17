@@ -44,6 +44,12 @@ export default (props) => {
         pagination-type={paginationType}
         pagination-el={`.${paginationClass}`}
         loop="true"
+        autoplay={JSON.stringify({
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        })}
+        speed="700"
         slides-per-view={slidesPerViewMobile}
         slides-per-group="1"
         slides-offset-before={padding ? padding : undefined}

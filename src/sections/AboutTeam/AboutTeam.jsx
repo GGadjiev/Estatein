@@ -3,11 +3,13 @@ import Section from '@/layouts/Section/index.js'
 import { employees } from '@/constants/data.js'
 import EmployeeCard from '@/components/EmployeeCard/index.js'
 
-export default () => {
+export default (props) => {
+  const { id } = props
   return (
     <Section
       className="about-team"
       title="Meet the Estatein Team"
+      id={id}
       description="At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality."
     >
       <div className="about-team__container">

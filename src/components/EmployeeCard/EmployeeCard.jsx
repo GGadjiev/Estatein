@@ -12,7 +12,11 @@ export default (props) => {
         className="employee-card__image"
         src={'/src/assets/images/' + image + '.png'}
       />
-      <a className="employee-card__twitter-button" href="/">
+      <a
+        className="employee-card__twitter-button"
+        href="https://x.com"
+        target="_blank"
+      >
         <Icon className="employee-card__twitter-icon" name="twitter" hasFill />
       </a>
       <div className="employee-card__text-container">
@@ -21,13 +25,17 @@ export default (props) => {
       </div>
       <div className="employee-card__say-hello">
         <span className="employee-card__say-hello-text">Say Hello 👋</span>
-        <button className="employee-card__say-hello-button">
+        <a
+          className="employee-card__say-hello-button"
+          href="https://x.com"
+          target="_blank"
+        >
           <Icon
             className="employee-card__say-hello-button-icon"
             name="field-submit"
             hasFill
           />
-        </button>
+        </a>
       </div>
     </div>
   )

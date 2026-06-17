@@ -3,12 +3,14 @@ import Section from '@/layouts/Section/index.js'
 import { aboutValues } from '@/constants/data.js'
 import Icon from '@/components/Icon/index.js'
 
-export default () => {
+export default (props) => {
+  const { id } = props
   return (
     <Section
       className="about-values section_side-by-side"
       title="Our Values"
       titleId="about-clients-title"
+      id={id}
       description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
     >
       <div className="about-values__container">

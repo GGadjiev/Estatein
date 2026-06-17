@@ -6,9 +6,9 @@ export const metadata = {
 
 export default () => {
   return (
-    <>
+    <div className="container">
       <h1>Page not found</h1>
       <Button href="/">Home</Button>
-    </>
+    </div>
   )
 }

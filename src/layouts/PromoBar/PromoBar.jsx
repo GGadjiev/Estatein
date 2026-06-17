@@ -6,7 +6,7 @@ export default () => {
     <div className={clsx('promobar', 'is-active')}>
       <p className="promobar__text">
         ✨Discover Your Dream Property with Estatein
-        <a href="/" className="promobar__link">
+        <a href="about" className="promobar__link">
           Learn More
         </a>
       </p>

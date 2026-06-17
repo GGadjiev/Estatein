@@ -35,7 +35,7 @@ export default (props) => {
           {locationName}
         </li>
       </ui>
-      <Button className="location-card__button button_purple">
+      <Button className="location-card__button button_purple" href="contact">
         Get Direction
       </Button>
     </article>

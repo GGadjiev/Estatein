@@ -5,10 +5,12 @@ import LocationCard from '@/components/LocationCard/index.js'
 import Button from '@/components/Button/index.js'
 import Slider from '@/components/Slider/index.js'
 
-export default () => {
+export default (props) => {
+  const { id } = props
   return (
     <Section
       className="contact-locations"
+      id={id}
       title="Discover Our Office Locations"
       titleId="contact-locations-title"
       description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you"

@@ -1,17 +1,19 @@
-import '@/sections/HomeProperties/HomeProperties.scss'
+import './Properties.scss'
 import { properties } from '@/constants/data.js'
 import PropertyCard from '@/components/PropertyCard/index.js'
 import SliderSection from '@/layouts/SliderSection/index.js'
 
-export default () => {
+export default (props) => {
+  const { title, titleId, description, sliderId, id } = props
   return (
     <SliderSection
       className="properties"
-      title="Discover a World of Possibilities"
-      titleId="properties-title"
-      description="Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home"
-      sliderId="properties"
-      actionConfig={{ href: '/', label: 'View All Properties' }}
+      title={title}
+      titleId={titleId}
+      description={description}
+      sliderId={sliderId}
+      actionConfig={{ href: 'properties', label: 'View All Properties' }}
+      id={id}
     >
       {properties.map((item) => (
         <PropertyCard {...item} className="properties__item" />

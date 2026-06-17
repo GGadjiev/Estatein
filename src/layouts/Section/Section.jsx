@@ -10,11 +10,13 @@ export default (props) => {
     headerActions,
     headerMedia,
     children,
+    id,
   } = props
   return (
     <section
       className={clsx('section', 'container', className)}
       aria-labelledby={titleId}
+      id={id}
     >
       {headerMedia && (
         <div className="section__header-media visible-tablet">

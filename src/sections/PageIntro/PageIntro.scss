@@ -3,6 +3,10 @@
   overflow: hidden;
   border: var(--border-gray);
 
+  @include tablet {
+    margin-bottom: fluid(46, 40, 1024, 390);
+  }
+
   &:before {
     content: '';
     display: block;
