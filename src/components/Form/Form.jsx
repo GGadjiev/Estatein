@@ -9,6 +9,7 @@ import Field from '@/components/Field/index.js'
 import Select from '@/components/Select/index.js'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { className, page } = props
@@ -90,8 +91,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="properties">Terms of Use</a> and{' '}
-              <a href="properties">Privacy Policy</a>
+              I agree with <a href={link('/properties')}>Terms of Use</a> and{' '}
+              <a href={link('/properties')}>Privacy Policy</a>
             </span>
           </label>
 
@@ -145,8 +146,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="contact">Terms of Use</a> and{' '}
-              <a href="contact">Privacy Policy</a>
+              I agree with <a href={link('/contact')}>Terms of Use</a> and{' '}
+              <a href={link('/contact')}>Privacy Policy</a>
             </span>
           </label>
 
@@ -203,8 +204,8 @@ export default (props) => {
             />
             <span className="form-checkbox__box"></span>
             <span className="form-checkbox__text">
-              I agree with <a href="property">Terms of Use</a> and{' '}
-              <a href="property">Privacy Policy</a>
+              I agree with <a href={link('/property')}>Terms of Use</a> and{' '}
+              <a href={link('/property')}>Privacy Policy</a>
             </span>
           </label>
 

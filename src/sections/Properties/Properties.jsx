@@ -12,7 +12,7 @@ export default (props) => {
       titleId={titleId}
       description={description}
       sliderId={sliderId}
-      actionConfig={{ href: 'properties', label: 'View All Properties' }}
+      actionConfig={{ href: '/properties', label: 'View All Properties' }}
       id={id}
       sliderProps={{
         padding: 1,

@@ -1,5 +1,6 @@
 import './PreFooterCta.scss'
 import Button from '@/components/Button/index.js'
+import { link } from "@/utils/link.js";
 
 export default () => {
   return (
@@ -20,7 +21,7 @@ export default () => {
         </div>
         <Button
           className="pre-footer-cta__button button_purple"
-          href="properties"
+          href={link('/properties')}
         >
           Explore Properties
         </Button>

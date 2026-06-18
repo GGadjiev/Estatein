@@ -4,6 +4,7 @@ import { Image } from 'minista'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
 import TextSlicer from '@/modules/TextSlicer.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { className, title, description, image, details, price, currency } =
@@ -22,7 +23,7 @@ export default (props) => {
         <p className="property-card__description">
           {slisedDesc}{' '}
           {isSlised && (
-            <a className="property-card__description-link" href="/property">
+            <a className="property-card__description-link" href={link('/property')}>
               Read More
             </a>
           )}
@@ -56,7 +57,7 @@ export default (props) => {
         </span>
         <Button
           className="property-card__button button_purple"
-          href="/property"
+          href={link('/property')}
         >
           View Property Details
         </Button>

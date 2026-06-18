@@ -2,6 +2,7 @@ import './PropertyDetails.scss'
 import Section from '@/layouts/Section/index.js'
 import { propertyDetails } from '@/constants/data.js'
 import Button from '@/components/Button/index.js'
+import { link } from "@/utils/link.js";
 
 export default () => {
   const { listingPrice } = propertyDetails
@@ -46,7 +47,7 @@ export default () => {
                   <h3 className="property-details__features-title">{title}</h3>
                   <Button
                     className="property-details__features-button button_gray"
-                    href="property"
+                    href={link('/property')}
                   >
                     Learn More
                   </Button>

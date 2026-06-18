@@ -1,3 +1,5 @@
+import { link } from "@/utils/link.js";
+
 export const homeGridCards = [
   { text: 'Find Your Dream Home', icon: 'house' },
   { text: 'Unlock Property Value', icon: 'camera' },
@@ -242,45 +244,45 @@ export const footerNavigation = [
   {
     title: 'Home',
     links: [
-      { text: 'Hero Section', href: '/#home-hero' },
-      { text: 'Features', href: '/#home-grid-cards' },
-      { text: 'Properties', href: '/#home-properties' },
-      { text: 'Testimonials', href: '/#home-reviews' },
-      { text: 'FAQ’s', href: '/#home-faq' },
+      { text: 'Hero Section', href: link('#home-hero') },
+      { text: 'Features', href: link('#home-grid-cards') },
+      { text: 'Properties', href: link('#home-properties') },
+      { text: 'Testimonials', href: link('#home-reviews') },
+      { text: 'FAQ’s', href: link('#home-faq') },
     ],
   },
   {
     title: 'About Us',
     links: [
-      { text: 'Our Story', href: '/about/#about-journey' },
-      { text: 'Our Works', href: '/about/#about-values' },
-      { text: 'How It Works', href: '/about/#about-experience' },
-      { text: 'Our Team', href: '/about/#about-team' },
-      { text: 'Our Clients', href: '/about/#about-clients' },
+      { text: 'Our Story', href: link('/about#about-journey') },
+      { text: 'Our Works', href: link('/about#about-values') },
+      { text: 'How It Works', href: link('/about#about-experience') },
+      { text: 'Our Team', href: link('/about#about-team') },
+      { text: 'Our Clients', href: link('/about#about-clients') },
     ],
   },
   {
     title: 'Properties',
     links: [
-      { text: 'Portfolio', href: '/properties/#properties-properties' },
-      { text: 'Categories', href: '/properties/#properties-form' },
+      { text: 'Portfolio', href: link('/properties#properties-properties') },
+      { text: 'Categories', href: link('/properties#properties-form') },
     ],
   },
   {
     title: 'Services',
     links: [
-      { text: 'Valuation Mastery', href: '/services/#services-intro' },
-      { text: 'Strategic Marketing', href: '/services/#services-grid-cards' },
-      { text: 'Negotiation Wizardry', href: '/services/#services-value' },
-      { text: 'Closing Success', href: '/services/#services-management' },
-      { text: 'Property Management', href: '/services/#services-investment' },
+      { text: 'Valuation Mastery', href: link('/services#services-intro') },
+      { text: 'Strategic Marketing', href: link('/services#services-grid-cards') },
+      { text: 'Negotiation Wizardry', href: link('/services#services-value') },
+      { text: 'Closing Success', href: link('/services#services-management') },
+      { text: 'Property Management', href: link('/services#services-investment') },
     ],
   },
   {
     title: 'Contact Us',
     links: [
-      { text: 'Contact Form', href: '/contact/#contact-form' },
-      { text: 'Our Offices', href: '/contact/#contact-locations' },
+      { text: 'Contact Form', href: link('/contact#contact-form') },
+      { text: 'Our Offices', href: link('/contact#contact-locations') },
     ],
   },
 ]
@@ -405,7 +407,7 @@ export const clients = [
     founderYear: '2019',
     domain: 'Commercial Real Estate',
     category: 'Luxury Home Development',
-    url: 'about',
+    url: '/about',
     review:
       "Estatein\'s expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
   },
@@ -414,7 +416,7 @@ export const clients = [
     founderYear: '2018',
     domain: 'Commercial Real Estate',
     category: 'Retail Space',
-    url: 'about',
+    url: '/about',
     review:
       "Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.",
   },
@@ -423,7 +425,7 @@ export const clients = [
     founderYear: '2021',
     domain: 'Information Technology',
     category: 'Software Engineering',
-    url: 'about',
+    url: '/about',
     review:
       'Estatein helped us secure a modern tech hub that perfectly fits our agile teams. Their smooth onboarding and tech-ready spaces exceeded our expectations.',
   },
@@ -432,7 +434,7 @@ export const clients = [
     founderYear: '2017',
     domain: 'Retail & E-commerce',
     category: 'Eco-Friendly Products',
-    url: 'about',
+    url: '/about',
     review:
       'Finding a sustainable warehouse with solar infrastructure was a massive challenge. Estatein delivered exactly what we needed within our tight timeline.',
   },
@@ -441,7 +443,7 @@ export const clients = [
     founderYear: '2015',
     domain: 'Finance & Banking',
     category: 'Investment Management',
-    url: 'about',
+    url: '/about',
     review:
       'The premium location and top-tier security systems of our new headquarters have significantly elevated our brand image and client trust.',
   },

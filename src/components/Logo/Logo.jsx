@@ -1,5 +1,6 @@
 import './Logo.scss'
 import clsx from 'clsx'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
@@ -9,13 +10,13 @@ export default (props) => {
   return (
     <a
       className={clsx('logo', className)}
-      href="/"
+      href={link('/')}
       title={title}
       aria-label={title}
     >
       <img
         className="logo__image"
-        src="/images/logo.svg"
+        src={link("/images/logo.svg")}
         alt=""
         width={160}
         height={48}

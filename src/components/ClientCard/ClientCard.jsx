@@ -2,6 +2,7 @@ import './ClientCard.scss'
 import clsx from 'clsx'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { className, name, founderYear, domain, category, url, review } = props
@@ -13,7 +14,7 @@ export default (props) => {
           <span className="client-card__founder-year">Since {founderYear}</span>
           <h3 className="client-card__name h3-big">{name}</h3>
         </div>
-        <Button className="client-card__button button_gray" href={url}>
+        <Button className="client-card__button button_gray" href={link(url)}>
           Visit Website
         </Button>
       </div>

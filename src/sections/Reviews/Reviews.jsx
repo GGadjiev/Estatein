@@ -12,7 +12,7 @@ export default (props) => {
       titleId="reviews-title"
       description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       sliderId="reviews"
-      actionConfig={{ href: 'about', label: 'View All Testimonials' }}
+      actionConfig={{ href: '/about', label: 'View All Testimonials' }}
       id={id}
       sliderProps={{
         padding: 1,

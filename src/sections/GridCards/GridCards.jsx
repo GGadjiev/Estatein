@@ -2,6 +2,7 @@ import './GridCards.scss'
 import Icon from '@/components/Icon/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
 import Button from '@/components/Button/index.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { items = [], id } = props
@@ -18,7 +19,7 @@ export default (props) => {
       <div className="grid-cards__inner">
         {items.map((item) => (
           <div className="grid-cards__item">
-            <Button className="grid-cards__arrow" href="properties">
+            <Button className="grid-cards__arrow" href={link('/properties')}>
               <Icon className="grid-cards__arrow-icon" name="arrow" />
             </Button>
             <div className="grid-cards__content">

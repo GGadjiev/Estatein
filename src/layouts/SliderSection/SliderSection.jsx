@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Button from '@/components/Button/index.js'
 import Section from '@/layouts/Section/index.js'
 import Slider from '@/components/Slider/index.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const {
@@ -19,7 +20,7 @@ export default (props) => {
 
   const ActionElement = actionConfig ? (
     <Button
-      href={actionConfig.href}
+      href={link(actionConfig.href)}
       className={clsx('button_gray', actionConfig.className)}
     >
       {actionConfig.label}

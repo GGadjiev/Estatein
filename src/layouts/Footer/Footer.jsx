@@ -4,6 +4,7 @@ import Field from '@/components/Field/index.js'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
 import { footerNavigation, footerSocials } from '@/constants/data.js'
+import { link } from "@/utils/link.js";
 
 export default () => {
   return (
@@ -50,7 +51,7 @@ export default () => {
             <p className="footer__copyright">
               &copy;2023 Estatein. All Rights Reserved.
             </p>
-            <a href="/" className="footer__legal-link">
+            <a href={link('/')} className="footer__legal-link">
               Terms & Conditions
             </a>
           </div>

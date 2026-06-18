@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const { url } = props
@@ -40,7 +41,7 @@ export default (props) => {
                     'header__menu-link',
                     href === url && 'is-active'
                   )}
-                  href={href}
+                  href={link(href)}
                 >
                   {label}
                 </a>
@@ -63,7 +64,7 @@ export default (props) => {
                       'header__menu-link',
                       href === url && 'is-active'
                     )}
-                    href={href}
+                    href={link(href)}
                   >
                     {label}
                   </a>
@@ -72,7 +73,7 @@ export default (props) => {
               <li className="header__menu-item">
                 <a
                   className="header__menu-link header__menu-link_button"
-                  href="/contact"
+                  href={link('/contact')}
                 >
                   Contact Us
                 </a>
@@ -83,7 +84,7 @@ export default (props) => {
 
         <Button
           className="header__button hidden-mobile button_purple-hover"
-          href="/contact"
+          href={link('/contact')}
         >
           Contact Us
         </Button>

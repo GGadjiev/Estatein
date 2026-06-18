@@ -2,6 +2,7 @@ import './Card.scss'
 import clsx from 'clsx'
 import Button from '@/components/Button/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
+import { link } from "@/utils/link.js";
 
 export default (props) => {
   const {
@@ -40,7 +41,7 @@ export default (props) => {
         </h3>
 
         {actions && (
-          <Button className="wide-card__button" href="properties">
+          <Button className="wide-card__button" href={link('/properties')}>
             Learn More
           </Button>
         )}
@@ -61,7 +62,7 @@ export default (props) => {
       <p className="card__description">{description}</p>
 
       {actions && (
-        <Button className="card__button" href="about">
+        <Button className="card__button" href={link('/')}>
           Read More
         </Button>
       )}

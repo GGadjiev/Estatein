@@ -1,12 +1,13 @@
 import './PromoBar.scss'
 import clsx from 'clsx'
+import { link } from "@/utils/link.js";
 
 export default () => {
   return (
     <div className={clsx('promobar', 'is-active')}>
       <p className="promobar__text">
         ✨Discover Your Dream Property with Estatein
-        <a href="about" className="promobar__link">
+        <a href={link('/about')} className="promobar__link">
           Learn More
         </a>
       </p>
