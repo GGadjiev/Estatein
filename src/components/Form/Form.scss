@@ -188,9 +188,14 @@
     align-items: center;
     gap: fluid-to-laptop(10, 6);
     cursor: pointer;
+    pointer-events: none;
 
     &__input:checked + .form-checkbox__box {
       border-color: var(--color-gray-30) !important;
+    }
+
+    a {
+      pointer-events: painted;
     }
 
     &__box {
@@ -202,6 +207,7 @@
       position: relative;
       flex-shrink: 0;
       transition: border-color 0.2s;
+      pointer-events: painted;
 
       @include hover {
         border-color: var(--color-gray-30);
