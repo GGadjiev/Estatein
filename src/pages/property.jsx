@@ -1,7 +1,7 @@
 import PropertyOverview from '@/sections/PropertyOverview/index.js'
 import PropertyForm from '@/sections/PropertyForm/index.js'
 import PropertyDetails from '@/sections/PropertyDetails/index.js'
-import Faq from "@/sections/Faq/index.js";
+import Faq from '@/sections/Faq/index.js'
 
 export const metadata = {
   title: 'Property',

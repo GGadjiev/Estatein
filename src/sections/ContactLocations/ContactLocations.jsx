@@ -16,10 +16,16 @@ export default (props) => {
       description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you"
     >
       <div className="contact-locations__inner">
-        <div className="contact-locations__tab-container">
-          <Button className="contact-locations__tab is-active">All</Button>
-          <Button className="contact-locations__tab">Regional</Button>
-          <Button className="contact-locations__tab">International</Button>
+        <div className="contact-locations__tab-container js-locations-tabs">
+          <Button className="contact-locations__tab locations-all is-active">
+            All
+          </Button>
+          <Button className="contact-locations__tab locations-regional">
+            Regional
+          </Button>
+          <Button className="contact-locations__tab locations-international">
+            International
+          </Button>
         </div>
 
         <Slider
@@ -30,7 +36,10 @@ export default (props) => {
           padding="1"
         >
           {contactLocations.map((item) => (
-            <LocationCard {...item} className="contact-locations__slide" />
+            <LocationCard
+              {...item}
+              className={`contact-locations__slide js-location-slide type-${item.type}`}
+            />
           ))}
         </Slider>
       </div>

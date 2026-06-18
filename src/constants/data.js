@@ -787,8 +787,8 @@ export const contactForm = {
 export const contactLocations = [
   {
     id: 1,
-    type: 'regional', // Внутренний тип для фильтрации
-    category: 'Main Headquarters', // Заголовок над адресом
+    type: 'regional',
+    category: 'Main Headquarters',
     address: '123 Estatein Plaza, City Center, Metropolis',
     description:
       'Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.',
