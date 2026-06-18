@@ -59,15 +59,11 @@
   }
 
   &:not(.is-active) &__text {
-    transform: translateY(
-      -20px
-    ); // Уводим текст чуть вверх внутри исчезающего блока
+    transform: translateY(-20px);
   }
 
   &:not(.is-active) &__close {
-    transform: translateY(
-      -20px
-    ); // Уводим текст чуть вверх внутри исчезающего блока
+    transform: translateY(-20px);
   }
 }
 

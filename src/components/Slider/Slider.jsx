@@ -20,10 +20,6 @@ export default (props) => {
     paginationType = 'fraction',
   } = props
 
-  // const desktopSpaceBetween = Number(slidesPerViewDesktop) === 2 ? 50 : 30
-  // const laptopSpaceBetween = Number(slidesPerViewLaptop) === 2 ? 40 : 30
-  // const tabletSpaceBetween = 20
-
   const nextButtonClass = id
     ? `slider__button_next_${id}`
     : 'slider__button_next'

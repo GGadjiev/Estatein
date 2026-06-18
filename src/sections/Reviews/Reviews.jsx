@@ -14,6 +14,9 @@ export default (props) => {
       sliderId="reviews"
       actionConfig={{ href: 'about', label: 'View All Testimonials' }}
       id={id}
+      sliderProps={{
+        padding: 1,
+      }}
     >
       {reviews.map((item) => (
         <ReviewCard {...item} className="reviews__item" />

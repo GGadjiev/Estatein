@@ -2,6 +2,8 @@
   padding-block: 20px;
   background-color: var(--color-gray-10);
   border: var(--border-gray);
+  position: relative;
+  z-index: 100;
 
   &__inner {
     display: flex;
@@ -9,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
+    position: relative;
+    z-index: 201;
 
     @include mobile {
       display: flex;
@@ -16,27 +20,82 @@
     }
   }
 
-  &__overlay-menu-dialog {
-    position: fixed;
-    inset: 0;
-    flex-direction: column-reverse;
-    justify-content: start;
-    row-gap: 16px;
-    width: 100%;
-    height: 100%;
-    padding: var(--container-padding-x);
-    background-color: var(--color-gray);
-    border: none;
+  &__menu_desktop {
+    display: flex;
+    align-items: center;
 
-    @include mobile-above {
-      display: contents;
+    @include mobile {
+      display: none !important;
+    }
+  }
+
+  &__button {
+    &:hover {
+      color: unset;
     }
 
     @include mobile {
-      &[open] {
-        display: flex;
-      }
+      display: none !important;
     }
+  }
+
+  &__burger-button {
+    display: none;
+    position: relative;
+    z-index: 202;
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__overlay-menu {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    @include mobile-above {
+      display: none !important;
+    }
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__overlay-menu-backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+  }
+
+  &__menu_mobile {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    row-gap: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: var(--container-padding-x);
+    padding-top: 80px;
+    background-color: var(--color-gray);
+    overflow-y: auto;
   }
 
   &__menu {
@@ -61,14 +120,18 @@
     }
 
     &-link {
-      //      padding: 14px 20px;
       padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
       color: var(--color-white);
 
+      &_button {
+        margin-top: 16px;
+        background-color: var(--color-purple-60);
+        border-radius: var(--border-radius-base-2);
+        text-align: center;
+      }
+
       &.is-active {
         background-color: var(--color-gray-08);
-
-        //        text-decoration: underline;
         border: var(--border-gray);
         border-radius: var(--border-radius-base-2);
       }
@@ -84,14 +147,9 @@
       justify-content: end;
     }
   }
+}
 
-  &__burger-button {
-    position: relative;
-  }
-
-  &__button {
-    &:hover {
-      color: unset;
-    }
-  }
+body.is-lock {
+  overflow: hidden;
+  max-width: 100vw;
 }

@@ -14,6 +14,9 @@ export default (props) => {
       sliderId="faq"
       actionConfig={{ href: 'about', label: 'View All FAQ’s' }}
       id={id}
+      sliderProps={{
+        padding: 1,
+      }}
     >
       {faq.map((item) => (
         <Card {...item} actions className="faq__item" />

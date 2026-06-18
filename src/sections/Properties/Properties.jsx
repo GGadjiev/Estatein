@@ -14,6 +14,9 @@ export default (props) => {
       sliderId={sliderId}
       actionConfig={{ href: 'properties', label: 'View All Properties' }}
       id={id}
+      sliderProps={{
+        padding: 1,
+      }}
     >
       {properties.map((item) => (
         <PropertyCard {...item} className="properties__item" />

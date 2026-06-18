@@ -1,36 +1,59 @@
-class OverlayMenu {
-  selectors = {
+export default function () {
+  const selectors = {
     root: '[data-js-overlay-menu]',
-    dialog: '[data-js-overlay-menu-dialog]',
+    panel: '[data-js-overlay-menu-panel]',
     burgerButton: '[data-js-overlay-menu-burger-button]',
+    backdrop: '[data-js-overlay-menu-backdrop]',
   }
 
-  stateClasses = {
+  const stateClasses = {
     isActive: 'is-active',
     isLock: 'is-lock',
   }
 
-  constructor() {
-    this.rootElement = document.querySelector(this.selectors.root)
-    if (!this.rootElement) {
-      return
-    }
-    this.dialogElement = this.rootElement.querySelector(this.selectors.dialog)
-    this.burgerButtonElement = this.rootElement.querySelector(
-      this.selectors.burgerButton
-    )
-    this.bindEvents()
+  let rootElement, panelElement, burgerButtonElement, backdropElement
+  let isOpen = false
+
+  const init = () => {
+    rootElement = document.querySelector(selectors.root)
+    if (!rootElement) return
+
+    panelElement = rootElement.querySelector(selectors.panel)
+    burgerButtonElement = rootElement.querySelector(selectors.burgerButton)
+    backdropElement = rootElement.querySelector(selectors.backdrop)
+
+    bindEvents()
   }
 
-  onBurgerButtonClick = () => {
-    this.burgerButtonElement.classList.toggle(this.stateClasses.isActive)
-    this.dialogElement.open = !this.dialogElement.open
-    document.documentElement.classList.toggle(this.stateClasses.isLock)
+  const toggleMenu = () => {
+    isOpen = !isOpen
+
+    panelElement.classList.toggle(stateClasses.isActive)
+    burgerButtonElement.classList.toggle(stateClasses.isActive)
+    document.documentElement.classList.toggle(stateClasses.isLock)
+    document.body.classList.toggle(stateClasses.isLock) // ✅ Добавлено
   }
 
-  bindEvents() {
-    this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
+  const closeMenu = () => {
+    if (!isOpen) return
+
+    isOpen = false
+    panelElement.classList.remove(stateClasses.isActive)
+    burgerButtonElement.classList.remove(stateClasses.isActive)
+    document.documentElement.classList.remove(stateClasses.isLock)
+    document.body.classList.remove(stateClasses.isLock) // ✅ Добавлено
   }
+
+  const bindEvents = () => {
+    burgerButtonElement.addEventListener('click', toggleMenu)
+    backdropElement.addEventListener('click', closeMenu)
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu()
+    })
+  }
+
+  init()
+
+  return { toggleMenu, closeMenu }
 }
-
-export default OverlayMenu
