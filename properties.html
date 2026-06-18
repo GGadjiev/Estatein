@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estatein | Properties</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <script src="/assets/main.js" type="module"></script>
-    <link rel="stylesheet" href="/assets/bundle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Estatein/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Estatein/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Estatein/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/Estatein/assets/site.webmanifest">
+    <script src="/Estatein/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/Estatein/assets/bundle.css">
   </head>
   <body>
     <div class="promobar is-active">
@@ -24,7 +24,7 @@
     <header class="header" data-js-overlay-menu="">
       <div class="header__inner container">
         <a class="logo header__logo" href="/" title="Home" aria-label="Home">
-          <img class="logo__image" src="/Estatein/images/logo.svg" alt="" width="160" height="48" loading="eager">
+          <img class="logo__image" src="/images/logo.svg" alt="" width="160" height="48" loading="eager">
         </a>
         <nav class="header__menu header__menu_desktop">
           <ul class="header__menu-list">
@@ -32,13 +32,13 @@
               <a class="header__menu-link" href="/">Home</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="about">About Us</a>
+              <a class="header__menu-link" href="/about">About Us</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="properties">Properties</a>
+              <a class="header__menu-link is-active" href="/properties">Properties</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="services">Services</a>
+              <a class="header__menu-link" href="/services">Services</a>
             </li>
           </ul>
         </nav>
@@ -50,21 +50,21 @@
                 <a class="header__menu-link" href="/">Home</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="about">About Us</a>
+                <a class="header__menu-link" href="/about">About Us</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="properties">Properties</a>
+                <a class="header__menu-link is-active" href="/properties">Properties</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="services">Services</a>
+                <a class="header__menu-link" href="/services">Services</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link header__menu-link_button" href="contact">Contact Us</a>
+                <a class="header__menu-link header__menu-link_button" href="/contact">Contact Us</a>
               </li>
             </ul>
           </nav>
         </div>
-        <a class="button header__button hidden-mobile button_purple-hover" href="contact">Contact Us</a>
+        <a class="button header__button hidden-mobile button_purple-hover" href="/contact">Contact Us</a>
         <button class="burger-button header__burger-button visible-mobile" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
           <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
             <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
@@ -91,7 +91,7 @@
                 <input class="field__control field__control_has-button" id="search" type="search" placeholder="Search For A Property">
                 <button class="button field__button search-filter-bar__search-input-button" type="submit"><span class="icon field__button-icon">
                     <svg fill="none" stroke="currentColor">
-                      <use href="/assets/images/icons.svg#search"></use>
+                      <use href="/Estatein/assets/images/icons.svg#search"></use>
                     </svg>
                   </span><span class="field__button-text hidden-tablet">Find Property</span></button>
               </div>
@@ -99,7 +99,7 @@
             <div class="search-filter-bar__filters">
               <div class="custom-select-wrapper search-filter-bar__filters-item"><span class="icon custom-select-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#mappoint"></use>
+                    <use href="/Estatein/assets/images/icons.svg#mappoint"></use>
                   </svg>
                 </span>
                 <select class="js-choices-select" name="location" data-placeholder="Location">
@@ -113,7 +113,7 @@
               </div>
               <div class="custom-select-wrapper search-filter-bar__filters-item"><span class="icon custom-select-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#house-2"></use>
+                    <use href="/Estatein/assets/images/icons.svg#house-2"></use>
                   </svg>
                 </span>
                 <select class="js-choices-select" name="propertyType" data-placeholder="Property Type">
@@ -127,7 +127,7 @@
               </div>
               <div class="custom-select-wrapper search-filter-bar__filters-item"><span class="icon custom-select-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#camera"></use>
+                    <use href="/Estatein/assets/images/icons.svg#camera"></use>
                   </svg>
                 </span>
                 <select class="js-choices-select" name="pricingRange" data-placeholder="Pricing Range">
@@ -141,7 +141,7 @@
               </div>
               <div class="custom-select-wrapper search-filter-bar__filters-item"><span class="icon custom-select-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#cube"></use>
+                    <use href="/Estatein/assets/images/icons.svg#cube"></use>
                   </svg>
                 </span>
                 <select class="js-choices-select" name="propertySize" data-placeholder="Property Size">
@@ -155,7 +155,7 @@
               </div>
               <div class="custom-select-wrapper search-filter-bar__filters-item"><span class="icon custom-select-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#calendar"></use>
+                    <use href="/Estatein/assets/images/icons.svg#calendar"></use>
                   </svg>
                 </span>
                 <select class="js-choices-select" name="buildYear" data-placeholder="Build Year">
@@ -184,24 +184,24 @@
         <div class="section__body">
           <div class="slider"><swiper-container class="slider__container" navigation="{&quot;nextEl&quot;:&quot;.slider__button_next_properties&quot;,&quot;prevEl&quot;:&quot;.slider__button_prev_properties&quot;}" pagination="true" pagination-type="fraction" pagination-el=".slider__pagination_properties" loop="true" autoplay="{&quot;delay&quot;:3000,&quot;disableOnInteraction&quot;:false,&quot;pauseOnMouseEnter&quot;:true}" speed="700" slides-per-view="1" slides-per-group="1" slides-offset-before="1" slides-offset-after="1" space-between="20" breakpoints="{&quot;768&quot;:{&quot;slidesPerView&quot;:2,&quot;spaceBetween&quot;:20},&quot;1024&quot;:{&quot;slidesPerView&quot;:2,&quot;spaceBetween&quot;:30},&quot;1440&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30}}"><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-1-360x266.png 360w, /assets/images/property-1-400x296.png 400w, /assets/images/property-1-432x318.png 432w" src="/assets/images/property-1-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-1-360x266.png 360w, /Estatein/assets/images/property-1-400x296.png 400w, /Estatein/assets/images/property-1-432x318.png 432w" src="/Estatein/assets/images/property-1-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Seaside Serenity Villa</h3>
                     <p class="property-card__description">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>4-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>3-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Villa</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->550 000</span></span>
@@ -210,24 +210,24 @@
                 </div>
               </swiper-slide><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-2-360x266.png 360w, /assets/images/property-2-400x296.png 400w, /assets/images/property-2-432x318.png 432w" src="/assets/images/property-2-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-2-360x266.png 360w, /Estatein/assets/images/property-2-400x296.png 400w, /Estatein/assets/images/property-2-432x318.png 432w" src="/Estatein/assets/images/property-2-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Metropolitan Haven</h3>
                     <p class="property-card__description">A chic and fully-furnished 2-bedroom apartment with panoramic city views...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>2-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>2-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Villa</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->340 000</span></span>
@@ -236,24 +236,24 @@
                 </div>
               </swiper-slide><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-3-360x266.png 360w, /assets/images/property-3-400x296.png 400w, /assets/images/property-3-432x318.png 432w" src="/assets/images/property-3-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-3-360x266.png 360w, /Estatein/assets/images/property-3-400x296.png 400w, /Estatein/assets/images/property-3-432x318.png 432w" src="/Estatein/assets/images/property-3-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Rustic Retreat Cottage</h3>
                     <p class="property-card__description">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community, featuring...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>3-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>3-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Villa</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->750 000</span></span>
@@ -262,24 +262,24 @@
                 </div>
               </swiper-slide><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-1-360x266.png 360w, /assets/images/property-1-400x296.png 400w, /assets/images/property-1-432x318.png 432w" src="/assets/images/property-1-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-1-360x266.png 360w, /Estatein/assets/images/property-1-400x296.png 400w, /Estatein/assets/images/property-1-432x318.png 432w" src="/Estatein/assets/images/property-1-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Metropolitan Horizon Penthouse</h3>
                     <p class="property-card__description">An exquisite 3-bedroom, 2-bathroom penthouse located in the heart of the...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>3-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>2-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Penthouse</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->890 000</span></span>
@@ -288,24 +288,24 @@
                 </div>
               </swiper-slide><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-2-360x266.png 360w, /assets/images/property-2-400x296.png 400w, /assets/images/property-2-432x318.png 432w" src="/assets/images/property-2-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-2-360x266.png 360w, /Estatein/assets/images/property-2-400x296.png 400w, /Estatein/assets/images/property-2-432x318.png 432w" src="/Estatein/assets/images/property-2-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Whispering Pines Chalet</h3>
                     <p class="property-card__description">A charming 5-bedroom, 4-bathroom mountain lodge nestled among mature pine...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>5-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>4-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Chalet</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->725 000</span></span>
@@ -314,24 +314,24 @@
                 </div>
               </swiper-slide><swiper-slide class="slider__slide">
                 <div class="property-card properties__item">
-                  <img srcset="/assets/images/property-3-360x266.png 360w, /assets/images/property-3-400x296.png 400w, /assets/images/property-3-432x318.png 432w" src="/assets/images/property-3-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
+                  <img srcset="/Estatein/assets/images/property-3-360x266.png 360w, /Estatein/assets/images/property-3-400x296.png 400w, /Estatein/assets/images/property-3-432x318.png 432w" src="/Estatein/assets/images/property-3-432x318.png" sizes="(min-width: 432px) 432px, 100vw" width="432" height="318" alt decoding="async" loading="lazy" class="property-card__image">
                   <div class="property-card__content">
                     <h3 class="property-card__title">Azure Waters Beachfront Studio</h3>
                     <p class="property-card__description">A compact yet luxuriously appointed 1-bedroom, 1-bathroom coastal apartment...<!-- -->
-                      <a class="property-card__description-link" href="property">Read More</a>
+                      <a class="property-card__description-link" href="/property">Read More</a>
                     </p>
                   </div>
                   <div class="property-card__details"><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bedroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bedroom"></use>
                         </svg>
                       </span>1-Bedroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#bathroom"></use>
+                          <use href="/Estatein/assets/images/icons.svg#bathroom"></use>
                         </svg>
                       </span>1-Bathroom</span><span class="property-card__detail"><span class="icon property-card__detail-icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#villa"></use>
+                          <use href="/Estatein/assets/images/icons.svg#villa"></use>
                         </svg>
                       </span>Studio</span></div>
                   <div class="property-card__footer"><span class="property-card__price-container"><span class="property-card__price-text">Price</span><span class="property-card__price">$<!-- -->310 000</span></span>
@@ -348,12 +348,12 @@
                 <div class="slider__control-buttons">
                   <button class="button slider__button slider__button_prev slider__button_prev_properties" type="button"><span class="icon slider__button-icon">
                       <svg fill="currentColor" stroke="none">
-                        <use href="/assets/images/icons.svg#slider-left-arrow"></use>
+                        <use href="/Estatein/assets/images/icons.svg#slider-left-arrow"></use>
                       </svg>
                     </span></button>
                   <button class="button slider__button slider__button_next slider__button_next_properties" type="button"><span class="icon slider__button-icon">
                       <svg fill="currentColor" stroke="none">
-                        <use href="/assets/images/icons.svg#slider-right-arrow"></use>
+                        <use href="/Estatein/assets/images/icons.svg#slider-right-arrow"></use>
                       </svg>
                     </span></button>
                 </div>
@@ -448,14 +448,14 @@
                   <label class="form-radio">
                     <input class="form-radio__input visually-hidden" type="radio" name="contact_method" checked="" value="phone"><span class="form-radio__box"><span class="icon form-radio__icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#phone"></use>
+                          <use href="/Estatein/assets/images/icons.svg#phone"></use>
                         </svg>
                       </span><span class="form-radio__text">Enter Your Number</span><span class="form-radio__dot"></span></span>
                   </label>
                   <label class="form-radio">
                     <input class="form-radio__input visually-hidden" type="radio" name="contact_method" value="email"><span class="form-radio__box"><span class="icon form-radio__icon">
                         <svg fill="currentColor" stroke="none">
-                          <use href="/assets/images/icons.svg#writing"></use>
+                          <use href="/Estatein/assets/images/icons.svg#writing"></use>
                         </svg>
                       </span><span class="form-radio__text">Enter Your Email</span><span class="form-radio__dot"></span></span>
                   </label>
@@ -494,19 +494,19 @@
         <div class="footer__top">
           <div class="footer__brand">
             <a class="logo footer__logo" href="/" title="Home" aria-label="Home">
-              <img class="logo__image" src="/Estatein/images/logo.svg" alt="" width="160" height="48" loading="eager">
+              <img class="logo__image" src="/images/logo.svg" alt="" width="160" height="48" loading="eager">
             </a>
             <div class="field footer__field">
               <label class="field__label visually-hidden" for="email">Email<span class="field__required-star" aria-hidden="true"> *</span></label>
               <div class="field__body"><span class="icon field__icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#email"></use>
+                    <use href="/Estatein/assets/images/icons.svg#email"></use>
                   </svg>
                 </span>
                 <input class="field__control field__control_has-icon field__control_has-button" id="email" type="email" placeholder="Enter Your Email" required="">
                 <button class="button field__button" type="submit"><span class="icon field__button-icon">
                     <svg fill="currentColor" stroke="none">
-                      <use href="/assets/images/icons.svg#field-submit"></use>
+                      <use href="/Estatein/assets/images/icons.svg#field-submit"></use>
                     </svg>
                   </span><span class="field__button-text hidden-tablet"></span></button>
               </div>
@@ -608,28 +608,28 @@
             <li class="footer__socials-item">
               <a class="button footer__socials-button" href="https://facebook.com"><span class="icon footer__socials-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#facebook"></use>
+                    <use href="/Estatein/assets/images/icons.svg#facebook"></use>
                   </svg>
                 </span></a>
             </li>
             <li class="footer__socials-item">
               <a class="button footer__socials-button" href="https://linkedin.com"><span class="icon footer__socials-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#linkedin"></use>
+                    <use href="/Estatein/assets/images/icons.svg#linkedin"></use>
                   </svg>
                 </span></a>
             </li>
             <li class="footer__socials-item">
               <a class="button footer__socials-button" href="https://twitter.com"><span class="icon footer__socials-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#twitter"></use>
+                    <use href="/Estatein/assets/images/icons.svg#twitter"></use>
                   </svg>
                 </span></a>
             </li>
             <li class="footer__socials-item">
               <a class="button footer__socials-button" href="https://youtube.com"><span class="icon footer__socials-icon">
                   <svg fill="currentColor" stroke="none">
-                    <use href="/assets/images/icons.svg#youtube"></use>
+                    <use href="/Estatein/assets/images/icons.svg#youtube"></use>
                   </svg>
                 </span></a>
             </li>
