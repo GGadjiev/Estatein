@@ -2,7 +2,7 @@ import './Card.scss'
 import clsx from 'clsx'
 import Button from '@/components/Button/index.js'
 import IconCircle from '@/components/IconCircle/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const {

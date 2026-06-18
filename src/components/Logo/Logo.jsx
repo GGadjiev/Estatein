@@ -1,6 +1,6 @@
 import './Logo.scss'
 import clsx from 'clsx'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
@@ -16,7 +16,7 @@ export default (props) => {
     >
       <img
         className="logo__image"
-        src={link("/images/logo.svg")}
+        src={link('/images/logo.svg')}
         alt=""
         width={160}
         height={48}

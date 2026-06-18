@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const { url } = props

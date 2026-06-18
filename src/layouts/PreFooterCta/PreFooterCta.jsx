@@ -1,6 +1,6 @@
 import './PreFooterCta.scss'
 import Button from '@/components/Button/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default () => {
   return (

@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import Button from '@/components/Button/index.js'
 import Section from '@/layouts/Section/index.js'
 import Slider from '@/components/Slider/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const {

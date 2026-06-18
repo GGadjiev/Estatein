@@ -57,6 +57,7 @@
       background-color: var(--color-gray-10);
       border: var(--border-gray);
       padding-left: fluid-to-laptop(20, 10) !important;
+      padding-right: 50px !important;
     }
 
     .choices__item--choice {
@@ -233,7 +234,7 @@
       user-select: none;
 
       @include laptop {
-        font-size: fluid-laptop-to-mobile(16, 14);
+        font-size: fluid-laptop-to-mobile(16, 12.3);
       }
 
       a {

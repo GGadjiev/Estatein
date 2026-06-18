@@ -17,12 +17,12 @@
       padding-top: fluid-to-laptop(73, 55);
 
       @include laptop {
-        padding-top: fluid-laptop-to-mobile(55, 35);
+        padding-top: fluid-laptop-to-mobile(55, 30);
         padding-inline: fluid-laptop-to-mobile(30, 14);
       }
 
       &__header {
-        padding-left: fluid-to-laptop(30, 24);
+        padding-left: fluid-to-laptop(30, 18);
       }
 
       &__description {

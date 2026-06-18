@@ -111,6 +111,7 @@
       display: flex;
       flex-direction: column;
       gap: fluid-to-laptop(10, 8);
+      text-wrap: nowrap;
 
       @include laptop {
         gap: fluid-laptop-to-mobile(8, 6);
@@ -139,7 +140,7 @@
           &:after {
             content: '';
             display: block;
-            width: fluid(656, 315, 768, 390);
+            width: fluid(656, 285, 768, 350);
             height: 1px;
             top: 0;
             background-color: var(--color-gray-15);

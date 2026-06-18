@@ -1,4 +1,4 @@
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export const homeGridCards = [
   { text: 'Find Your Dream Home', icon: 'house' },
@@ -272,10 +272,16 @@ export const footerNavigation = [
     title: 'Services',
     links: [
       { text: 'Valuation Mastery', href: link('/services#services-intro') },
-      { text: 'Strategic Marketing', href: link('/services#services-grid-cards') },
+      {
+        text: 'Strategic Marketing',
+        href: link('/services#services-grid-cards'),
+      },
       { text: 'Negotiation Wizardry', href: link('/services#services-value') },
       { text: 'Closing Success', href: link('/services#services-management') },
-      { text: 'Property Management', href: link('/services#services-investment') },
+      {
+        text: 'Property Management',
+        href: link('/services#services-investment'),
+      },
     ],
   },
   {

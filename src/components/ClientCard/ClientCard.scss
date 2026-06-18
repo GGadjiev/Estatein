@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
 
     &-text {
       display: flex;
@@ -27,6 +28,10 @@
         gap: fluid-laptop-to-mobile(4, 2);
       }
     }
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__founder-year {
@@ -35,6 +40,10 @@
 
   &__button {
     align-self: flex-end;
+
+    @include mobile {
+      align-self: stretch;
+    }
   }
 
   &__tags {

@@ -4,7 +4,7 @@ import Field from '@/components/Field/index.js'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
 import { footerNavigation, footerSocials } from '@/constants/data.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default () => {
   return (

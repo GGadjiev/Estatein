@@ -2,7 +2,7 @@ import './LocationCard.scss'
 import clsx from 'clsx'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const {
@@ -36,7 +36,10 @@ export default (props) => {
           {locationName}
         </li>
       </ui>
-      <Button className="location-card__button button_purple" href={link('/contact')}>
+      <Button
+        className="location-card__button button_purple"
+        href={link('/contact')}
+      >
         Get Direction
       </Button>
     </article>

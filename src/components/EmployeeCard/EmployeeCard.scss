@@ -63,7 +63,7 @@
       cursor: pointer;
 
       @include laptop {
-        padding: fluid(14, 8, 390, 1440);
+        padding: fluid(14, 8, 1440, 390);
       }
     }
   }

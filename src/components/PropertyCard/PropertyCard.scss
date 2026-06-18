@@ -5,8 +5,6 @@
   padding: fluid-to-laptop(40, 30);
   border: var(--border-gray);
   border-radius: var(--border-radius-base);
-  //  flex: 1 1 512px;
-  //  flex: 0 0 100%;
   width: 100%;
   box-sizing: border-box;
 
@@ -50,7 +48,6 @@
   }
 
   &__image {
-    //    margin: 0 auto;
     width: 100%;
   }
 
@@ -77,18 +74,9 @@
 
   &__button {
     padding-inline: fluid-to-laptop(54.5, 47.7);
-    //    text-wrap: nowrap;
-
-    //    @include laptop {
-    //      padding-inline: fluid(47.7, 25, 1440, 1024);
-    //    }
-    //
-    //    @include tablet {
-    //      padding-inline: fluid-laptop-to-mobile(47.7, 25);
-    //    }
 
     @include laptop {
-      padding-inline: fluid-laptop-to-mobile(47.7, 25);
+      padding-inline: fluid-laptop-to-mobile(47.7, 20);
     }
   }
 }

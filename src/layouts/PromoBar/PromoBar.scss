@@ -33,6 +33,17 @@
     column-gap: 10px;
     font-size: 12px;
     font-weight: 500;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    text-decoration: underline !important;
+    @include mobile {
+      padding-left: 17px;
+    }
   }
 
   &__close {

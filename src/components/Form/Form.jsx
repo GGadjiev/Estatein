@@ -9,7 +9,7 @@ import Field from '@/components/Field/index.js'
 import Select from '@/components/Select/index.js'
 import Icon from '@/components/Icon/index.js'
 import Button from '@/components/Button/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const { className, page } = props

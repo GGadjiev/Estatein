@@ -1,6 +1,6 @@
 import './PromoBar.scss'
 import clsx from 'clsx'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default () => {
   return (

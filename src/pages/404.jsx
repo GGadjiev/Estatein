@@ -1,5 +1,5 @@
 import Button from '@/components/Button'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export const metadata = {
   title: 'Not found',

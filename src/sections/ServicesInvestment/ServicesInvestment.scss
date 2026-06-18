@@ -39,8 +39,12 @@
     .card {
       gap: fluid-to-laptop(53, 35);
 
+      @include laptop {
+        padding-inline: fluid-laptop-to-mobile(30, 14);
+      }
+
       &__header {
-        padding-left: fluid-to-laptop(30, 24);
+        padding-left: fluid-to-laptop(30, 18);
       }
     }
 

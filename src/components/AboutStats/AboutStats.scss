@@ -22,7 +22,7 @@
     background-color: var(--color-gray-10);
 
     @include laptop {
-      padding: fluid-laptop-to-mobile(16, 16) fluid-laptop-to-mobile(20, 16);
+      padding: fluid-laptop-to-mobile(16, 10) fluid-laptop-to-mobile(20, 10);
     }
 
     @include mobile {

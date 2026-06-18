@@ -2,7 +2,7 @@ import './PropertyDetails.scss'
 import Section from '@/layouts/Section/index.js'
 import { propertyDetails } from '@/constants/data.js'
 import Button from '@/components/Button/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default () => {
   const { listingPrice } = propertyDetails

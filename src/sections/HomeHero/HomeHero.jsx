@@ -3,7 +3,7 @@ import Button from '@/components/Button/index.js'
 import Icon from '@/components/Icon/index.js'
 import { Image } from 'minista'
 import AboutStats from '@/components/AboutStats/index.js'
-import { link } from "@/utils/link.js";
+import { link } from '@/utils/link.js'
 
 export default (props) => {
   const { id } = props

@@ -1,6 +1,12 @@
 .contact-gallery {
   .section {
     &__header {
+      h2 {
+        @include laptop {
+          font-size: fluid-laptop-to-mobile(38, 25);
+        }
+      }
+
       @include tablet-above {
         padding: 0 0 fluid-to-laptop(130, 75) fluid-to-laptop(80, 60);
       }
