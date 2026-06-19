@@ -3,7 +3,7 @@
     &__header {
       h2 {
         @include laptop {
-          font-size: fluid-laptop-to-mobile(38, 25);
+          font-size: fluid-laptop-to-mobile(38, 24);
         }
       }
 

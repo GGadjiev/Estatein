@@ -33,6 +33,12 @@
 
   &__actions-mobile {
     margin-right: auto;
+
+    .button {
+      @include laptop {
+        padding: fluid-laptop-to-mobile(12, 11) fluid-laptop-to-mobile(16, 11);
+      }
+    }
   }
 
   &__footer {

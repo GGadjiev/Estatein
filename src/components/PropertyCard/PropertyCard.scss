@@ -76,7 +76,7 @@
     padding-inline: fluid-to-laptop(54.5, 47.7);
 
     @include laptop {
-      padding-inline: fluid-laptop-to-mobile(47.7, 20);
+      padding-inline: fluid-laptop-to-mobile(47.7, 16);
     }
   }
 }

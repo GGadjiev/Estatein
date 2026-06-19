@@ -111,7 +111,6 @@
       display: flex;
       flex-direction: column;
       gap: fluid-to-laptop(10, 8);
-      text-wrap: nowrap;
 
       @include laptop {
         gap: fluid-laptop-to-mobile(8, 6);
@@ -145,6 +144,10 @@
             top: 0;
             background-color: var(--color-gray-15);
             position: absolute;
+          }
+
+          &:nth-child(2n + 1) {
+            grid-column: 2 span;
           }
         }
       }
