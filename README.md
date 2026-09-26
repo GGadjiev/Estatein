@@ -1,157 +1,128 @@
-# 🧱 Friendly Frontend Starter
+# Estatein — многостраничный сайт агентства недвижимости
 
-Стартер для современных фронтенд-проектов на базе [Minista](https://minista.qranoko.jp/) с поддержкой JSX (без React), SCSS, линтинга и автоформатирования.
+Шестой учебный проект — сайт агентства недвижимости Estatein: семь страниц, от главной до карточки объекта. Первый многостраничный и первый компонентный проект: разметка собирается из JSX-секций и компонентов с пропсами, сборка — Vite + статический генератор Minista, весь контент вынесен в `data.js`. Сторонние библиотеки — Swiper, Choices.js и IMask, остальной интерактив — vanilla JS.
 
-## 🚀 Быстрый старт
+**[Открыть демо](https://ggadjiev.github.io/Estatein/)**
 
-Создайте проект с помощью `npm create`:
+## Страницы сайта
 
-```bash
-npm create friendly-frontend@latest
-```
-
-Для TypeScript-версии добавьте флаг `--ts`:
-
-```bash
-npm create friendly-frontend@latest -- --ts
-```
-
-## 📦 Что внутри
-
-Стартер включает:
-
-- [Minista](https://minista.qranoko.jp/) с поддержкой JSX без React
-- Сборка через [Vite](https://vite.dev/)
-- Стили:
-  - [SCSS](https://sass-lang.com/)
-  - [PostCSS](https://postcss.org/) + плагины: [`preset-env`](https://www.npmjs.com/package/postcss-preset-env), [`pxtorem`](https://www.npmjs.com/package/postcss-pxtorem)
-  - CSS Normalize: [`@a1rth/css-normalize`](https://www.npmjs.com/package/@a1rth/css-normalize)
-  - Утилитарные миксины и функции в `src/styles/helpers`
-- Полезные зависимости:
-  - [`clsx`](https://www.npmjs.com/package/clsx) — удобное объединение CSS-классов
-  - [`imask`](https://www.npmjs.com/package/imask) — маски для полей ввода
-- Линтинг и форматирование:
-  - [`ESLint`](https://eslint.org/), [`Stylelint`](https://stylelint.io/), [`Prettier`](https://prettier.io/)
-  - Общая конфигурация: [`friendly-frontend-lint-config`](https://www.npmjs.com/package/friendly-frontend-lint-config)
-- Удобства:
-  - Алиасы через `jsconfig.json` (`@/ → src/`)
-  - Готовая структура `src/` с компонентами, секциями, утилитами и layout’ами
-
-## 🚀 Скрипты
-
-```bash
-npm run start         # Запуск в dev-режиме
-npm run build         # Сборка
-npm run preview       # Локальный просмотр сборки
-
-npm run lint:js       # Проверка JS-кода
-npm run lint:js:fix   # Автоисправление JS-кода
-npm run lint:css      # Проверка CSS-кода
-npm run lint:css:fix  # Автоисправление CSS-кода
-npm run format        # Проверка форматирования
-npm run format:fix    # Форматирование
-npm run lint          # Полная проверка кода и форматирования без исправлений
-npm run lint:fix      # Полная проверка с автоисправлением и форматированием
-```
-
-## ⚙️ Структура проекта
-
-```csharp
-├── public/               # Статичные файлы, не обрабатываемые сборщиком
-├── src/
-│   ├── assets/           # Изображения, иконки, фавиконки и шрифты
-│   │   ├── favicons/     # Фавиконки для сайта
-│   │   ├── fonts/        # Подключаемые шрифты (woff2 и пр.)
-│   │   ├── icons/        # SVG-иконки (для спрайта)
-│   │   └── images/       # Остальные изображения
-│   │
-│   ├── components/       # Мелкие переиспользуемые компоненты (Button, Input и т.п.)
-│   ├── constants/        # Константы, enum’ы, конфиги, словари и пр.
-│   ├── layouts/          # Структурные компоненты страницы (Header, Content, Section, Footer)
-│   ├── modules/          # JavaScript-модули (например: OverlayMenu, InputMaskCollection)
-│   ├── pages/            # Файлы страниц (Minista сам роутит всё отсюда)
-│   ├── sections/         # Переиспользуемые секции страниц (Hero, About, Features и пр.)
-│   ├── styles/           # Общие стили проекта (переменные, миксины, сбросы)
-│   ├── utils/            # Утилитарные функции (например: pxToRem, debounce)
-│   ├── global.jsx        # Общий layout для всех страниц (Minista Feature)
-│   └── main.js           # Точка входа JavaScript-логики, запускающейся в браузере
-│
-├── .gitignore             # Список файлов и папок, игнорируемых Git
-├── .prettierignore        # Список файлов и папок, игнорируемых Prettier
-├── eslint.config.js       # Конфигурация ESLint (проверка JS/JSX-кода)
-├── jsconfig.json          # Настройки путей и автодополнения для JS (используется IDE и сборщиком)
-├── minista.config.js      # Конфигурация Minista
-├── package.json           # Зависимости проекта, скрипты, метаинформация
-├── package-lock.json      # Зафиксированные версии всех установленных пакетов
-├── postcss.config.js      # Конфигурация PostCSS (preset-env, pxtorem и пр.)
-├── prettier.config.js     # Настройки автоформатирования кода (Prettier)
-├── README.md              # Документация по проекту (вы сейчас её читаете)
-└── stylelint.config.js    # Конфигурация Stylelint (проверка CSS/SCSS)
-```
-
-## 🧠 Что особенно удобно
-
-- JSX без React — почти как HTML, но мощнее: можно вставлять JS и выносить куски разметки в отдельные файлы
-- [Vite](https://vite.dev/) под капотом — [Minista](https://minista.qranoko.jp/) использует [Vite](https://vite.dev/) как сборщик, так что всё быстро, современно и с поддержкой HMR
-- Компонент `Icon` с автонастройкой цвета. Поверх встроенного `<Icon>` реализован `src/components/Icon.jsx`, который: прокидывает `fill`, `stroke` и использует `currentColor`, чтобы цвет SVG-иконки подстраивался под цвет текста и корректно работал как с fill, так и со stroke-иконками.
-- Мощные Sass-хелперы — в `src/styles/helpers/` лежат:
-  - функции (`fluid`, `fluid-to-laptop`)
-  - миксины для медиа-запросов (`mobile`, `mobile-above`, `hover` и т. п.)
-  - переменные и константы
-  - Утилитарные CSS-классы — для типовых задач:
-    - `.container`
-    - `.visually-hidden`
-    - `.visible-tablet`, `.hidden-tablet`
-    - `.visible-mobile`, `.hidden-mobile`
-
-## 📚 Документация Minista
-
-Если вы не знакомы с Minista — обязательно загляните в официальную документацию:
-
-> 🔗 https://minista.qranoko.jp/docs/
-
-Рекомендуем к прочтению:
-
-- 📄 Конфигурация Minista — `minista.config.js`
-  - https://minista.qranoko.jp/docs/config-file
-- 🧱 Глобальный layout — `src/global.jsx`
-  - https://minista.qranoko.jp/docs/global
-- 🧾 Метаданные страниц — переменная `metadata` в `src/pages/**.jsx`
-  - https://minista.qranoko.jp/docs/metadata
-- 🧠 Компонент `<Head>` — для добавления `<meta>`, `<title>` и прочего
-  - https://minista.qranoko.jp/docs/head
-- 🖼 Компонент `<Image>` — для оптимизированной загрузки изображений
-  - https://minista.qranoko.jp/docs/image
-- 🧩 Компонент `<Icon>` — SVG-спрайт и иконки
-  - https://minista.qranoko.jp/docs/svg-sprite-icon
-    > ☝️ В нашем шаблоне поверх встроенного `<Icon>` реализован компонент-обёртка `src/components/Icon.jsx`.
-    > Он автоматически прокидывает нужные атрибуты (`fill`, `stroke`) и использует `currentColor` —
-    > чтобы удобно управлять цветом иконки через CSS, независимо от оригинальной реализации SVG.
-
-## 📝 Советы
-
-Для TypeScript-версии используйте `npm create friendly-frontend@latest -- --ts`
-
-## ❓ FAQ
-
-### Почему используется JSX без React?
-
-Благодаря Minista. Это позволяет использовать знакомый синтаксис, но без нагрузки от React — идеально для статичных и маркетинговых сайтов.
-
-### Это можно развернуть на Netlify/Vercel?
-
-Да. Это обычная статика — после `npm run build` можно деплоить куда угодно.
-
-## Обратная связь
-
-Если нашли баг или хотите предложить улучшение — открывайте issue или присылайте pull request.
-
-GitHub: https://github.com/aleksanderlamkov/friendly-frontend-starter
-
-## Лицензия
-
-MIT
-
+- **Главная** — Hero с заголовком, двумя CTA-кнопками и статистикой агентства (200+ клиентов, 10k+ объектов, 16+ лет опыта); сетка из четырёх направлений работы; слайдер Featured Properties; отзывы клиентов со звёздным рейтингом; FAQ.
+![Estatein — Home-page](screenshots/screenshot-home-full.png)
 ---
+- **About Us** — история агентства, четыре ценности, достижения, процесс покупки из шести шагов, команда из четырёх сотрудников, клиенты-компании с отзывами.
+![Estatein — About Us](screenshots/screenshot-about-us.png)
+---
+- **Services** — две сетки услуг («Unlock Property Value» и «Effortless Property Management») с широкими CTA-карточками и инвестиционный блок.
+![Estatein — Services](screenshots/screenshot-services.png)
+---
+- **Properties** — панель поиска: текстовое поле и пять фильтров-селектов (локация, тип недвижимости, цена, площадь, год постройки); слайдер объектов; форма подбора.
+![Estatein — Properties](screenshots/screenshot-properties.png)
+---
+- **Property** — карточка объекта с ценой и адресом, детали (спальни, ванные, площадь), форма запроса и FAQ.
+![Estatein — Property](screenshots/screenshot-property.png)
+---
+- **Contact** — четыре контактные карточки, форма связи, офисы с фильтром по табам (все / региональные / международные) и фотогалерея.
+![Estatein — Contact Us](screenshots/screenshot-contact-us.png)
+---
+- **404** — страница ошибки с кнопкой возврата на главную.
 
-**Автор:** [Александр Ламков](https://www.youtube.com/@AleksanderLamkov)
+Общее для всех страниц: закрываемый промо-бар, шапка с навигацией и бургер-меню, CTA-блок с формой подписки перед подвалом, подвал с якорной навигацией по секциям каждой страницы и соцсетями.
+
+## Технологии
+
+| Технология | Как используется |
+| --- | --- |
+| **Minista + Vite** | Статическая генерация: JSX-компоненты рендерятся в HTML на этапе сборки — React в браузер не попадает, сайту нужен только бандл с vanilla JS |
+| **JSX** | Компонентная разметка: страницы собираются из секций, секции — из компонентов; контент передаётся пропсами из `data.js` |
+| **SCSS** | 55 файлов (~4100 строк); helpers (`fluid()`, миксины брейкпоинтов) подключаются во все файлы автоматически через `additionalData`; дизайн-токены — кастомные свойства в `:root` |
+| **CSS3** | Grid и Flexbox, флюид-типографика на `clamp()`, `aspect-ratio`, логические свойства |
+| **Swiper 12** | Web components `swiper-container`: слайдеры объектов, отзывов, FAQ и офисов; автопрокрутка раз в 3 секунды с паузой при наведении, зацикливание, адаптивные брейкпоинты |
+| **Choices.js** | Стилизованные селекты: пять фильтров поиска и поля форм |
+| **IMask** | Маска ввода номера телефона |
+| **Vanilla JS** | 7 модулей клиентской логики, которые находят свои элементы по `data-js-*`-атрибутам |
+| **clsx** | Условные классы в компонентах |
+| **Шрифт** | Urbanist (Regular / Medium / SemiBold / Bold, `woff2`) — локально |
+| **PostCSS** | `pxtorem` и `preset-env` — только в production-сборке |
+| **Качество кода** | ESLint 9 (flat config, `jsx-a11y`, `react-hooks`), Stylelint (БЭМ-паттерн селекторов, порядок свойств), Prettier |
+
+## Интерактивность
+
+Клиентская логика — отдельные модули vanilla JS, каждый сам находит свои элементы по `data-js-*`-атрибутам и не завязан на классы стилей:
+
+- **Оверлей-меню** — бургер на мобильных: блокировка скролла страницы, закрытие по Escape и клику в фон.
+- **Двойной слайдер объекта** — девять миниатюр под основным слайдером; активный слайд синхронизируется через модуль thumbs, инициализация web-компонентов ожидается через `requestAnimationFrame`.
+- **Фильтрация офисов** — табы «все / региональные / международные» пересобирают слайдер: Swiper уничтожается, слайды фильтруются по классам, слайдер создаётся заново.
+- **TextSlicer** — обрезка длинных описаний объектов по границе слов со ссылкой Read More.
+- **Промо-бар** — закрывается по крестику.
+
+## Архитектура
+
+Код разделён на слои по ответственности:
+
+- `pages/` — 7 страниц: только композиция секций и метаданные;
+- `sections/` — 22 крупные секции, из которых собираются страницы;
+- `components/` — 17 переиспользуемых компонентов: `Card` работает в трёх режимах (обычная / шаг / широкая), `Form` — в трёх конфигурациях (Properties / Contact / Property), `Slider` — обёртка над Swiper с пропсами;
+- `layouts/` — 7 обёрток: шапка, подвал, промо-бар, `Section` и `SliderSection` с шапкой секции;
+- `modules/` — 7 модулей клиентской логики;
+- `constants/data.js` — весь контент сайта: объекты, отзывы, FAQ, команда, фильтры, формы;
+- `utils/` — `link()` для ссылок с учётом базового пути GitHub Pages и мелкие помощники.
+
+## Адаптивность
+
+Вёрстка рассчитана на экраны от 350px до 1920px:
+
+| Контрольная точка | Ширина |
+| --- | --- |
+| Laptop | ≤ 1440px |
+| Tablet | ≤ 1024px |
+| Mobile | ≤ 768px |
+| Mobile-S | ≤ 480px |
+
+Между точками размеры плавные: SCSS-функция `fluid($max, $min, $start, $end)` компилируется в `clamp()`, для типовых диапазонов 1920→1440 и 1440→390 есть готовые варианты `fluid-to-laptop()` и `fluid-laptop-to-mobile()`. Миксин `hover` различает устройства с мышью и без: на тач-экранах вместо `:hover` срабатывает `:active`.
+
+## Чему я научился
+
+- строить компонентную архитектуру: страницы → секции → компоненты; переиспользовать одну карточку в трёх режимах вместо копирования разметки;
+- выносить весь контент в `data.js` и передавать его пропсами;
+- подключать сторонние библиотеки и подгонять их под макет: Swiper, Choices.js, IMask;
+- синхронизировать два слайдера между собой и пересоздавать Swiper после фильтрации слайдов;
+- деплоить собранный проект в подпапку GitHub Pages: `base: '/Estatein/'` и утилита `link()` для корректных путей.
+
+## Запуск локально
+
+```bash
+git clone https://github.com/GGadjiev/Estatein.git
+cd Estatein
+npm install
+npm start        # дев-сервер с горячей перезагрузкой
+npm run build    # production-сборка в dist/
+npm run preview  # предпросмотр собранной версии
+```
+
+Проверка кода: `npm run lint` (ESLint + Stylelint + Prettier).
+
+## Структура проекта
+
+```
+├── minista.config.js        # SSG-конфиг: base, SVG-спрайт, оптимизация изображений
+├── postcss.config.js        # pxtorem + preset-env (production)
+├── eslint.config.js         # ESLint 9: flat config, jsx-a11y, react-hooks
+├── stylelint.config.js      # Stylelint: БЭМ-паттерн селекторов
+├── prettier.config.js
+└── src/
+    ├── global.jsx           # каркас страниц: Head, PromoBar, Header, Footer
+    ├── main.js              # входной бандл: инициализация JS-модулей
+    ├── pages/               # 7 страниц: index, about, services, properties, property, contact, 404
+    ├── sections/            # 22 секции
+    ├── components/          # 17 компонентов: Button, Card, Field, Form, Select, Slider…
+    ├── layouts/             # Header, Footer, PromoBar, Section, SliderSection…
+    ├── modules/             # 7 модулей: OverlayMenu, InitSelect, InputMaskCollection…
+    ├── constants/           # data.js — контент сайта
+    ├── utils/               # link, getIdFromTitle, pxToRem…
+    ├── styles/              # variables, globals, utils, fonts + helpers (media, mixins, functions)
+    └── assets/              # Urbanist (woff2), 44 SVG-иконки, изображения
+```
+
+## Деплой
+
+Production-сборка из `dist/` публикуется в ветку `gh-pages`. Проект живёт в подпапке `https://ggadjiev.github.io/Estatein/`, поэтому в конфиге задан `base: '/Estatein/'`, а все внутренние ссылки строятся утилитой `link()` из `import.meta.env.BASE_URL`.
